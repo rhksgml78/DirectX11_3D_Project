@@ -3,7 +3,7 @@
 
 # User-specific files
 *.vs
-*.build
+*Build
 *.suo
 *.user
 *.userosscache
