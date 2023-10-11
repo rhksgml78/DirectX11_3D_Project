@@ -21,8 +21,8 @@ StudyScene::StudyScene()
     RESOURCE->shaders.Load("2.ShadowMap.hlsl");
 
     player = Actor::Create();
-    player->LoadFile("Player_Study.xml");
-    player->anim->ChangeAnimation(AnimationState::LOOP, 0, 0.1f);
+    player->LoadFile("BossMonsterSE.xml");
+    player->anim->ChangeAnimation(AnimationState::LOOP, 2, 0.1f);
 
     inven = Inven::Create();
     inven->LoadFile("Inven_Study.xml"); // 액터를 구성
@@ -82,6 +82,7 @@ StudyScene::StudyScene()
     water->LoadFile("water.xml");
 
     envi = new Environment(1024, 1024); // 환경이미지 크기늘리기
+    envi2 = new Environment(1024, 1024); // 수면 굴절 효과를 위한 환경객체2
     RESOURCE->shaders.Load("0.SkyCubeMap.hlsl")->LoadGeometry();
     RESOURCE->shaders.Load("4.CubeMap.hlsl")->LoadGeometry();
     RESOURCE->shaders.Load("5.CubeMap.hlsl")->LoadGeometry();
@@ -225,17 +226,25 @@ void StudyScene::PreRender()
 
 #pragma region Water_Effect
     {
-        // Render 이전단계인 PreRender단계에서 envi의 위치값 조절
+        // 반사맵핑 텍스처
         Vector3 Dir = water->GetWorldPos() - Camera::main->GetWorldPos();
         float Distance = Dir.Length();
         Dir.Normalize();
         Vector3 reflect = Vector3::Reflect(Dir, water->GetUp());
         envi->position = (water->GetWorldPos() - reflect * Distance);
+        envi->SetTarget(Color(0, 0, 0, 1));
+        sky->Render(RESOURCE->shaders.Load("0.SkyCubeMap.hlsl")); // 배경까지 반사시키려면 주석해제
+        player->Render(RESOURCE->shaders.Load("4.CubeMap.hlsl"));
+        map->Render(RESOURCE->shaders.Load("5.CubeMap.hlsl"));
     }
-    envi->SetTarget(Color(0, 0, 0, 1));
-    sky->Render(RESOURCE->shaders.Load("0.SkyCubeMap.hlsl"));
-    player->Render(RESOURCE->shaders.Load("4.CubeMap.hlsl"));
-    map->Render(RESOURCE->shaders.Load("5.CubeMap.hlsl"));
+    {
+        // 굴절효과를 위해서 별도 렌더 구간 마련
+        envi2->position = Camera::main->GetWorldPos(); // 현재시점위치
+        envi2->SetTarget(Color(0, 0, 0, 1));
+        sky->Render(RESOURCE->shaders.Load("0.SkyCubeMap.hlsl"));
+        player->Render(RESOURCE->shaders.Load("4.CubeMap.hlsl"));
+        map->Render(RESOURCE->shaders.Load("5.CubeMap.hlsl"));
+    }
 #pragma endregion
 }
 
@@ -256,8 +265,10 @@ void StudyScene::Render()
 #pragma region instuncing
     //actorInstance->Render();
 #pragma endregion
+
 #pragma region Water_Effect
-    envi->SetRGBTexture(4);
+    envi->SetRGBTexture(4); // 쉐이더리소스, 샘플러설정용 슬롯번호
+    envi2->SetRGBTexture(5); // 쉐이더리소스, 샘플러설정용 슬롯번호
     {
         waterBufferDesc.time = TIMER->GetWorldTime() / 5.0f;
         waterBufferDesc.dir = Vector2(-1, -1);
@@ -282,6 +293,4 @@ void StudyScene::ResizeScreen()
     cam->height = App.GetHeight();
     cam->viewport.width = App.GetWidth();
     cam->viewport.height = App.GetHeight();
-
-
 }

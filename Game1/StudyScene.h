@@ -32,6 +32,7 @@ private:
 	}waterBufferDesc;
 
 	Environment* envi;
+	Environment* envi2;
 	ID3D11Buffer* waterBuffer;
 #pragma endregion
 

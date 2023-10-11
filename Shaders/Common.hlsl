@@ -113,8 +113,10 @@ SamplerState SamplerE : register(s3);
 TextureCube TextureBG : register(t4);
 SamplerState SamplerBG : register(s4);
 
-//TextureCube TextureC : register(t5);
-//SamplerState SamplerC : register(s5);
+TextureCube TextureC : register(t5);
+SamplerState SamplerC : register(s5);
+
+
 
 Texture2D ShadowMap : register(t7);
 SamplerState SamplerDefault

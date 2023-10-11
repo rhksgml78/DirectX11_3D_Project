@@ -102,26 +102,39 @@ float4 PS(PixelInput input) : SV_TARGET
 	Result.rgb += EmissiveMapping(BaseColor.rgb, Uv, MappingNormal, input.wPosition);
 	//Environment
 	
-	float3 Envi;
+    float3 Envi = float3(0, 0, 0);
+    float3 Envi2 = float3(0, 0, 0);
+	
 	[flatten]
 	if (environment != 0.0f)
 	{
+		// 시야벡터
 		float3 ViewDir = normalize(input.wPosition - ViewPos.xyz);
+		// 반사
 		float3 reflection = reflect(ViewDir, Normal);
-		
-		
+		// 법선
 		float3 normal = TextureN.Sample(SamplerN, Uv).rgb;
-		normal = normal * 2.0f - 1.0f;
-		//
-		reflection.xyz += MappingNormal * 0.01f;
+		
+		normal = normal * 2.0f - 1.0f; // 0.0 ~ 1.0 구간으로 제한
+		
+		reflection.xyz += MappingNormal * 0.01f; // 반사의 좌표를 미세하게 틀어주기
+		
 		reflection = normalize(reflection);
-		Envi = TextureBG.Sample(SamplerBG, reflection.xyz) * environment;
-	}
-	else
-	{
-		Envi = float3(0, 0, 0);
-	}
-	Result.rgb += Envi;
+		
+        float3 Refract = refract(normalize(ViewDir), Normal, 1.01f) + MappingNormal*0.01f;
+		
+		// 두개의 임시변수는 0.5로줄어서 두개가 합쳐지면 1이되도록 한것!
+		Envi = TextureBG.Sample(SamplerBG, reflection.xyz) * environment * 0.5f;
+        Envi2 = TextureC.Sample(SamplerC, Refract) * environment * 0.5f;
+    }
+	/*
+	refract() 함수를 사용한다! 매개변수3개들어감 float3형태로 i n n
+	입사각 표면 굴절률 (물체에따른 굴절률은 인터넷자료참고. 물은1.333)
+	쉐이더코드에서 굴절률을적용할떄에는 1.01정도가 적당한것같다. 
+	*/
+
+	Result.rgb += Envi + Envi2;
+	
 	
 	BaseColor = Result;
 	
