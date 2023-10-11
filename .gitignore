@@ -99,3 +99,9 @@ UpgradeLog*.htm
 
 # If you know of other specific file types or directories that should be excluded 
 # based on the tools you're using, add them below this line.
+*.pdb
+*.idb
+*.obj
+*.tlog
+*.lastbuildstate
+*.tlog
