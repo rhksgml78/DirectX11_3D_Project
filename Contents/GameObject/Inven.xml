@@ -1,0 +1,264 @@
+<Root Name="Inven" Visible="true" ObType="4">
+    <Mesh File="6.UI.mesh"/>
+    <Shader File="6.UI.hlsl"/>
+    <Material File="InvenMenu.mtl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="2" Y="2" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <UI PivotX="0" PivotY="0"/>
+    <Children Size="21"/>
+    <Child0 Name="Armor" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.35249999" Y="0.067500003" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Boots" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.20999999" Y="0.067500003" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="Glove" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.28099999" Y="0.067500003" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child2>
+    <Child3 Name="Helmet" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.42500001" Y="0.067500003" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child3>
+    <Child4 Name="Image" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="0.2115" Y="0.32499999" Z="0"/>
+            <Scale X="0.064999998" Y="0.15000001" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child4>
+    <Child5 Name="Left0" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.42500001" Y="0.20999999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child5>
+    <Child6 Name="Left1" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.35249999" Y="0.20999999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child6>
+    <Child7 Name="Left2" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.28099999" Y="0.20999999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child7>
+    <Child8 Name="Right0" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.42500001" Y="0.35249999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child8>
+    <Child9 Name="Right1" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.35249999" Y="0.35249999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child9>
+    <Child10 Name="Right2" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.28099999" Y="0.35249999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child10>
+    <Child11 Name="Skill0" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.42500001" Y="-0.22499999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child11>
+    <Child12 Name="Skill1" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.34999999" Y="-0.22750001" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child12>
+    <Child13 Name="Skill2" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.27900001" Y="-0.22499999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child13>
+    <Child14 Name="Skill3" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.20999999" Y="-0.22499999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child14>
+    <Child15 Name="Skill4" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.1375" Y="-0.22499999" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child15>
+    <Child16 Name="Useable0" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.42500001" Y="-0.077500001" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child16>
+    <Child17 Name="Useable1" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.35249999" Y="-0.077500001" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child17>
+    <Child18 Name="Useable2" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.28099999" Y="-0.077500001" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child18>
+    <Child19 Name="Useable3" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.20999999" Y="-0.077500001" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child19>
+    <Child20 Name="Useable4" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="cannot.mtl"/>
+        <Transform>
+            <Position X="-0.1375" Y="-0.077500001" Z="0"/>
+            <Scale X="0.050000001" Y="0.11" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child20>
+</Root>

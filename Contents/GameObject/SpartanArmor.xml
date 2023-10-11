@@ -1,0 +1,40 @@
+<Root Name="RootNode" Visible="true" ObType="1" BoneIndex="0">
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="166.99994" Y="-199.00002" Z="-4.9999995"/>
+            <Scale X="1.4" Y="1.4" Z="1.4"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Athenas Sold Chest Base" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="Spartan Sold Linothorax/Athenas Sold Chest Base.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Spartan Sold Linothorax/Linothorax Base .mtl"/>
+            <Transform>
+                <Position X="-118.6265" Y="115.73864" Z="-13.007148"/>
+                <Scale X="0.23372704" Y="0.23372704" Z="0.19328262"/>
+                <Rotation X="-1.5707963" Y="-0" Z="0"/>
+            </Transform>
+            <Children Size="1"/>
+            <Child0 Name="Rim Belts.003" Visible="true" ObType="0" BoneIndex="3">
+                <Mesh File="Spartan Sold Linothorax/Rim Belts.003.mesh"/>
+                <Shader File="4.cube.hlsl"/>
+                <Material File="Spartan Sold Linothorax/Leather Belts Rings Straps1001.mtl"/>
+                <Transform>
+                    <Position X="0" Y="0" Z="0"/>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="0" Y="0" Z="-0"/>
+                </Transform>
+                <Children Size="0"/>
+            </Child0>
+        </Child0>
+    </Child0>
+</Root>

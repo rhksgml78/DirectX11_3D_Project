@@ -1,0 +1,30 @@
+<Root Name="Shield" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="SHEILD_DRAGON_ENGINE/SHEILD_DRAGON_ENGINE.skel" BoneIndexCount="3"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="sheild_dragone_lod1" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="SHEILD_DRAGON_ENGINE/sheild_dragone_lod1.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Shield.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="-1.9073486e-06"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="1.5707963" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child0>
+</Root>

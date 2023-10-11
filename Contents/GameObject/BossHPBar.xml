@@ -1,0 +1,33 @@
+<Root Name="BossHPBar" Visible="true" ObType="4">
+    <Transform>
+        <Position X="0.15000001" Y="0" Z="0"/>
+        <Scale X="1.3" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <UI PivotX="0" PivotY="0"/>
+    <Children Size="2"/>
+    <Child0 Name="HPbar" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="HpBar.mtl"/>
+        <Transform>
+            <Position X="-0.60000002" Y="-0.75" Z="0"/>
+            <Scale X="1.1" Y="0.050000001" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0.5" PivotY="0"/>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Maxbar" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="MaxBar.mtl"/>
+        <Transform>
+            <Position X="-0.60000002" Y="-0.75" Z="0"/>
+            <Scale X="1.11" Y="0.075000003" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0.5" PivotY="0"/>
+        <Children Size="0"/>
+    </Child1>
+</Root>

@@ -1,0 +1,29 @@
+<Root Name="Largeshield" Visible="true" ObType="1">
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="58.499992" Y="-2.0000002" Z="-11.499999"/>
+            <Scale X="0.5" Y="0.5" Z="0.5"/>
+            <Rotation X="0" Y="0" Z="1.4137167"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="polySurface155" Visible="true" ObType="0">
+            <Mesh File="Scutum_low/polySurface155.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Largeshield.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child0>
+</Root>

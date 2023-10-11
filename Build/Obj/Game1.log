@@ -1,0 +1,139 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 중간 디렉터리(C:\Users\user\Desktop\D3DPPT\\Build\Obj\)에 다른 프로젝트(ObjLoader.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  APlayer.cpp
+  AttackObserver.cpp
+  AttackSubject.cpp
+  BehaviorTree.cpp
+  BlackBoard.cpp
+  BossScene.cpp
+  BTAttackNode.cpp
+  BTChaseNode.cpp
+  BTDecoratorNode.cpp
+  BTIntroNode.cpp
+  BTJumpNode.cpp
+  BTMoveNode.cpp
+  BTNode.cpp
+  BTSearchNode.cpp
+  BTSelectorNode.cpp
+  BTSequnceNode.cpp
+C:\Users\user\Desktop\D3DPPT\Game1\BTNode.cpp(1,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BossScene.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTJumpNode.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTMoveNode.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTDecoratorNode.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 APlayer.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTAttackNode.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 AttackSubject.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTNode.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTChaseNode.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 AttackObserver.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BlackBoard.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BehaviorTree.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTSearchNode.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTIntroNode.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(836,79): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(839,79): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(844,84): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(849,84): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(854,90): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(859,88): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(863,93): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(865,93): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(867,92): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(869,88): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(871,93): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(873,84): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(875,85): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(877,84): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(879,95): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(881,106): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(883,107): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(885,106): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(887,107): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\APlayer.cpp(889,85): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTSequnceNode.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 BTSelectorNode.cpp)
+  CollisionObserver.cpp
+  CollisionSubject.cpp
+  Command.cpp
+  CommandAttack.cpp
+  CommandChase.cpp
+  CommandHit.cpp
+  CommandIntro.cpp
+C:\Users\user\Desktop\D3DPPT\Game1\BossScene.cpp(425): warning C4715: 'BossScene::PlayerAttaks': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  CommandJump.cpp
+  CommandMove.cpp
+  CommandSearch.cpp
+  Deadpool.cpp
+  GameUI.cpp
+  GItem.cpp
+  IObserver.cpp
+  ISubject.cpp
+  Item.cpp
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 CollisionObserver.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 CollisionSubject.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 Command.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 CommandAttack.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 CommandChase.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 CommandJump.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 CommandSearch.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 GItem.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 CommandHit.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 CommandIntro.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 CommandMove.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 Deadpool.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 IObserver.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 GameUI.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\GameUI.cpp(679,9): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 ISubject.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 Item.cpp)
+  LoadingScene.cpp
+  Main.cpp
+  Map.cpp
+C:\Users\user\Desktop\D3DPPT\Game1\CommandAttack.cpp(190): warning C4715: 'CommandAttack::Attack': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  Monster.cpp
+  MonsterBoss.cpp
+  MonsterType1.cpp
+  MonsterType2.cpp
+  Player.cpp
+C:\Users\user\Desktop\D3DPPT\Game1\CommandMove.cpp(235): warning C4715: 'CommandMove::Move': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  RocksEffect.cpp
+  RocksEffectVt.cpp
+  Scene2.cpp
+  SKH_TestScene.cpp
+  Solar.cpp
+  StudyScene.cpp
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 LoadingScene.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\LoadingScene.cpp(77,46): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\LoadingScene.cpp(78,46): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\LoadingScene.cpp(79,46): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 Main.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 Map.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 Monster.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 MonsterType2.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 MonsterType1.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 MonsterBoss.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\MonsterType2.cpp(225,24): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\MonsterType1.cpp(41,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\MonsterType1.cpp(233,24): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 Player.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 RocksEffectVt.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\MonsterBoss.cpp(461,30): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\user\Desktop\D3DPPT\Game1\MonsterBoss.cpp(515,34): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\MonsterBoss.cpp(520,47): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\MonsterBoss.cpp(521,47): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\MonsterBoss.cpp(522,47): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 Scene2.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 RocksEffect.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\RocksEffectVt.cpp(21,28): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\RocksEffectVt.cpp(22,41): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\Scene2.cpp(109,48): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\Scene2.cpp(110,48): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\Scene2.cpp(111,48): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 SKH_TestScene.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 Solar.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\BlackBoard.h(64,59): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다. (소스 파일 컴파일 중 StudyScene.cpp)
+C:\Users\user\Desktop\D3DPPT\Game1\Scene2.cpp(485): warning C4715: 'Scene2::PlayerAttaks': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\Scene2.cpp(503): warning C4715: 'Scene2::MonsterAttacks': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\Users\user\Desktop\D3DPPT\Game1\Scene2.cpp(514): warning C4715: 'Scene2::Monster2Attacks': 모든 제어 경로에서 값을 반환하지는 않습니다.
+     C:\Users\user\Desktop\D3DPPT\\Build\Game1.lib 라이브러리 및 C:\Users\user\Desktop\D3DPPT\\Build\Game1.exp 개체를 생성하고 있습니다.
+  Game1.vcxproj -> C:\Users\user\Desktop\D3DPPT\Build\Game1.exe

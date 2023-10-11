@@ -1,0 +1,45 @@
+<Root Name="Gear" Visible="false" ObType="1" BoneIndex="0">
+    <Skeleton File="Gear1/Gear1.skel" BoneIndexCount="3"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="-860" Y="414.39999" Z="-764.54999"/>
+        <Scale X="70" Y="70" Z="85.900002"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="2"/>
+    <Child0 Name="GearSphere" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="2.Sphere.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="0" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0.25666663"/>
+            <Scale X="6.5" Y="6.5" Z="2.8"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="-6.0879998" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Gear1" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="Gear1/Gear1.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Gear.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child1>
+</Root>

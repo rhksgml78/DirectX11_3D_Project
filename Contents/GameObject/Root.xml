@@ -1,0 +1,98 @@
+<Root Name="Actor" Visible="true" ObType="1">
+    <Transform>
+        <Position X="-45.475815" Y="3.494478" Z="-131.37938"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="-3.0319955" Z="0"/>
+    </Transform>
+    <Children Size="2"/>
+    <Child0 Name="Camera" Visible="true" ObType="2">
+        <Transform>
+            <Position X="0" Y="18.757332" Z="16.85"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0.36300105" Y="-3.1590462" Z="0"/>
+        </Transform>
+        <Camera Ortho="false" Fov="1.047192" Width="1459" Height="866" NearZ="1" FarZ="5000" viewportX="0" viewportY="0" viewportW="1459" viewportH="866"/>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Deadpool" Visible="true" ObType="1">
+        <Mesh File="6.Edit.mesh"/>
+        <Shader File="6.Cube.hlsl"/>
+        <Material File="Dead.mtl"/>
+        <Collider ColliderType="0" Visible="true">
+            <Position X="0" Y="-5.25" Z="0"/>
+            <Scale X="1.95" Y="1.95" Z="1.95"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="11" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-0.017453292" Z="0"/>
+        </Transform>
+        <Children Size="6"/>
+        <Child0 Name="LeftArm" Visible="true" ObType="0">
+            <Mesh File="6.Edit2.mesh"/>
+            <Shader File="6.Cube.hlsl"/>
+            <Material File="Dead.mtl"/>
+            <Transform>
+                <Position X="-1.5" Y="-2.5" Z="0"/>
+                <Scale X="0.5" Y="1.5" Z="0.5"/>
+                <Rotation X="0" Y="-1.5707964" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="LeftLeg" Visible="true" ObType="0">
+            <Mesh File="6.Edit2.mesh"/>
+            <Shader File="6.Cube.hlsl"/>
+            <Material File="Dead.mtl"/>
+            <Transform>
+                <Position X="-0.5" Y="-5.5" Z="0"/>
+                <Scale X="0.5" Y="1.5" Z="0.5"/>
+                <Rotation X="0" Y="-1.5707964" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+        <Child2 Name="None" Visible="true" ObType="0">
+            <Mesh File="6.Edit4.mesh"/>
+            <Shader File="6.Cube.hlsl"/>
+            <Material File="Dead.mtl"/>
+            <Transform>
+                <Position X="0" Y="-2.5" Z="0"/>
+                <Scale X="1" Y="1.5" Z="0.5"/>
+                <Rotation X="0" Y="3.1415927" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child2>
+        <Child3 Name="Nonran" Visible="true" ObType="0">
+            <Mesh File="2.Sphere.mesh"/>
+            <Shader File="2.Cube.hlsl"/>
+            <Transform>
+                <Position X="-0.27650404" Y="2.0516529" Z="-0.15607497"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="54.511936" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child3>
+        <Child4 Name="RightArm" Visible="true" ObType="0">
+            <Mesh File="6.Edit2.mesh"/>
+            <Shader File="6.Cube.hlsl"/>
+            <Material File="Dead.mtl"/>
+            <Transform>
+                <Position X="1.5" Y="-2.5" Z="0"/>
+                <Scale X="0.5" Y="1.5" Z="0.5"/>
+                <Rotation X="0" Y="1.5707964" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child4>
+        <Child5 Name="RightLeg" Visible="true" ObType="0">
+            <Mesh File="6.Edit2.mesh"/>
+            <Shader File="6.Cube.hlsl"/>
+            <Material File="Dead.mtl"/>
+            <Transform>
+                <Position X="0.5" Y="-5.5" Z="0"/>
+                <Scale X="0.5" Y="1.5" Z="0.5"/>
+                <Rotation X="0" Y="1.5707964" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child5>
+    </Child1>
+</Root>

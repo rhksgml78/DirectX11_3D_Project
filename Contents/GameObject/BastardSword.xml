@@ -1,0 +1,73 @@
+<Root Name="root2" Visible="true" ObType="1" BoneIndex="0">
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="52.149334" Y="9.000001" Z="0.99999994"/>
+            <Scale X="0.02" Y="0.02" Z="0.02"/>
+            <Rotation X="1.012291" Y="0.43633232" Z="1.9896754"/>
+        </Transform>
+        <Children Size="5"/>
+        <Child0 Name="Blade_Low" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="BastardSword1/Blade_Low.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BastardSword1/DefaultMaterial.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="CrossGuard_Low" Visible="true" ObType="0" BoneIndex="3">
+            <Mesh File="BastardSword1/CrossGuard_Low.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BastardSword1/DefaultMaterial.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+        <Child2 Name="Grip_Low" Visible="true" ObType="0" BoneIndex="4">
+            <Mesh File="BastardSword1/Grip_Low.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BastardSword1/DefaultMaterial.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child2>
+        <Child3 Name="Pommel_Low" Visible="true" ObType="0" BoneIndex="5">
+            <Mesh File="BastardSword1/Pommel_Low.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BastardSword1/DefaultMaterial.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child3>
+        <Child4 Name="RainGuard_Low" Visible="true" ObType="0" BoneIndex="6">
+            <Mesh File="BastardSword1/RainGuard_Low.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BastardSword1/DefaultMaterial.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child4>
+    </Child0>
+</Root>

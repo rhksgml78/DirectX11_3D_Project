@@ -1,0 +1,40 @@
+<Root Name="RootNode" Visible="true" ObType="1">
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="-4.5000005" Z="-3.4999995"/>
+        <Scale X="0.89999998" Y="0.64999998" Z="0.94999999"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="2"/>
+        <Child0 Name="Armor" Visible="true" ObType="0">
+            <Mesh File="Armor/Armor.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Armor/Armor.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="100" Y="100" Z="100"/>
+                <Rotation X="1.5707963" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="Chain" Visible="true" ObType="0">
+            <Mesh File="Armor/Chain.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Armor/Chain.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="100" Y="100" Z="100"/>
+                <Rotation X="1.5707963" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+    </Child0>
+</Root>

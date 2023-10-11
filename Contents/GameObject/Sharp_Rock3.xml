@@ -1,0 +1,30 @@
+<Root Name="Sharp_Rock3" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="Field_Rock_B_01_Low/Field_Rock_B_01_Low.skel" BoneIndexCount="3"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="30"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="-0.5" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Object004" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="Field_Rock_B_01_Low/Object004.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Sharp_Rock2.mtl"/>
+            <Transform>
+                <Position X="0" Y="6.3499999" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="1.5707964" Z="1.5707964"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child0>
+</Root>

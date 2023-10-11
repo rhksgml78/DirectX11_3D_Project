@@ -1,0 +1,10 @@
+<Root Name="Root" Visible="true" ObType="1">
+    <Mesh File="1.Line.mesh"/>
+    <Shader File="1.Collider.hlsl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="0"/>
+</Root>

@@ -1,0 +1,16 @@
+<Root Name="Root" Visible="true" ObType="1">
+    <Mesh File="2.Sphere.mesh"/>
+    <Shader File="2.Cube.hlsl"/>
+    <Material File="sphere2.mtl"/>
+    <Collider ColliderType="0" Visible="true">
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1.05" Y="1.05" Z="1.05"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Collider>
+    <Transform>
+        <Position X="-90.5" Y="25.65" Z="0"/>
+        <Scale X="20" Y="20" Z="20"/>
+        <Rotation X="0.052359879" Y="0.06981317" Z="-0.06981317"/>
+    </Transform>
+    <Children Size="0"/>
+</Root>

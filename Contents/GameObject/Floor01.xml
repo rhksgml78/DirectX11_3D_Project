@@ -1,0 +1,53 @@
+<Root Name="BossFloor" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="Stone Bridge_Obj/Stone Bridge_Obj.skel" BoneIndexCount="3"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="415" Y="0" Z="1740"/>
+        <Scale X="3" Y="3" Z="4.5"/>
+        <Rotation X="0" Y="-1.5707964" Z="0"/>
+    </Transform>
+    <Children Size="3"/>
+    <Child0 Name="FinalBattleStart" Visible="true" ObType="0" BoneIndex="-1">
+        <Collider ColliderType="1" Visible="false">
+            <Position X="5.8666668" Y="0.91666669" Z="0"/>
+            <Scale X="1" Y="16.1" Z="10.45"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="None" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Transform>
+            <Position X="-8.6999998" Y="-9.1499996" Z="0"/>
+            <Scale X="0.40000001" Y="0.40000001" Z="0.40000001"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="6.6999998" Y="-1.25" Z="-7.75"/>
+            <Scale X="2" Y="1" Z="1.5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="StoneBridge" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="Stone Bridge_Obj/StoneBridge.mesh"/>
+            <Shader File="4.Cube.hlsl"/>
+            <Material File="BossRoad.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="0.40000001" Y="0.2" Z="0.2"/>
+                <Rotation X="0" Y="-1.5707964" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child2>
+</Root>

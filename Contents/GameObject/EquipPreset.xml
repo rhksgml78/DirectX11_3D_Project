@@ -1,0 +1,60 @@
+<Root Name="EquipPreset" Visible="true" ObType="4">
+    <Mesh File="6.UI.mesh"/>
+    <Shader File="6.UI.hlsl"/>
+    <Material File="EquipPreset.mtl"/>
+    <Transform>
+        <Position X="-0.80000001" Y="-0.69999999" Z="0"/>
+        <Scale X="0.30000001" Y="0.40000001" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <UI PivotX="0" PivotY="0"/>
+    <Children Size="4"/>
+    <Child0 Name="FlaskSlot" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="FlaskSlot.mtl"/>
+        <Transform>
+            <Position X="0" Y="-0.25" Z="0"/>
+            <Scale X="0.30000001" Y="0.44999999" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="LeftSlot" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="LeftSlot.mtl"/>
+        <Transform>
+            <Position X="-0.33333334" Y="0" Z="0"/>
+            <Scale X="0.30000001" Y="0.44999999" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="MagicSlot" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="MagicSlot.mtl"/>
+        <Transform>
+            <Position X="0" Y="0.25" Z="0"/>
+            <Scale X="0.30000001" Y="0.44999999" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child2>
+    <Child3 Name="RightSlot" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="RightSlot.mtl"/>
+        <Transform>
+            <Position X="0.33333334" Y="0" Z="0"/>
+            <Scale X="0.30000001" Y="0.44999999" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0" PivotY="0"/>
+        <Children Size="0"/>
+    </Child3>
+</Root>

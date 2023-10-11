@@ -1,0 +1,29 @@
+<Root Name="axe" Visible="true" ObType="1">
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="35.499996" Y="9.500001" Z="-1.999994"/>
+        <Scale X="2.5" Y="1" Z="1"/>
+        <Rotation X="4.6949358" Y="4.6949358" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Cylinder" Visible="true" ObType="0">
+            <Mesh File="hell axe/Cylinder.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="hell axe/axe.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="100" Y="100" Z="100"/>
+                <Rotation X="1.5707963" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child0>
+</Root>

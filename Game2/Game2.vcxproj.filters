@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Scene1.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimatinTestScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Scene1.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatinTestScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{e6d5a275-c725-47e6-93cf-83c2b208fddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{b626eecd-f76c-49d7-8a29-a4515a4fda19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

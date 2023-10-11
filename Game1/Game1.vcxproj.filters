@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Scene2.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>GameSystem\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="BlackBoard.h">
+      <Filter>GameSystem\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviorTree.h">
+      <Filter>GameSystem\BehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandAttack.h">
+      <Filter>GameSystem\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandChase.h">
+      <Filter>GameSystem\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandHit.h">
+      <Filter>GameSystem\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandJump.h">
+      <Filter>GameSystem\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandMove.h">
+      <Filter>GameSystem\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandSearch.h">
+      <Filter>GameSystem\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="BTDecoratorNode.h">
+      <Filter>GameSystem\BehaviorTree\Branch</Filter>
+    </ClInclude>
+    <ClInclude Include="BTSelectorNode.h">
+      <Filter>GameSystem\BehaviorTree\Branch</Filter>
+    </ClInclude>
+    <ClInclude Include="BTSequnceNode.h">
+      <Filter>GameSystem\BehaviorTree\Branch</Filter>
+    </ClInclude>
+    <ClInclude Include="BTNode.h">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="BTAttackNode.h">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="BTChaseNode.h">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="BTJumpNode.h">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="BTMoveNode.h">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="BTSearchNode.h">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Actors\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterBoss.h">
+      <Filter>Actors\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="SKH_TestScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="StudyScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandIntro.h">
+      <Filter>GameSystem\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="BTIntroNode.h">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClInclude>
+    <ClInclude Include="GItem.h">
+      <Filter>Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterType1.h">
+      <Filter>Actors\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterType2.h">
+      <Filter>Actors\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="RocksEffect.h">
+      <Filter>Actors\BossSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="RocksEffectVt.h">
+      <Filter>Actors\BossSkill</Filter>
+    </ClInclude>
+    <ClInclude Include="BossScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="IObserver.h">
+      <Filter>GameSystem\ObserverPattern\01_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ISubject.h">
+      <Filter>GameSystem\ObserverPattern\01_Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackObserver.h">
+      <Filter>GameSystem\ObserverPattern\02_Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionObserver.h">
+      <Filter>GameSystem\ObserverPattern\02_Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackSubject.h">
+      <Filter>GameSystem\ObserverPattern\03_Subject</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionSubject.h">
+      <Filter>GameSystem\ObserverPattern\03_Subject</Filter>
+    </ClInclude>
+    <ClInclude Include="APlayer.h">
+      <Filter>Actors\OtherActor</Filter>
+    </ClInclude>
+    <ClInclude Include="Deadpool.h">
+      <Filter>Actors\OtherActor</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Actors\OtherActor</Filter>
+    </ClInclude>
+    <ClInclude Include="Solar.h">
+      <Filter>Actors\OtherUi</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUI.h">
+      <Filter>Actors\OtherUi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Scene2.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="LoadingScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>GameSystem\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="BlackBoard.cpp">
+      <Filter>GameSystem\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviorTree.cpp">
+      <Filter>GameSystem\BehaviorTree</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandAttack.cpp">
+      <Filter>GameSystem\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandChase.cpp">
+      <Filter>GameSystem\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandHit.cpp">
+      <Filter>GameSystem\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandJump.cpp">
+      <Filter>GameSystem\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandMove.cpp">
+      <Filter>GameSystem\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandSearch.cpp">
+      <Filter>GameSystem\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="BTDecoratorNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Branch</Filter>
+    </ClCompile>
+    <ClCompile Include="BTSelectorNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Branch</Filter>
+    </ClCompile>
+    <ClCompile Include="BTSequnceNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Branch</Filter>
+    </ClCompile>
+    <ClCompile Include="BTNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="BTAttackNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="BTChaseNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="BTJumpNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="BTMoveNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="BTSearchNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Actors\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterBoss.cpp">
+      <Filter>Actors\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="SKH_TestScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="StudyScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandIntro.cpp">
+      <Filter>GameSystem\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="BTIntroNode.cpp">
+      <Filter>GameSystem\BehaviorTree\Node</Filter>
+    </ClCompile>
+    <ClCompile Include="GItem.cpp">
+      <Filter>Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterType1.cpp">
+      <Filter>Actors\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterType2.cpp">
+      <Filter>Actors\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="RocksEffect.cpp">
+      <Filter>Actors\BossSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="RocksEffectVt.cpp">
+      <Filter>Actors\BossSkill</Filter>
+    </ClCompile>
+    <ClCompile Include="BossScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="IObserver.cpp">
+      <Filter>GameSystem\ObserverPattern\01_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="ISubject.cpp">
+      <Filter>GameSystem\ObserverPattern\01_Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackObserver.cpp">
+      <Filter>GameSystem\ObserverPattern\02_Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionObserver.cpp">
+      <Filter>GameSystem\ObserverPattern\02_Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackSubject.cpp">
+      <Filter>GameSystem\ObserverPattern\03_Subject</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionSubject.cpp">
+      <Filter>GameSystem\ObserverPattern\03_Subject</Filter>
+    </ClCompile>
+    <ClCompile Include="APlayer.cpp">
+      <Filter>Actors\OtherActor</Filter>
+    </ClCompile>
+    <ClCompile Include="Deadpool.cpp">
+      <Filter>Actors\OtherActor</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Actors\OtherActor</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUI.cpp">
+      <Filter>Actors\OtherUi</Filter>
+    </ClCompile>
+    <ClCompile Include="Solar.cpp">
+      <Filter>Actors\OtherUi</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Actors">
+      <UniqueIdentifier>{067ecc00-24cc-423e-a2e4-5b190061ca40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{1d9db8ce-74a3-472c-b6db-ce9a5227d383}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actors\Monster">
+      <UniqueIdentifier>{bebe3423-4ae1-4960-aead-f408fab19f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem">
+      <UniqueIdentifier>{66f259dd-448e-479d-9f5e-88142ab899bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\BehaviorTree">
+      <UniqueIdentifier>{f35e93d5-e609-428f-bb41-4b8349b78980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Command">
+      <UniqueIdentifier>{99d42639-7103-4990-abd5-f8cbcffedad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\BehaviorTree\Branch">
+      <UniqueIdentifier>{0954dbb6-fac9-4834-98f0-d5199bfbe5ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\BehaviorTree\Node">
+      <UniqueIdentifier>{4d590211-d324-49e4-9fde-4cb990c710da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inventory">
+      <UniqueIdentifier>{bb2ab19f-bfbb-4065-b593-d9e4e2694be4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{78ff313f-2f9f-4576-a9c7-889285fe6be7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actors\BossSkill">
+      <UniqueIdentifier>{2fe1a92e-515e-4b64-bd71-11c25c26c5a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\ObserverPattern">
+      <UniqueIdentifier>{3cf9ba21-d5b1-4850-b89e-09301620af5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\ObserverPattern\01_Interface">
+      <UniqueIdentifier>{95404ffb-c33e-44db-9ae5-d00461178886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\ObserverPattern\02_Observer">
+      <UniqueIdentifier>{1659d385-b6ef-44b7-a2f2-173f13e9ecb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\ObserverPattern\03_Subject">
+      <UniqueIdentifier>{27048fd2-5e03-4163-921f-126d09f1f4cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actors\OtherActor">
+      <UniqueIdentifier>{a52ceb27-2473-479a-8042-57e03a8f064a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actors\OtherUi">
+      <UniqueIdentifier>{9ecec733-394a-49b9-bd1c-0b0a7f8cae48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+<Root Name="Billboard" Visible="true" ObType="5">
+    <Mesh File="9.Billboard.mesh"/>
+    <Shader File="9.Cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="25.4" Z="0"/>
+        <Scale X="7.9000001" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Billboard pivotX="-1.942" pivotY="0"/>
+    <Children Size="0"/>
+</Root>

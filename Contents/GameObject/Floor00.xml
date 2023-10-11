@@ -1,0 +1,297 @@
+<Root Name="Floor" Visible="true" ObType="3">
+    <Mesh File="Terrain.mesh"/>
+    <Shader File="5.Cube.hlsl"/>
+    <Material File="Terrain.mtl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="1.5" Y="1" Z="1.5"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <terrain uvScale="1" triSize="131072" diFile="Terrain.di"/>
+    <Children Size="14"/>
+    <Child0 Name="BossFloor" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="BossFloor.mtl"/>
+        <Transform>
+            <Position X="510.29999" Y="400" Z="1200"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="FieldFloor" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="FieldFloor.mtl"/>
+        <Transform>
+            <Position X="-60" Y="0" Z="1260"/>
+            <Scale X="0.69999999" Y="1" Z="0.69999999"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="3"/>
+        <Child0 Name="FieldFloor1" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="FieldFloor.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="-256"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="FieldFloor2" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="FieldFloor.mtl"/>
+            <Transform>
+                <Position X="256" Y="0" Z="-256"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+        <Child2 Name="FieldFloor3" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="FieldFloor.mtl"/>
+            <Transform>
+                <Position X="256" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child2>
+    </Child1>
+    <Child2 Name="FinalTrapLine" Visible="true" ObType="0">
+        <Collider ColliderType="1" Visible="false">
+            <Position X="7.5999999" Y="-20" Z="0"/>
+            <Scale X="130" Y="10" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="6.8000002" Z="-640"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child2>
+    <Child3 Name="Floor1" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="Terrain.mtl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="-250"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Floor1_1" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="250" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child3>
+    <Child4 Name="Floor2" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="Terrain.mtl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="-500"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Floor2_1" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="-250" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child4>
+    <Child5 Name="Floor3" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="Terrain.mtl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="-750"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="4"/>
+        <Child0 Name="Floor3_1" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="250" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="Floor3_2" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="500" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+        <Child2 Name="Floor3_3" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="500" Y="0" Z="-250"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child2>
+        <Child3 Name="Floor3_4" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="500" Y="0" Z="-500"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child3>
+    </Child5>
+    <Child6 Name="ObLine1" Visible="true" ObType="0">
+        <Mesh File="1.Cube.mesh"/>
+        <Shader File="1.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1000" Z="0"/>
+            <Scale X="1" Y="1000" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="96" Y="0.02" Z="-256"/>
+            <Scale X="0.5" Y="0.0099999998" Z="100"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child6>
+    <Child7 Name="ObLine2" Visible="true" ObType="0">
+        <Mesh File="1.Cube.mesh"/>
+        <Shader File="1.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1000" Z="0"/>
+            <Scale X="1" Y="1000" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="32" Y="0.02" Z="-256"/>
+            <Scale X="0.5" Y="0.0099999998" Z="100"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child7>
+    <Child8 Name="ObLine3" Visible="true" ObType="0">
+        <Mesh File="1.Cube.mesh"/>
+        <Shader File="1.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1000" Z="0"/>
+            <Scale X="1" Y="1000" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-32" Y="0.02" Z="-256"/>
+            <Scale X="0.5" Y="0.0099999998" Z="100"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child8>
+    <Child9 Name="ObLine4" Visible="true" ObType="0">
+        <Mesh File="1.Cube.mesh"/>
+        <Shader File="1.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1000" Z="0"/>
+            <Scale X="1" Y="1000" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-96" Y="0.02" Z="-256"/>
+            <Scale X="0.5" Y="0.0099999998" Z="100"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child9>
+    <Child10 Name="ReadyBoss" Visible="true" ObType="0">
+        <Collider ColliderType="1" Visible="true">
+            <Position X="0" Y="-60" Z="105.33334"/>
+            <Scale X="125" Y="30" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child10>
+    <Child11 Name="RockLine1" Visible="false" ObType="0">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="7.5999999" Y="3.4000001" Z="0"/>
+            <Scale X="130" Y="10" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="6.8000002" Z="-640"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child11>
+    <Child12 Name="RockLine2" Visible="false" ObType="0">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="141" Y="3.4000001" Z="-118"/>
+            <Scale X="1" Y="10" Z="130"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="6.8000002" Z="-640"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child12>
+    <Child13 Name="RockLine3" Visible="false" ObType="0">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="370" Y="3.4000001" Z="-118"/>
+            <Scale X="1" Y="10" Z="130"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="6.8000002" Z="-640"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child13>
+</Root>

@@ -1,0 +1,54 @@
+<Root Name="Terrain" Visible="true" ObType="3">
+    <Mesh File="PathTerrain.mesh"/>
+    <Shader File="5.Cube.hlsl"/>
+    <Material File="PathTerrain.mtl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="5" Y="5" Z="5"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <terrain uvScale="20" triSize="131072" diFile="PathTerrain.di"/>
+    <Children Size="3"/>
+    <Child0 Name="-144835007" Visible="true" ObType="0">
+        <Mesh File=""/>
+        <Collider ColliderType="1" Visible="true">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-3.8200002" Y="-1.9073486e-06" Z="9.2938004"/>
+            <Scale X="2" Y="5" Z="2"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="121548453" Visible="true" ObType="0">
+        <Mesh File=""/>
+        <Collider ColliderType="1" Visible="true">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="16.1646" Y="0" Z="2.6124001"/>
+            <Scale X="3" Y="5" Z="3"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="1925604726" Visible="true" ObType="0">
+        <Mesh File=""/>
+        <Collider ColliderType="1" Visible="true">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-3.0893545" Y="1.9073486e-06" Z="-9.5099945"/>
+            <Scale X="4" Y="5" Z="4"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child2>
+</Root>

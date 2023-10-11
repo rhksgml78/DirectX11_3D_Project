@@ -1,0 +1,19 @@
+<Root Name="Actor" Visible="true" ObType="1">
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="0.050000001" Y="0.050000001" Z="0.050000001"/>
+        <Rotation X="-1.5707964" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Rectangle19" Visible="true" ObType="0">
+        <Mesh File="map_surface/Rectangle19.mesh"/>
+        <Shader File="3.Cube.hlsl"/>
+        <Material File="map_surface/09_-_Default.mtl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+</Root>

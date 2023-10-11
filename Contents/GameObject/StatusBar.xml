@@ -1,0 +1,81 @@
+<Root Name="StatusBar" Visible="true" ObType="4">
+    <Transform>
+        <Position X="-0.72500002" Y="0.67500001" Z="0"/>
+        <Scale X="0.5" Y="0.60000002" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <UI PivotX="0.5" PivotY="-0.5"/>
+    <Children Size="6"/>
+    <Child0 Name="HpBar" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="HpBar.mtl"/>
+        <Transform>
+            <Position X="-1" Y="1" Z="0"/>
+            <Scale X="1" Y="0.050000001" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0.5" PivotY="-0.5"/>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="MaxHp" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="MaxBar.mtl"/>
+        <Transform>
+            <Position X="-1.005" Y="1.0125" Z="0"/>
+            <Scale X="1.013" Y="0.075000003" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0.5" PivotY="-0.5"/>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="MaxMp" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="MaxBar.mtl"/>
+        <Transform>
+            <Position X="-1.005" Y="0.9375" Z="0"/>
+            <Scale X="1.013" Y="0.075000003" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0.5" PivotY="-0.5"/>
+        <Children Size="0"/>
+    </Child2>
+    <Child3 Name="MaxStamina" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="MaxBar.mtl"/>
+        <Transform>
+            <Position X="-1.005" Y="0.86250001" Z="0"/>
+            <Scale X="1.013" Y="0.075000003" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0.5" PivotY="-0.5"/>
+        <Children Size="0"/>
+    </Child3>
+    <Child4 Name="MpBar" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="MpBar.mtl"/>
+        <Transform>
+            <Position X="-1" Y="0.92500001" Z="0"/>
+            <Scale X="1" Y="0.050000001" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0.5" PivotY="-0.5"/>
+        <Children Size="0"/>
+    </Child4>
+    <Child5 Name="StaminaBar" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="STBar.mtl"/>
+        <Transform>
+            <Position X="-1" Y="0.85000002" Z="0"/>
+            <Scale X="1" Y="0.050000001" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0.5" PivotY="-0.5"/>
+        <Children Size="0"/>
+    </Child5>
+</Root>

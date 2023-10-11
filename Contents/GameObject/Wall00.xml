@@ -1,0 +1,513 @@
+<Root Name="Wall" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="AncientWallLowPoly/AncientWallLowPoly.skel" BoneIndexCount="3"/>
+    <Mesh File="Group63503.mesh"/>
+    <Shader File="4.Cube.hlsl"/>
+    <Transform>
+        <Position X="166" Y="-150" Z="190"/>
+        <Scale X="3" Y="3" Z="3"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="39"/>
+    <Child0 Name="BoxWall01" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="63" Y="2.5" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-56" Y="55.5" Z="0"/>
+            <Scale X="1" Y="4.1999998" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="BoxWall02" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="1" Y="2.5" Z="125"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-120.5" Y="55.5" Z="-125"/>
+            <Scale X="1" Y="4.1999998" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="BoxWall03" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="62" Y="2.5" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-183" Y="55.5" Z="-249.5"/>
+            <Scale X="1" Y="4.1999998" Z="1.5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child2>
+    <Child3 Name="BoxWall04" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="1" Y="2.5" Z="65"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-246" Y="55.5" Z="-314"/>
+            <Scale X="1.5" Y="4.1999998" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child3>
+    <Child4 Name="BoxWall05" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="63" Y="2.5" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-184" Y="55.5" Z="-379"/>
+            <Scale X="1" Y="4.1999998" Z="1.5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child4>
+    <Child5 Name="BoxWall06" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="1" Y="2.5" Z="63"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-121" Y="55.5" Z="-441"/>
+            <Scale X="1.5" Y="4.1999998" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child5>
+    <Child6 Name="BoxWall07" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="120" Y="2.5" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="7.5" Y="55.5" Z="-504"/>
+            <Scale X="1" Y="4.1999998" Z="1.5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child6>
+    <Child7 Name="BoxWall08" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="1" Y="2.5" Z="125"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="129.5" Y="55.5" Z="-627.5"/>
+            <Scale X="1.5" Y="4.1999998" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child7>
+    <Child8 Name="BoxWall09" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="65" Y="2.5" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="193.5" Y="55.5" Z="-754"/>
+            <Scale X="1" Y="4.1999998" Z="1.5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child8>
+    <Child9 Name="BoxWall10" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="1" Y="2.5" Z="190"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="256" Y="55.5" Z="-566"/>
+            <Scale X="1.5" Y="4.1999998" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child9>
+    <Child10 Name="BoxWall11" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="126" Y="2.5" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="134" Y="55.5" Z="-374.5"/>
+            <Scale X="1" Y="4.1999998" Z="1.5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child10>
+    <Child11 Name="BoxWall12" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="1" Y="2.5" Z="61"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="8.5" Y="55.5" Z="-315"/>
+            <Scale X="1.5" Y="4.1999998" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child11>
+    <Child12 Name="BoxWall13" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="63" Y="2.5" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="70" Y="55.5" Z="-254"/>
+            <Scale X="1" Y="4.1999998" Z="1.5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child12>
+    <Child13 Name="BoxWall14" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="1" Y="2.5" Z="65"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="133.5" Y="55.5" Z="-190.5"/>
+            <Scale X="1.5" Y="4.1999998" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child13>
+    <Child14 Name="BoxWall15" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="63" Y="2.5" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="72" Y="55.5" Z="-125"/>
+            <Scale X="1" Y="4.1999998" Z="1.5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child14>
+    <Child15 Name="BoxWall16" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="1.2380953" Z="0"/>
+            <Scale X="1" Y="2.5" Z="64"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="8.5" Y="55.5" Z="-62.5"/>
+            <Scale X="1.5" Y="4.1999998" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child15>
+    <Child16 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Group63503" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="AncientWallLowPoly/Group63503.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Wall00.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="0.1" Y="0.1" Z="0.1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child16>
+    <Child17 Name="Wall01" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="-55.299999" Y="53" Z="0.60000002"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child17>
+    <Child18 Name="Wall02" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="-121.3" Y="53" Z="-62.5"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child18>
+    <Child19 Name="Wall03" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="-121.3" Y="53" Z="-186"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child19>
+    <Child20 Name="Wall04" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="-185" Y="53" Z="-249"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child20>
+    <Child21 Name="Wall05" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="-246.5" Y="53" Z="-315"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child21>
+    <Child22 Name="Wall06" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="-185" Y="53" Z="-380"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child22>
+    <Child23 Name="Wall07" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="-121" Y="53" Z="-443.5"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child23>
+    <Child24 Name="Wall08" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="-56.799999" Y="53" Z="-506"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child24>
+    <Child25 Name="Wall09" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="63.5" Y="53" Z="-506"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child25>
+    <Child26 Name="Wall10" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="128" Y="53" Z="-569"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child26>
+    <Child27 Name="Wall11" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="128" Y="53" Z="-690.5"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child27>
+    <Child28 Name="Wall12" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="191.5" Y="53" Z="-754"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child28>
+    <Child29 Name="Wall13" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="256.29999" Y="53" Z="-691.90002"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child29>
+    <Child30 Name="Wall14" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="256.29999" Y="53" Z="-568"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child30>
+    <Child31 Name="Wall15" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="256.29999" Y="53" Z="-440"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child31>
+    <Child32 Name="Wall16" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="198" Y="53" Z="-374"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child32>
+    <Child33 Name="Wall17" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="73.5" Y="53" Z="-374"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child33>
+    <Child34 Name="Wall18" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="9.5" Y="53" Z="-314.5"/>
+            <Scale X="3.3" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child34>
+    <Child35 Name="Wall19" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="72" Y="53" Z="-255"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child35>
+    <Child36 Name="Wall20" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="135" Y="53" Z="-191"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child36>
+    <Child37 Name="Wall21" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="73" Y="53" Z="-125"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child37>
+    <Child38 Name="Wall22" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="Group63503.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="Wall00.mtl"/>
+        <Transform>
+            <Position X="9" Y="53" Z="-62.349998"/>
+            <Scale X="3.5" Y="1" Z="1"/>
+            <Rotation X="0" Y="1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child38>
+</Root>

@@ -1,0 +1,673 @@
+<Root Name="BossWall" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="Road Barrier 01a/Road Barrier 01a.skel" BoneIndexCount="3"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="570" Y="400" Z="1770"/>
+        <Scale X="15" Y="21" Z="15"/>
+        <Rotation X="0" Y="1.5707964" Z="0"/>
+    </Transform>
+    <Children Size="58"/>
+    <Child0 Name="BossWall01" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="BossWall02" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="2.0200002" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="BossWall03" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="4.0400004" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child2>
+    <Child3 Name="BossWall04" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="6.0599999" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child3>
+    <Child4 Name="BossWall05" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="8.0800009" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child4>
+    <Child5 Name="BossWall06" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="9.6400003" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child5>
+    <Child6 Name="BossWall07" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="0.83000004"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child6>
+    <Child7 Name="BossWall08" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="2.8500001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child7>
+    <Child8 Name="BossWall09" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="4.8700004"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child8>
+    <Child9 Name="BossWall10" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="6.8900003"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child9>
+    <Child10 Name="BossWall11" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="8.9099998"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child10>
+    <Child11 Name="BossWall12" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="10.93"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child11>
+    <Child12 Name="BossWall13" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="12.95"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child12>
+    <Child13 Name="BossWall14" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="14.97"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child13>
+    <Child14 Name="BossWall15" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="16.99"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child14>
+    <Child15 Name="BossWall16" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="19.01"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child15>
+    <Child16 Name="BossWall17" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="21.030001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child16>
+    <Child17 Name="BossWall18" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="23.050001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child17>
+    <Child18 Name="BossWall19" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="10.84" Y="0" Z="24.74"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child18>
+    <Child19 Name="BossWall20" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="9.6400003" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child19>
+    <Child20 Name="BossWall21" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="7.6199999" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child20>
+    <Child21 Name="BossWall22" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="5.5999999" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child21>
+    <Child22 Name="BossWall23" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="3.5799999" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child22>
+    <Child23 Name="BossWall24" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="1.5600001" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child23>
+    <Child24 Name="BossWall25" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-0.46000001" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child24>
+    <Child25 Name="BossWall26" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-2.48" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child25>
+    <Child26 Name="BossWall27" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-4.5" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child26>
+    <Child27 Name="BossWall28" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-6.52" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child27>
+    <Child28 Name="BossWall29" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-8.54" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child28>
+    <Child29 Name="BossWall30" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-10.56" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child29>
+    <Child30 Name="BossWall31" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-12.580001" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child30>
+    <Child31 Name="BossWall32" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-13.94" Y="0" Z="25.57"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child31>
+    <Child32 Name="BossWall33" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="24.380001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child32>
+    <Child33 Name="BossWall34" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="22.360001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child33>
+    <Child34 Name="BossWall35" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="20.34"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child34>
+    <Child35 Name="BossWall36" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="18.32"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child35>
+    <Child36 Name="BossWall37" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="16.300001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child36>
+    <Child37 Name="BossWall38" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="14.280001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child37>
+    <Child38 Name="BossWall39" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="12.26"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child38>
+    <Child39 Name="BossWall40" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="10.240001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child39>
+    <Child40 Name="BossWall41" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="8.2200003"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child40>
+    <Child41 Name="BossWall42" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="6.2000003"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child41>
+    <Child42 Name="BossWall43" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="4.1799998"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child42>
+    <Child43 Name="BossWall44" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="2.1600001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child43>
+    <Child44 Name="BossWall45" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-14.77" Y="0" Z="1.1600001"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="-1.5707964" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child44>
+    <Child45 Name="BossWall46" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-13.94" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child45>
+    <Child46 Name="BossWall47" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-11.92" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child46>
+    <Child47 Name="BossWall48" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-9.9000006" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child47>
+    <Child48 Name="BossWall49" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-9.6000004" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child48>
+    <Child49 Name="BossWall50" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-7.5800004" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child49>
+    <Child50 Name="BossWall51" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-5.5599999" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child50>
+    <Child51 Name="BossWall52" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-3.5400002" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child51>
+    <Child52 Name="BossWall53" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="mesh01.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="BossWall.mtl"/>
+        <Transform>
+            <Position X="-1.7600001" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child52>
+    <Child53 Name="BossWallBox1" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="2" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="130" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-2" Y="0" Z="0"/>
+            <Scale X="0.1" Y="1" Z="0.1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child53>
+    <Child54 Name="BossWallBox2" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="2" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="130"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="10.8" Y="0" Z="12.8"/>
+            <Scale X="0.1" Y="1" Z="0.1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child54>
+    <Child55 Name="BossWallBox3" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="2" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="130" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-2" Y="0" Z="25.6"/>
+            <Scale X="0.1" Y="1" Z="0.1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child55>
+    <Child56 Name="BossWallBox4" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="2" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="130"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-14.7" Y="0" Z="12.8"/>
+            <Scale X="0.1" Y="1" Z="0.1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child56>
+    <Child57 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="mesh01" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="Road Barrier 01a/mesh01.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossWall.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child57>
+</Root>

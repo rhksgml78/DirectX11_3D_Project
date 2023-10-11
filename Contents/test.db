@@ -1,0 +1,15 @@
+14
+0 6 HPpotion FullFlask.png 50 5
+1 1 sword1 sword1.png 20 BastardSword.xml
+2 1 sword2 sword2.png 15 sword.xml
+3 2 helmet1 helmet1.png 5
+4 2 helmet2 helmet2.png 10
+5 3 basic_armor armor2.png 5 armor1.xml
+6 3 newarmor armor1.png 15 SpartanArmor.xml
+7 4 glove1 glove1.png 5
+8 4 glove2 glove2.png 15
+9 5 boots1 boots1.png 5
+10 5 boots2 boots2.png 15
+11 6 MPpotion FullFlask_MP.png 30 2
+12 1 axe axe.png 30 axe.xml
+13 1 Largeshield Largeshield.png 40 Largeshield.xml

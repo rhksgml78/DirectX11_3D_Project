@@ -1,0 +1,39 @@
+<Root Name="Sharp_Rock" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="Rock_LOD0/Rock_LOD0.skel" BoneIndexCount="4"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="4.0076041" Y="0" Z="-62.483986"/>
+        <Scale X="1.7" Y="2" Z="1.5"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="4.625"/>
+            <Scale X="0.050000001" Y="0.050000001" Z="0.050000001"/>
+            <Rotation X="3.1415927" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="2"/>
+        <Child0 Name="Rock_LOD_0" Visible="true" ObType="0" BoneIndex="3">
+            <Mesh File="Rock_LOD0/Rock_LOD_0.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Sharp_Rock.mtl"/>
+            <Transform>
+                <Position X="0" Y="-400" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="default" Visible="true" ObType="0" BoneIndex="2">
+            <Shader File="4.cube.hlsl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+    </Child0>
+</Root>

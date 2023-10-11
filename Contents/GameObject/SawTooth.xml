@@ -1,0 +1,158 @@
+<Root Name="SawTooth" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="saw/saw.skel" BoneIndexCount="4"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="48" Y="-40" Z="-320"/>
+        <Scale X="0.89999998" Y="0.89999998" Z="3.3"/>
+        <Rotation X="0" Y="1.5707964" Z="0"/>
+    </Transform>
+    <Children Size="6"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="2"/>
+        <Child0 Name="default" Visible="true" ObType="0" BoneIndex="2">
+            <Shader File="4.cube.hlsl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="saw" Visible="true" ObType="0" BoneIndex="3">
+            <Mesh File="saw/saw.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="saw/blinn1SG.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+    </Child0>
+    <Child1 Name="SawSphere" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="2.Sphere.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="0" Visible="true">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="43.950001" Y="44" Z="0.64999998"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="SawTooth1" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="saw/saw.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="saw/DefaultMaterial.mtl"/>
+        <Transform>
+            <Position X="-49.999996" Y="-11.111109" Z="29.090834"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="SawTooth1Box" Visible="false" ObType="0" BoneIndex="-1">
+            <Mesh File="2.Sphere.mesh"/>
+            <Shader File="0.Cube.hlsl"/>
+            <Collider ColliderType="0" Visible="false">
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="42" Y="43" Z="0.5"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child2>
+    <Child3 Name="SawTooth2" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="saw/saw.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="saw/DefaultMaterial.mtl"/>
+        <Transform>
+            <Position X="194.44443" Y="-11.111109" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="SawToothBox2" Visible="false" ObType="0" BoneIndex="-1">
+            <Mesh File="2.Sphere.mesh"/>
+            <Shader File="0.Cube.hlsl"/>
+            <Collider ColliderType="0" Visible="false">
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="42" Y="43" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child3>
+    <Child4 Name="SawTooth3" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="saw/saw.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="saw/DefaultMaterial.mtl"/>
+        <Transform>
+            <Position X="-49.99947" Y="-11.111111" Z="-29.090834"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="SawToothBox3" Visible="false" ObType="0" BoneIndex="-1">
+            <Mesh File="2.Sphere.mesh"/>
+            <Shader File="0.Cube.hlsl"/>
+            <Collider ColliderType="0" Visible="false">
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="42" Y="43" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child4>
+    <Child5 Name="SawTooth4" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="saw/saw.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="saw/DefaultMaterial.mtl"/>
+        <Transform>
+            <Position X="194.41628" Y="-11.111111" Z="-58.177818"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="SawToothBox4" Visible="false" ObType="0" BoneIndex="-1">
+            <Mesh File="2.Sphere.mesh"/>
+            <Shader File="0.Cube.hlsl"/>
+            <Collider ColliderType="0" Visible="false">
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="42" Y="43" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child5>
+</Root>

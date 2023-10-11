@@ -1,0 +1,45 @@
+<Root Name="EndDungeon" Visible="false" ObType="1" BoneIndex="0">
+    <Skeleton File="004/004.skel" BoneIndexCount="3"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="55" Y="0" Z="2033"/>
+        <Scale X="0.30000001" Y="0.60000002" Z="0.15000001"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="2"/>
+    <Child0 Name="NotGo" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="180" Y="46" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="33" Y="46.5" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Volume5" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="004/Volume5.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="DungeonEnd.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child1>
+</Root>

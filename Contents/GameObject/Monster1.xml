@@ -1,0 +1,645 @@
+<Root Name="Monster_Type_1" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="Pumpkinhulk L Shaw/Pumpkinhulk L Shaw.skel" BoneIndexCount="69"/>
+    <Animations AnimSize="8" File0="monster_scream/monster_scream0.anim" File1="monster_idle/monster_idle0.anim" File2="monster_move/monster_move0.anim" File3="monster_hit/monster_hit0.anim" File4="monster_death/monster_death0.anim" File5="monster_attack_hand/monster_attack_hand0.anim" File6="monster_attack_hand2/monster_attack_hand20.anim" File7="monster_attack_kick/monster_attack_kick0.anim"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="-7.346283" Y="0" Z="-212.37753"/>
+        <Scale X="0.1" Y="0.1" Z="0.1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="3.1415927" Z="-0"/>
+        </Transform>
+        <Children Size="2"/>
+        <Child0 Name="PumpkinHulk" Visible="true" ObType="0" BoneIndex="68">
+            <Mesh File="Pumpkinhulk L Shaw/PumpkinHulk.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="Pumpkinhulk L Shaw/PumpkinHulk_Material.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="mixamorig:Hips" Visible="true" ObType="0" BoneIndex="2">
+            <Shader File="4.cube.hlsl"/>
+            <Collider ColliderType="2" Visible="true">
+                <Position X="0" Y="30" Z="0"/>
+                <Scale X="30" Y="60" Z="30"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="5.4904563e-06" Y="101.29298" Z="1.664325"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="3"/>
+            <Child0 Name="mixamorig:LeftUpLeg" Visible="true" ObType="0" BoneIndex="58">
+                <Shader File="4.cube.hlsl"/>
+                <Transform>
+                    <Position X="15.658525" Y="-8.4068022" Z="-1.4669536"/>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="0.1389882" Y="-2.212373e-07" Z="3.1415911"/>
+                </Transform>
+                <Children Size="1"/>
+                <Child0 Name="mixamorig:LeftLeg" Visible="true" ObType="0" BoneIndex="59">
+                    <Shader File="4.cube.hlsl"/>
+                    <Transform>
+                        <Position X="0" Y="37.074753" Z="-7.1054274e-14"/>
+                        <Scale X="1" Y="1" Z="1"/>
+                        <Rotation X="0.34447315" Y="-1.5297468e-08" Z="-4.5298876e-08"/>
+                    </Transform>
+                    <Children Size="1"/>
+                    <Child0 Name="mixamorig:LeftFoot" Visible="true" ObType="0" BoneIndex="60">
+                        <Shader File="4.cube.hlsl"/>
+                        <Transform>
+                            <Position X="7.6757935e-08" Y="38.107468" Z="-2.3803182e-13"/>
+                            <Scale X="0.99999994" Y="0.99999994" Z="1"/>
+                            <Rotation X="-1.0076536" Y="0.1017188" Z="0.12946869"/>
+                        </Transform>
+                        <Children Size="1"/>
+                        <Child0 Name="mixamorig:LeftToeBase" Visible="true" ObType="0" BoneIndex="61">
+                            <Shader File="4.cube.hlsl"/>
+                            <Transform>
+                                <Position X="-3.4940348e-07" Y="27.5" Z="4.4978808e-08"/>
+                                <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                <Rotation X="-0.75546062" Y="0.15194263" Z="-0.082094051"/>
+                            </Transform>
+                            <Children Size="1"/>
+                            <Child0 Name="mixamorig:LeftToe_End" Visible="true" ObType="0" BoneIndex="62">
+                                <Shader File="4.cube.hlsl"/>
+                                <Transform>
+                                    <Position X="-2.8183905e-07" Y="18.087629" Z="-6.4393074e-10"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child0>
+                        </Child0>
+                    </Child0>
+                </Child0>
+            </Child0>
+            <Child1 Name="mixamorig:RightUpLeg" Visible="true" ObType="0" BoneIndex="63">
+                <Shader File="4.cube.hlsl"/>
+                <Transform>
+                    <Position X="-15.658519" Y="-8.4067583" Z="-1.4669579"/>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="0.13898832" Y="-2.2123746e-07" Z="3.1415911"/>
+                </Transform>
+                <Children Size="1"/>
+                <Child0 Name="mixamorig:RightLeg" Visible="true" ObType="0" BoneIndex="64">
+                    <Shader File="4.cube.hlsl"/>
+                    <Transform>
+                        <Position X="3.5527137e-14" Y="37.074722" Z="5.3290705e-15"/>
+                        <Scale X="1" Y="1" Z="1"/>
+                        <Rotation X="0.34447306" Y="-1.5297461e-08" Z="-4.5298858e-08"/>
+                    </Transform>
+                    <Children Size="1"/>
+                    <Child0 Name="mixamorig:RightFoot" Visible="true" ObType="0" BoneIndex="65">
+                        <Shader File="4.cube.hlsl"/>
+                        <Collider ColliderType="2" Visible="true">
+                            <Position X="0" Y="15.5" Z="0"/>
+                            <Scale X="15" Y="20" Z="15"/>
+                            <Rotation X="0" Y="0" Z="0"/>
+                        </Collider>
+                        <Transform>
+                            <Position X="7.6758049e-08" Y="38.107498" Z="-1.7763568e-15"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="-1.0076549" Y="-0.10172459" Z="-0.12946527"/>
+                        </Transform>
+                        <Children Size="1"/>
+                        <Child0 Name="mixamorig:RightToeBase" Visible="true" ObType="0" BoneIndex="66">
+                            <Shader File="4.cube.hlsl"/>
+                            <Transform>
+                                <Position X="7.1054274e-15" Y="27.5" Z="-2.1316282e-14"/>
+                                <Scale X="0.99999994" Y="0.99999994" Z="0.99999994"/>
+                                <Rotation X="-0.75545359" Y="-0.15194437" Z="0.082098022"/>
+                            </Transform>
+                            <Children Size="1"/>
+                            <Child0 Name="mixamorig:RightToe_End" Visible="true" ObType="0" BoneIndex="67">
+                                <Shader File="4.cube.hlsl"/>
+                                <Transform>
+                                    <Position X="-3.5527141e-15" Y="18.088001" Z="-2.2655491e-15"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="0"/>
+                            </Child0>
+                        </Child0>
+                    </Child0>
+                </Child0>
+            </Child1>
+            <Child2 Name="mixamorig:Spine" Visible="true" ObType="0" BoneIndex="3">
+                <Shader File="4.cube.hlsl"/>
+                <Transform>
+                    <Position X="2.6764437e-05" Y="12.947357" Z="-1.3068553"/>
+                    <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                    <Rotation X="-0.007701403" Y="-1.1096415e-07" Z="-1.6410836e-06"/>
+                </Transform>
+                <Children Size="1"/>
+                <Child0 Name="mixamorig:Spine1" Visible="true" ObType="0" BoneIndex="4">
+                    <Shader File="4.cube.hlsl"/>
+                    <Transform>
+                        <Position X="-2.4673168e-11" Y="11.650537" Z="-2.7978906e-09"/>
+                        <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                        <Rotation X="0.0093841981" Y="0" Z="0"/>
+                    </Transform>
+                    <Children Size="1"/>
+                    <Child0 Name="mixamorig:Spine2" Visible="true" ObType="0" BoneIndex="5">
+                        <Shader File="4.cube.hlsl"/>
+                        <Transform>
+                            <Position X="-2.9327301e-11" Y="11.899615" Z="-2.8577105e-09"/>
+                            <Scale X="1" Y="1" Z="1"/>
+                            <Rotation X="-0.0016827949" Y="0" Z="-0"/>
+                        </Transform>
+                        <Children Size="3"/>
+                        <Child0 Name="mixamorig:LeftShoulder" Visible="true" ObType="0" BoneIndex="10">
+                            <Shader File="4.cube.hlsl"/>
+                            <Transform>
+                                <Position X="15.693204" Y="30.527576" Z="14.885503"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="-1.0878985" Y="1.570796" Z="3.1397233"/>
+                            </Transform>
+                            <Children Size="1"/>
+                            <Child0 Name="mixamorig:LeftArm" Visible="true" ObType="0" BoneIndex="11">
+                                <Shader File="4.cube.hlsl"/>
+                                <Transform>
+                                    <Position X="1.2434498e-14" Y="18.002003" Z="1.5916159e-12"/>
+                                    <Scale X="1" Y="0.99999994" Z="1"/>
+                                    <Rotation X="0.47683871" Y="0.00097142934" Z="0.0012813471"/>
+                                </Transform>
+                                <Children Size="1"/>
+                                <Child0 Name="mixamorig:LeftForeArm" Visible="true" ObType="0" BoneIndex="12">
+                                    <Shader File="4.cube.hlsl"/>
+                                    <Transform>
+                                        <Position X="-1.5987212e-14" Y="37.520119" Z="-9.6633823e-13"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="-0"/>
+                                    </Transform>
+                                    <Children Size="1"/>
+                                    <Child0 Name="mixamorig:LeftHand" Visible="true" ObType="0" BoneIndex="13">
+                                        <Shader File="4.cube.hlsl"/>
+                                        <Collider ColliderType="2" Visible="true">
+                                            <Position X="0" Y="15.500003" Z="0"/>
+                                            <Scale X="15" Y="15" Z="15"/>
+                                            <Rotation X="0" Y="0" Z="0"/>
+                                        </Collider>
+                                        <Transform>
+                                            <Position X="4.938272e-13" Y="41.865597" Z="2.1316284e-12"/>
+                                            <Scale X="1" Y="1" Z="1"/>
+                                            <Rotation X="0" Y="0" Z="-0"/>
+                                        </Transform>
+                                        <Children Size="5"/>
+                                        <Child0 Name="mixamorig:LeftHandIndex1" Visible="true" ObType="0" BoneIndex="18">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="-6.3456936" Y="17.472862" Z="-0.14421339"/>
+                                                <Scale X="1" Y="0.99999994" Z="1"/>
+                                                <Rotation X="0.0060574948" Y="1.3116064e-08" Z="0.00083206425"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:LeftHandIndex2" Visible="true" ObType="0" BoneIndex="19">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="4.6185278e-14" Y="6.306459" Z="5.4001253e-13"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="-0"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:LeftHandIndex3" Visible="true" ObType="0" BoneIndex="20">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-3.1974423e-14" Y="5.2869735" Z="-1.0516034e-12"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="2.8861114e-06" Y="3.201394e-11" Z="1.1092414e-05"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:LeftHandIndex4" Visible="true" ObType="0" BoneIndex="21">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="-2.8421709e-14" Y="4.6435709" Z="4.9453779e-12"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child0>
+                                        <Child1 Name="mixamorig:LeftHandMiddle1" Visible="true" ObType="0" BoneIndex="22">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="-0.11242178" Y="18.009872" Z="0.44106624"/>
+                                                <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                                <Rotation X="0.0060552652" Y="1.1262025e-08" Z="0.0008315809"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:LeftHandMiddle2" Visible="true" ObType="0" BoneIndex="23">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="1.7763568e-15" Y="6.8427596" Z="1.9895202e-13"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="-0"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:LeftHandMiddle3" Visible="true" ObType="0" BoneIndex="24">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-2.1316282e-14" Y="5.6561446" Z="-1.4210857e-13"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="-0"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:LeftHandMiddle4" Visible="true" ObType="0" BoneIndex="25">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="-5.3290705e-15" Y="4.4578562" Z="0"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child1>
+                                        <Child2 Name="mixamorig:LeftHandPinky1" Visible="true" ObType="0" BoneIndex="30">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="11.143558" Y="14.82057" Z="-0.0017840954"/>
+                                                <Scale X="1" Y="0.99999994" Z="1"/>
+                                                <Rotation X="0.0060574948" Y="1.3116291e-08" Z="0.00083280919"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:LeftHandPinky2" Visible="true" ObType="0" BoneIndex="31">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="-1.4210855e-14" Y="5.5762572" Z="-3.9790399e-13"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="-1.7255144e-05"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:LeftHandPinky3" Visible="true" ObType="0" BoneIndex="32">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="3.8546943e-12" Y="4.0901804" Z="2.8421713e-14"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="-0" Y="0" Z="2.115902e-05"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:LeftHandPinky4" Visible="true" ObType="0" BoneIndex="33">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="-9.826806e-12" Y="4.2223215" Z="-4.5474741e-13"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child2>
+                                        <Child3 Name="mixamorig:LeftHandRing1" Visible="true" ObType="0" BoneIndex="26">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="5.8324614" Y="16.592585" Z="0.11744207"/>
+                                                <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                                <Rotation X="0.0060550859" Y="1.1111046e-08" Z="0.00083249772"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:LeftHandRing2" Visible="true" ObType="0" BoneIndex="27">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="-4.2632564e-14" Y="6.3329101" Z="1.1368686e-13"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="-3.1103667e-07" Y="-3.2969558e-12" Z="1.0599894e-05"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:LeftHandRing3" Visible="true" ObType="0" BoneIndex="28">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-8.4199314e-12" Y="5.6088729" Z="-4.0273573e-11"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="-0"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:LeftHandRing4" Visible="true" ObType="0" BoneIndex="29">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="5.3290705e-14" Y="4.489686" Z="-1.4779292e-12"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child3>
+                                        <Child4 Name="mixamorig:LeftHandThumb1" Visible="true" ObType="0" BoneIndex="14">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="-7.2978668" Y="5.8094864" Z="-5.1408439"/>
+                                                <Scale X="1" Y="1" Z="1"/>
+                                                <Rotation X="-0.37742916" Y="-0.26823649" Z="0.58131307"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:LeftHandThumb2" Visible="true" ObType="0" BoneIndex="15">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="-5.6843419e-14" Y="6.9819427" Z="-3.6948228e-13"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="-5.03669e-08" Y="4.5930008e-08" Z="-6.2516624e-06"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:LeftHandThumb3" Visible="true" ObType="0" BoneIndex="16">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="7.1054274e-14" Y="4.4467621" Z="2.273737e-13"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="-0"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:LeftHandThumb4" Visible="true" ObType="0" BoneIndex="17">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="-9.9475983e-14" Y="5.3379884" Z="1.1368685e-13"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child4>
+                                    </Child0>
+                                </Child0>
+                            </Child0>
+                        </Child0>
+                        <Child1 Name="mixamorig:Neck" Visible="true" ObType="0" BoneIndex="6">
+                            <Shader File="4.cube.hlsl"/>
+                            <Transform>
+                                <Position X="-4.110752e-10" Y="29.862507" Z="6.8567863"/>
+                                <Scale X="1" Y="1" Z="1"/>
+                                <Rotation X="0" Y="0" Z="-0"/>
+                            </Transform>
+                            <Children Size="1"/>
+                            <Child0 Name="mixamorig:Head" Visible="true" ObType="0" BoneIndex="7">
+                                <Shader File="4.cube.hlsl"/>
+                                <Transform>
+                                    <Position X="-3.699667e-07" Y="15.8127" Z="-4.5045896"/>
+                                    <Scale X="1" Y="1" Z="1"/>
+                                    <Rotation X="0" Y="0" Z="-0"/>
+                                </Transform>
+                                <Children Size="2"/>
+                                <Child0 Name="mixamorig:HeadTop_End" Visible="true" ObType="0" BoneIndex="8">
+                                    <Shader File="4.cube.hlsl"/>
+                                    <Transform>
+                                        <Position X="-3.1664496e-07" Y="16.914217" Z="-8.5488129"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="0" Y="0" Z="-0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child0>
+                                <Child1 Name="mixamorig:RightEye" Visible="true" ObType="0" BoneIndex="9">
+                                    <Shader File="4.cube.hlsl"/>
+                                    <Transform>
+                                        <Position X="-4.1168685" Y="5.6626287" Z="-14.065406"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="-1.5707963" Y="1.5707965" Z="0"/>
+                                    </Transform>
+                                    <Children Size="0"/>
+                                </Child1>
+                            </Child0>
+                        </Child1>
+                        <Child2 Name="mixamorig:RightShoulder" Visible="true" ObType="0" BoneIndex="34">
+                            <Shader File="4.cube.hlsl"/>
+                            <Transform>
+                                <Position X="-15.693211" Y="30.527874" Z="14.885532"/>
+                                <Scale X="1" Y="0.99999994" Z="1"/>
+                                <Rotation X="-1.087907" Y="-1.5707964" Z="-3.1397262"/>
+                            </Transform>
+                            <Children Size="1"/>
+                            <Child0 Name="mixamorig:RightArm" Visible="true" ObType="0" BoneIndex="35">
+                                <Shader File="4.cube.hlsl"/>
+                                <Transform>
+                                    <Position X="8.8817842e-15" Y="18.001926" Z="-2.7284845e-12"/>
+                                    <Scale X="1" Y="0.99999994" Z="1"/>
+                                    <Rotation X="0.47681168" Y="-0.00096980482" Z="-0.0012771542"/>
+                                </Transform>
+                                <Children Size="1"/>
+                                <Child0 Name="mixamorig:RightForeArm" Visible="true" ObType="0" BoneIndex="36">
+                                    <Shader File="4.cube.hlsl"/>
+                                    <Transform>
+                                        <Position X="1.9539925e-14" Y="37.520115" Z="-1.2505554e-11"/>
+                                        <Scale X="1" Y="1" Z="1"/>
+                                        <Rotation X="3.3606357e-05" Y="7.6879874e-12" Z="2.2876587e-07"/>
+                                    </Transform>
+                                    <Children Size="1"/>
+                                    <Child0 Name="mixamorig:RightHand" Visible="true" ObType="0" BoneIndex="37">
+                                        <Shader File="4.cube.hlsl"/>
+                                        <Collider ColliderType="2" Visible="true">
+                                            <Position X="0" Y="15.500004" Z="0"/>
+                                            <Scale X="15" Y="15" Z="15"/>
+                                            <Rotation X="0" Y="0" Z="0"/>
+                                        </Collider>
+                                        <Transform>
+                                            <Position X="6.3948846e-14" Y="41.865688" Z="-2.8990147e-11"/>
+                                            <Scale X="1" Y="1" Z="1"/>
+                                            <Rotation X="0" Y="0" Z="-0"/>
+                                        </Transform>
+                                        <Children Size="5"/>
+                                        <Child0 Name="mixamorig:RightHandIndex1" Visible="true" ObType="0" BoneIndex="42">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="6.3456221" Y="17.472958" Z="-0.14441121"/>
+                                                <Scale X="1" Y="1" Z="1"/>
+                                                <Rotation X="0.0060431724" Y="-1.3892785e-09" Z="-0.00083122519"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:RightHandIndex2" Visible="true" ObType="0" BoneIndex="43">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="-1.7763568e-15" Y="6.3060017" Z="3.1263883e-13"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="-0"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:RightHandIndex3" Visible="true" ObType="0" BoneIndex="44">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="3.5527137e-15" Y="5.2870016" Z="-2.6261663e-11"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="-8.8751494e-06"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:RightHandIndex4" Visible="true" ObType="0" BoneIndex="45">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="-1.7763568e-15" Y="4.644001" Z="-2.2737371e-11"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child0>
+                                        <Child1 Name="mixamorig:RightHandMiddle1" Visible="true" ObType="0" BoneIndex="46">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="0.1123863" Y="18.009583" Z="0.44084245"/>
+                                                <Scale X="0.99999994" Y="1" Z="1"/>
+                                                <Rotation X="0.0060431724" Y="-1.3895058e-09" Z="-0.00082646782"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:RightHandMiddle2" Visible="true" ObType="0" BoneIndex="47">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="-5.4001252e-12" Y="6.8430014" Z="2.8421713e-14"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="-0"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:RightHandMiddle3" Visible="true" ObType="0" BoneIndex="48">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="1.8829385e-13" Y="5.6560016" Z="-1.8616221e-11"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="-2.2431583e-05"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:RightHandMiddle4" Visible="true" ObType="0" BoneIndex="49">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="1.5454306e-13" Y="4.4580011" Z="-1.5234038e-11"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child1>
+                                        <Child2 Name="mixamorig:RightHandPinky1" Visible="true" ObType="0" BoneIndex="54">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="-11.143656" Y="14.820504" Z="-0.002437758"/>
+                                                <Scale X="1" Y="1" Z="1"/>
+                                                <Rotation X="0.0060431724" Y="-1.3899606e-09" Z="-0.00084440177"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:RightHandPinky2" Visible="true" ObType="0" BoneIndex="55">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="-4.2632564e-14" Y="5.5760016" Z="1.3841374e-10"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="-0" Y="0" Z="4.2383879e-05"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:RightHandPinky3" Visible="true" ObType="0" BoneIndex="56">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-3.6841641e-12" Y="4.0900011" Z="1.3258729e-10"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="0" Y="0" Z="-2.4449877e-05"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:RightHandPinky4" Visible="true" ObType="0" BoneIndex="57">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="3.8546943e-12" Y="4.223001" Z="1.3758951e-10"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child2>
+                                        <Child3 Name="mixamorig:RightHandRing1" Visible="true" ObType="0" BoneIndex="50">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="-5.8324885" Y="16.592424" Z="0.11727241"/>
+                                                <Scale X="0.99999994" Y="1" Z="1"/>
+                                                <Rotation X="0.0060431724" Y="-1.3895058e-09" Z="-0.00082646782"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:RightHandRing2" Visible="true" ObType="0" BoneIndex="51">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="-9.0700789e-12" Y="6.3330016" Z="5.9685595e-13"/>
+                                                    <Scale X="1" Y="1" Z="1"/>
+                                                    <Rotation X="0" Y="0" Z="-1.7828492e-05"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:RightHandRing3" Visible="true" ObType="0" BoneIndex="52">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-3.3573149e-12" Y="5.6090016" Z="2.074785e-12"/>
+                                                        <Scale X="1" Y="1" Z="1"/>
+                                                        <Rotation X="-0.00022271715" Y="-3.97071e-09" Z="1.7828488e-05"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:RightHandRing4" Visible="true" ObType="0" BoneIndex="53">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="-2.074785e-12" Y="4.4900012" Z="-1.1368685e-13"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child3>
+                                        <Child4 Name="mixamorig:RightHandThumb1" Visible="true" ObType="0" BoneIndex="38">
+                                            <Shader File="4.cube.hlsl"/>
+                                            <Transform>
+                                                <Position X="7.2978077" Y="5.8091459" Z="-5.1409888"/>
+                                                <Scale X="0.99999994" Y="0.99999994" Z="0.99999994"/>
+                                                <Rotation X="-0.38082194" Y="0.26285025" Z="-0.57933635"/>
+                                            </Transform>
+                                            <Children Size="1"/>
+                                            <Child0 Name="mixamorig:RightHandThumb2" Visible="true" ObType="0" BoneIndex="39">
+                                                <Shader File="4.cube.hlsl"/>
+                                                <Transform>
+                                                    <Position X="1.8474114e-13" Y="6.9820623" Z="1.4210857e-13"/>
+                                                    <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                                    <Rotation X="0.00026164416" Y="-6.541801e-07" Z="8.4691987e-05"/>
+                                                </Transform>
+                                                <Children Size="1"/>
+                                                <Child0 Name="mixamorig:RightHandThumb3" Visible="true" ObType="0" BoneIndex="40">
+                                                    <Shader File="4.cube.hlsl"/>
+                                                    <Transform>
+                                                        <Position X="-3.9790399e-13" Y="4.4468946" Z="8.8107321e-13"/>
+                                                        <Scale X="1" Y="0.99999994" Z="0.99999994"/>
+                                                        <Rotation X="-0.0002934442" Y="3.9152889e-07" Z="-4.883335e-05"/>
+                                                    </Transform>
+                                                    <Children Size="1"/>
+                                                    <Child0 Name="mixamorig:RightHandThumb4" Visible="true" ObType="0" BoneIndex="41">
+                                                        <Shader File="4.cube.hlsl"/>
+                                                        <Transform>
+                                                            <Position X="2.4158456e-13" Y="5.3384986" Z="-1.6768815e-12"/>
+                                                            <Scale X="1" Y="1" Z="1"/>
+                                                            <Rotation X="0" Y="0" Z="-0"/>
+                                                        </Transform>
+                                                        <Children Size="0"/>
+                                                    </Child0>
+                                                </Child0>
+                                            </Child0>
+                                        </Child4>
+                                    </Child0>
+                                </Child0>
+                            </Child0>
+                        </Child2>
+                    </Child0>
+                </Child0>
+            </Child2>
+        </Child1>
+    </Child0>
+</Root>

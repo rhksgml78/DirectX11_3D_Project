@@ -1,0 +1,5 @@
+﻿  Main.cpp
+C:\Users\user\Documents\GitHub\Soul\TerrainEditor\Main.cpp(480,10): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Documents\GitHub\Soul\TerrainEditor\Main.cpp(752,32): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\Documents\GitHub\Soul\TerrainEditor\Main.cpp(753,31): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TerrainEditor.vcxproj -> C:\Users\user\Documents\GitHub\Soul\x64\Debug\TerrainEditor.exe

@@ -1,0 +1,97 @@
+<Root Name="LockBlock" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="lockblock/lockblock.skel" BoneIndexCount="3"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="-98.449997" Y="0" Z="-242.39999"/>
+        <Scale X="0.27000001" Y="0.27000001" Z="0.27000001"/>
+        <Rotation X="3.1415927" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="4"/>
+    <Child0 Name="BlockBox" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="700" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="360" Y="-120" Z="-226"/>
+            <Scale X="1" Y="120" Z="7.25"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="LockBlock1" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="defaultobject.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="lockwall.mtl"/>
+        <Transform>
+            <Position X="2983.9036" Y="60.000137" Z="2956.9775"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="BlockBox1" Visible="false" ObType="0" BoneIndex="-1">
+            <Mesh File="0.Cube.mesh"/>
+            <Shader File="0.Cube.hlsl"/>
+            <Collider ColliderType="1" Visible="false">
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="700" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="-2644.4446" Y="-187" Z="-1733"/>
+                <Scale X="1" Y="120" Z="50"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child1>
+    <Child2 Name="LockBlock2" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="defaultobject.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="lockwall.mtl"/>
+        <Transform>
+            <Position X="3000.0017" Y="59.999996" Z="4340.2334"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="BlockBox2" Visible="false" ObType="0" BoneIndex="-1">
+            <Mesh File="0.Cube.mesh"/>
+            <Shader File="0.Cube.hlsl"/>
+            <Collider ColliderType="1" Visible="false">
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="700" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="-2644.4468" Y="-187" Z="-1736.5222"/>
+                <Scale X="1" Y="120" Z="50"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child2>
+    <Child3 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="defaultobject" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="lockblock/defaultobject.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="lockwall.mtl"/>
+            <Transform>
+                <Position X="3000" Y="60" Z="1550"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child3>
+</Root>

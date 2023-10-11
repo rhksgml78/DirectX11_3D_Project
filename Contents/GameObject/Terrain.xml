@@ -1,0 +1,133 @@
+<Root Name="Floor" Visible="true" ObType="3">
+    <Mesh File="Terrain.mesh"/>
+    <Shader File="5.Cube.hlsl"/>
+    <Material File="Terrain.mtl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="0.5" Y="0.5" Z="0.5"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <terrain uvScale="1" triSize="131072" diFile="Terrain.di"/>
+    <Children Size="5"/>
+    <Child0 Name="BossFloor" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="BossFloor.mtl"/>
+        <Transform>
+            <Position X="0" Y="-200" Z="-1212"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="FinalFloor" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="Terrain.mtl"/>
+        <Transform>
+            <Position X="26" Y="-3" Z="-1046"/>
+            <Scale X="0.30000001" Y="0.30000001" Z="0.30000001"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="Floor1" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="Terrain.mtl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="-250"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Floor1_1" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="250" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child2>
+    <Child3 Name="Floor2" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="Terrain.mtl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="-500"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Floor2_1" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="-250" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child3>
+    <Child4 Name="Floor3" Visible="true" ObType="0">
+        <Mesh File="Terrain.mesh"/>
+        <Shader File="5.Cube.hlsl"/>
+        <Material File="Terrain.mtl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="-750"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="4"/>
+        <Child0 Name="Floor3_1" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="250" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="Floor3_2" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="500" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+        <Child2 Name="Floor3_3" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="500" Y="0" Z="-250"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child2>
+        <Child3 Name="Floor3_4" Visible="true" ObType="0">
+            <Mesh File="Terrain.mesh"/>
+            <Shader File="5.Cube.hlsl"/>
+            <Material File="Terrain.mtl"/>
+            <Transform>
+                <Position X="500" Y="0" Z="-500"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child3>
+    </Child4>
+</Root>

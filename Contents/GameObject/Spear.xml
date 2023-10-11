@@ -1,0 +1,35 @@
+<Root Name="Actor" Visible="true" ObType="1">
+    <Transform>
+        <Position X="-1.5" Y="1" Z="0"/>
+        <Scale X="1" Y="1" Z="1.9"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="2"/>
+    <Child0 Name="Camera" Visible="true" ObType="2">
+        <Transform>
+            <Position X="13.125429" Y="3.4547033" Z="0.17406088"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0.11735989" Y="-1.5717937" Z="0"/>
+        </Transform>
+        <Camera Ortho="false" Fov="0.71558499" Width="1300" Height="840" NearZ="0.1" FarZ="500" viewportX="0" viewportY="0" viewportW="1305.85" viewportH="841"/>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Spear" Visible="true" ObType="0">
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="-0.052359879" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="Mesh" Visible="true" ObType="0">
+            <Mesh File="1.Sphere.mesh"/>
+            <Shader File="1.Cube.hlsl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="1"/>
+                <Scale X="0.2" Y="0.2" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child1>
+</Root>

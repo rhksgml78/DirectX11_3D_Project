@@ -1,0 +1,198 @@
+#include "Framework.h"
+
+//D3D11_INPUT_ELEMENT_DESC VertexP::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 }
+//};
+//D3D11_INPUT_ELEMENT_DESC VertexPC::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//};
+//
+//D3D11_INPUT_ELEMENT_DESC VertexPCN::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//    { "NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0,
+//    12 + 16,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//};
+//
+//D3D11_INPUT_ELEMENT_DESC VertexPTN::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "UV", 0, DXGI_FORMAT_R32G32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//    { "NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0,
+//    12 + 8,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//};
+//
+//D3D11_INPUT_ELEMENT_DESC VertexModel::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "UV", 0, DXGI_FORMAT_R32G32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//    { "NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0,
+//    12 + 8,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//    { "TANGENT", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0,
+//    12 + 8 + 12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//     { "INDICES", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0,
+//    12 + 8 + 12 + 12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//     { "WEIGHTS", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0,
+//    12 + 8 + 12 + 12 + 16,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//};
+//
+//
+//D3D11_INPUT_ELEMENT_DESC VertexTerrain::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "UV", 0, DXGI_FORMAT_R32G32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//    { "NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0,
+//    12 + 8,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//     { "WEIGHTS", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0,
+//    12 + 8 + 12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//};
+//
+//
+//D3D11_INPUT_ELEMENT_DESC VertexPT::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "UV", 0, DXGI_FORMAT_R32G32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//};
+//
+//D3D11_INPUT_ELEMENT_DESC VertexPS::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "SIZE", 0, DXGI_FORMAT_R32G32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//};
+//
+//D3D11_INPUT_ELEMENT_DESC VertexPSV::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "SIZE", 0, DXGI_FORMAT_R32G32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//    { "VELOCITY", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0,
+//    12 + 8,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 }
+//};
+//
+//D3D11_INPUT_ELEMENT_DESC VertexPSP::LayoutDesc[] =
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "SIZE", 0, DXGI_FORMAT_R32G32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//    { "PIVOT", 0, DXGI_FORMAT_R32G32_FLOAT, 0,
+//    12 + 8,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//};
+//
+//D3D11_INPUT_ELEMENT_DESC VertexPCNI::LayoutDesc[] = // 인스턴싱 레이아웃 디스크립션
+//{
+//    { "POSITION",
+//    0,
+//    DXGI_FORMAT_R32G32B32_FLOAT,
+//    0,
+//    0,
+//    D3D11_INPUT_PER_VERTEX_DATA,
+//    0 },
+//    { "COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0,
+//    12,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//    { "NORMAL", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0,
+//    12 + 16,
+//    D3D11_INPUT_PER_VERTEX_DATA, 0 },
+//     { "TRANSFORM", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 1,
+//    0,
+//    D3D11_INPUT_PER_INSTANCE_DATA, 1 },
+//      { "TRANSFORM", 1, DXGI_FORMAT_R32G32B32A32_FLOAT, 1,
+//    16,
+//    D3D11_INPUT_PER_INSTANCE_DATA, 1 },
+//     { "TRANSFORM", 2, DXGI_FORMAT_R32G32B32A32_FLOAT, 1,
+//    32,
+//    D3D11_INPUT_PER_INSTANCE_DATA, 1 },
+//     { "TRANSFORM", 3, DXGI_FORMAT_R32G32B32A32_FLOAT, 1,
+//    48,
+//    D3D11_INPUT_PER_INSTANCE_DATA, 1 },
+//};

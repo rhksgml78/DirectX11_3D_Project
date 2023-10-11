@@ -1,0 +1,56 @@
+<Root Name="StartDungeon" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="CaveRock_K_Obj/CaveRock_K_Obj.skel" BoneIndexCount="3"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="14" Y="3.5999999" Z="2033"/>
+        <Scale X="0.89999998" Y="1.2" Z="0.89999998"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="3"/>
+    <Child0 Name="GoDungeon" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="14" Z="0"/>
+            <Scale X="57.599998" Y="24.549999" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="40.666664" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="CaveRock_K" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="CaveRock_K_Obj/CaveRock_K.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="DungeonStart.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child1>
+    <Child2 Name="RightStart" Visible="true" ObType="0" BoneIndex="-1">
+        <Mesh File="CaveRock_K.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="DungeonStart.mtl"/>
+        <Transform>
+            <Position X="81.666664" Y="0" Z="-3.3333333"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="3.1415927" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child2>
+</Root>

@@ -1,0 +1,45 @@
+<Root Name="FinalTrap" Visible="false" ObType="1" BoneIndex="0">
+    <Skeleton File="ninja_star/ninja_star.skel" BoneIndexCount="3"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="10" Z="-1600"/>
+        <Scale X="75" Y="75" Z="75"/>
+        <Rotation X="1.5707964" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="2"/>
+    <Child0 Name="FinalTrapBox" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="2" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1.5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="2.5" Y="2.5" Z="0.1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="ninja_star_Cube.002" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="ninja_star/ninja_star_Cube.002.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="ninja_star/Material.002.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child1>
+</Root>

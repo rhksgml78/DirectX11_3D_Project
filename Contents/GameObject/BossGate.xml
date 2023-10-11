@@ -1,0 +1,118 @@
+<Root Name="BossGate" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="Ancient_portal/Ancient_portal.skel" BoneIndexCount="13"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="-213.75" Y="0" Z="1740"/>
+        <Scale X="6" Y="6" Z="6"/>
+        <Rotation X="0" Y="3.1415927" Z="0"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="9"/>
+        <Child0 Name="Cylinder" Visible="true" ObType="0" BoneIndex="12">
+            <Mesh File="Ancient_portal/Cylinder.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossGate.mtl"/>
+            <Transform>
+                <Position X="0" Y="-52.299999" Z="-1.1900001"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="Cylinder.008_Cylinder.016" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="Ancient_portal/Cylinder.008_Cylinder.016.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossGate.mtl"/>
+            <Transform>
+                <Position X="0" Y="-52.299999" Z="-1.1900001"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+        <Child2 Name="Cylinder.009_Cylinder.017" Visible="true" ObType="0" BoneIndex="3">
+            <Mesh File="Ancient_portal/Cylinder.009_Cylinder.017.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossGate.mtl"/>
+            <Transform>
+                <Position X="0" Y="-52.299999" Z="-1.1900001"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child2>
+        <Child3 Name="Cylinder.010_Cylinder.018" Visible="true" ObType="0" BoneIndex="4">
+            <Mesh File="Ancient_portal/Cylinder.010_Cylinder.018.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossGate.mtl"/>
+            <Transform>
+                <Position X="0" Y="-52.299999" Z="-1.1900001"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child3>
+        <Child4 Name="Cylinder.011_Cylinder.019" Visible="true" ObType="0" BoneIndex="5">
+            <Mesh File="Ancient_portal/Cylinder.011_Cylinder.019.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossGate.mtl"/>
+            <Transform>
+                <Position X="0" Y="-52.299999" Z="-1.1900001"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child4>
+        <Child5 Name="Cylinder.012_Cylinder.020" Visible="true" ObType="0" BoneIndex="6">
+            <Mesh File="Ancient_portal/Cylinder.012_Cylinder.020.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossGate.mtl"/>
+            <Transform>
+                <Position X="0" Y="-52.299999" Z="-1.1900001"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child5>
+        <Child6 Name="Cylinder.013_Cylinder.021" Visible="true" ObType="0" BoneIndex="7">
+            <Mesh File="Ancient_portal/Cylinder.013_Cylinder.021.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossGate.mtl"/>
+            <Transform>
+                <Position X="0" Y="-52.299999" Z="-1.1900001"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child6>
+        <Child7 Name="Cylinder.014_Cylinder.022" Visible="true" ObType="0" BoneIndex="8">
+            <Mesh File="Ancient_portal/Cylinder.014_Cylinder.022.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossGate.mtl"/>
+            <Transform>
+                <Position X="0" Y="-52.299999" Z="-1.1900001"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child7>
+        <Child8 Name="Cylinder.015_Cylinder.023" Visible="true" ObType="0" BoneIndex="9">
+            <Mesh File="Ancient_portal/Cylinder.015_Cylinder.023.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="BossGate.mtl"/>
+            <Transform>
+                <Position X="0" Y="-52.299999" Z="-1.1900001"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child8>
+    </Child0>
+</Root>

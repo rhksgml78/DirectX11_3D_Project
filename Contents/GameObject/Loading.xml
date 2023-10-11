@@ -1,0 +1,24 @@
+<Root Name="LoadingScreen" Visible="true" ObType="4">
+    <Mesh File="6.UI.mesh"/>
+    <Shader File="6.UI.hlsl"/>
+    <Material File="Loading.mtl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="2" Y="2" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <UI PivotX="0" PivotY="0"/>
+    <Children Size="1"/>
+    <Child0 Name="bar" Visible="true" ObType="4">
+        <Mesh File="6.UI.mesh"/>
+        <Shader File="6.UI.hlsl"/>
+        <Material File="Loadingbar.mtl"/>
+        <Transform>
+            <Position X="-0.5" Y="-0.44999999" Z="0"/>
+            <Scale X="1" Y="0.075" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <UI PivotX="0.5" PivotY="0.5"/>
+        <Children Size="0"/>
+    </Child0>
+</Root>

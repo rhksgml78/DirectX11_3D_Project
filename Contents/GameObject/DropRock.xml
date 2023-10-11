@@ -1,0 +1,117 @@
+<Root Name="DropRock" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="Rock_LOD0/Rock_LOD0.skel" BoneIndexCount="4"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="750" Y="-300" Z="-1111.5"/>
+        <Scale X="7.5" Y="7.5" Z="7.5"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="4"/>
+    <Child0 Name="DropRock1" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="Rock_LOD_0.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="DropRock.mtl"/>
+        <Transform>
+            <Position X="0" Y="96" Z="0"/>
+            <Scale X="0.050000001" Y="0.050000001" Z="0.050000001"/>
+            <Rotation X="3.1415927" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="DropRock1Box" Visible="true" ObType="0" BoneIndex="-1">
+            <Mesh File="0.Cube.mesh"/>
+            <Shader File="0.Cube.hlsl"/>
+            <Collider ColliderType="1" Visible="false">
+                <Position X="0" Y="240" Z="68"/>
+                <Scale X="300" Y="380" Z="300"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child0>
+    <Child1 Name="DropRock2" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="Rock_LOD_0.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="DropRock.mtl"/>
+        <Transform>
+            <Position X="-50" Y="96" Z="0"/>
+            <Scale X="0.050000001" Y="0.050000001" Z="0.050000001"/>
+            <Rotation X="3.1415927" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="DropRock2Box" Visible="true" ObType="0" BoneIndex="-1">
+            <Mesh File="0.Cube.mesh"/>
+            <Shader File="0.Cube.hlsl"/>
+            <Collider ColliderType="1" Visible="false">
+                <Position X="0" Y="240" Z="68"/>
+                <Scale X="300" Y="380" Z="300"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child1>
+    <Child2 Name="DropRock3" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="Rock_LOD_0.mesh"/>
+        <Shader File="4.Cube.hlsl"/>
+        <Material File="DropRock.mtl"/>
+        <Transform>
+            <Position X="-100" Y="96" Z="0"/>
+            <Scale X="0.050000001" Y="0.050000001" Z="0.050000001"/>
+            <Rotation X="3.1415927" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="1"/>
+        <Child0 Name="DropRock3Box" Visible="true" ObType="0" BoneIndex="-1">
+            <Mesh File="0.Cube.mesh"/>
+            <Shader File="0.Cube.hlsl"/>
+            <Collider ColliderType="1" Visible="false">
+                <Position X="0" Y="240" Z="68"/>
+                <Scale X="300" Y="380" Z="300"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Collider>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+    </Child2>
+    <Child3 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="0.050000001" Y="0.050000001" Z="0.050000001"/>
+            <Rotation X="3.1415927" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="2"/>
+        <Child0 Name="Rock_LOD_0" Visible="true" ObType="0" BoneIndex="3">
+            <Mesh File="Rock_LOD0/Rock_LOD_0.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="DropRock.mtl"/>
+            <Transform>
+                <Position X="0" Y="-400" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="default" Visible="true" ObType="0" BoneIndex="2">
+            <Shader File="4.cube.hlsl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+    </Child3>
+</Root>

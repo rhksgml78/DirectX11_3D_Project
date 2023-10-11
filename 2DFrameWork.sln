@@ -1,0 +1,199 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2DFrameWork", "2DFrameWork\2DFrameWork.vcxproj", "{C2138BC9-A195-455F-91A6-5FF469EB5E61}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game1", "Game1\Game1.vcxproj", "{62755BC4-7433-469B-8413-314F6EC62971}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61} = {C2138BC9-A195-455F-91A6-5FF469EB5E61}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game2", "Game2\Game2.vcxproj", "{E4AABC26-46D5-436A-BE00-FF12933156D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61} = {C2138BC9-A195-455F-91A6-5FF469EB5E61}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shaders", "Shaders", "{6498BC6D-79F3-44EF-806D-3CB449E9F69E}"
+	ProjectSection(SolutionItems) = preProject
+		Shaders\0.Cube.hlsl = Shaders\0.Cube.hlsl
+		Shaders\0.Sky.hlsl = Shaders\0.Sky.hlsl
+		Shaders\0.SkyCubeMap.hlsl = Shaders\0.SkyCubeMap.hlsl
+		Shaders\1.Collider.hlsl = Shaders\1.Collider.hlsl
+		Shaders\1.Cube.hlsl = Shaders\1.Cube.hlsl
+		Shaders\1.UI.hlsl = Shaders\1.UI.hlsl
+		Shaders\10.Cube.hlsl = Shaders\10.Cube.hlsl
+		Shaders\2.Cube.hlsl = Shaders\2.Cube.hlsl
+		Shaders\2.Instance.hlsl = Shaders\2.Instance.hlsl
+		Shaders\2.ShadowMap.hlsl = Shaders\2.ShadowMap.hlsl
+		Shaders\3.Cube.hlsl = Shaders\3.Cube.hlsl
+		Shaders\4.Cube.hlsl = Shaders\4.Cube.hlsl
+		Shaders\4.CubeMap.hlsl = Shaders\4.CubeMap.hlsl
+		Shaders\4.ShadowMap.hlsl = Shaders\4.ShadowMap.hlsl
+		Shaders\4.Water.hlsl = Shaders\4.Water.hlsl
+		Shaders\5.Cube.hlsl = Shaders\5.Cube.hlsl
+		Shaders\5.CubeMap.hlsl = Shaders\5.CubeMap.hlsl
+		Shaders\5.ShadowMap.hlsl = Shaders\5.ShadowMap.hlsl
+		Shaders\6.Cube.hlsl = Shaders\6.Cube.hlsl
+		Shaders\6.PostEffrect.hlsl = Shaders\6.PostEffrect.hlsl
+		Shaders\6.Trail.hlsl = Shaders\6.Trail.hlsl
+		Shaders\6.UI.hlsl = Shaders\6.UI.hlsl
+		Shaders\7.Rain.hlsl = Shaders\7.Rain.hlsl
+		Shaders\8.Pop.hlsl = Shaders\8.Pop.hlsl
+		Shaders\8.VerticalPop.hlsl = Shaders\8.VerticalPop.hlsl
+		Shaders\9.Cube.hlsl = Shaders\9.Cube.hlsl
+		Shaders\Common.hlsl = Shaders\Common.hlsl
+		Shaders\ComputeShader.hlsl = Shaders\ComputeShader.hlsl
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameObject", "GameObject", "{02D83A04-620D-48C6-B4E7-41AB710F9687}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\GameObject\armor1.xml = Contents\GameObject\armor1.xml
+		Contents\GameObject\axe.xml = Contents\GameObject\axe.xml
+		Contents\GameObject\Boss2.xml = Contents\GameObject\Boss2.xml
+		Contents\GameObject\BossGate.xml = Contents\GameObject\BossGate.xml
+		Contents\GameObject\BossHPBar.xml = Contents\GameObject\BossHPBar.xml
+		Contents\GameObject\BossMonsterSE.xml = Contents\GameObject\BossMonsterSE.xml
+		Contents\GameObject\BossWall.xml = Contents\GameObject\BossWall.xml
+		Contents\GameObject\Cam.xml = Contents\GameObject\Cam.xml
+		Contents\GameObject\Deadpool.xml = Contents\GameObject\Deadpool.xml
+		Contents\GameObject\DropRock.xml = Contents\GameObject\DropRock.xml
+		Contents\GameObject\DungeonEnd.xml = Contents\GameObject\DungeonEnd.xml
+		Contents\GameObject\DungeonStart.xml = Contents\GameObject\DungeonStart.xml
+		Contents\GameObject\EquipPreset.xml = Contents\GameObject\EquipPreset.xml
+		Contents\GameObject\Event.xml = Contents\GameObject\Event.xml
+		Contents\GameObject\FieldWall.xml = Contents\GameObject\FieldWall.xml
+		Contents\GameObject\Fire_Effect_Collider.xml = Contents\GameObject\Fire_Effect_Collider.xml
+		Contents\GameObject\Floor00.xml = Contents\GameObject\Floor00.xml
+		Contents\GameObject\Floor01.xml = Contents\GameObject\Floor01.xml
+		Contents\GameObject\Gear.xml = Contents\GameObject\Gear.xml
+		Contents\GameObject\Human.xml = Contents\GameObject\Human.xml
+		Contents\GameObject\Icicle_Effect_Collider.xml = Contents\GameObject\Icicle_Effect_Collider.xml
+		Contents\GameObject\innerinven.xml = Contents\GameObject\innerinven.xml
+		Contents\GameObject\Inven.xml = Contents\GameObject\Inven.xml
+		Contents\GameObject\itemSelected.xml = Contents\GameObject\itemSelected.xml
+		Contents\GameObject\Knife.xml = Contents\GameObject\Knife.xml
+		Contents\GameObject\Largeshield.xml = Contents\GameObject\Largeshield.xml
+		Contents\GameObject\Line.xml = Contents\GameObject\Line.xml
+		Contents\GameObject\Loading.xml = Contents\GameObject\Loading.xml
+		Contents\GameObject\LockBlock.xml = Contents\GameObject\LockBlock.xml
+		Contents\GameObject\Main.xml = Contents\GameObject\Main.xml
+		Contents\GameObject\map.xml = Contents\GameObject\map.xml
+		Contents\GameObject\map_floor.xml = Contents\GameObject\map_floor.xml
+		Contents\GameObject\Monster1.xml = Contents\GameObject\Monster1.xml
+		Contents\GameObject\Monster1SE.xml = Contents\GameObject\Monster1SE.xml
+		Contents\GameObject\Monster2.xml = Contents\GameObject\Monster2.xml
+		Contents\GameObject\Normal.xml = Contents\GameObject\Normal.xml
+		Contents\GameObject\paper.xml = Contents\GameObject\paper.xml
+		Contents\GameObject\Player.xml = Contents\GameObject\Player.xml
+		Contents\GameObject\Player2.xml = Contents\GameObject\Player2.xml
+		Contents\GameObject\PlayerCol.xml = Contents\GameObject\PlayerCol.xml
+		Contents\GameObject\PostEffect.xml = Contents\GameObject\PostEffect.xml
+		Contents\GameObject\rock.xml = Contents\GameObject\rock.xml
+		Contents\GameObject\Root.xml = Contents\GameObject\Root.xml
+		Contents\GameObject\SawTooth.xml = Contents\GameObject\SawTooth.xml
+		Contents\GameObject\Sharp_Rock.xml = Contents\GameObject\Sharp_Rock.xml
+		Contents\GameObject\Sharp_Rock2.xml = Contents\GameObject\Sharp_Rock2.xml
+		Contents\GameObject\Sharp_Rock3.xml = Contents\GameObject\Sharp_Rock3.xml
+		Contents\GameObject\SharpRock.xml = Contents\GameObject\SharpRock.xml
+		Contents\GameObject\Shere3.xml = Contents\GameObject\Shere3.xml
+		Contents\GameObject\Shield.xml = Contents\GameObject\Shield.xml
+		Contents\GameObject\Shuriken.xml = Contents\GameObject\Shuriken.xml
+		Contents\GameObject\sisser.xml = Contents\GameObject\sisser.xml
+		Contents\GameObject\Skill_Circle_Col.xml = Contents\GameObject\Skill_Circle_Col.xml
+		Contents\GameObject\Skill_Line_Col.xml = Contents\GameObject\Skill_Line_Col.xml
+		Contents\GameObject\SpartanArmor.xml = Contents\GameObject\SpartanArmor.xml
+		Contents\GameObject\Spear.xml = Contents\GameObject\Spear.xml
+		Contents\GameObject\Sphere.xml = Contents\GameObject\Sphere.xml
+		Contents\GameObject\Sphere2.xml = Contents\GameObject\Sphere2.xml
+		Contents\GameObject\Sphere3.xml = Contents\GameObject\Sphere3.xml
+		Contents\GameObject\SphereInstance.xml = Contents\GameObject\SphereInstance.xml
+		Contents\GameObject\StatusBar.xml = Contents\GameObject\StatusBar.xml
+		Contents\GameObject\Sun.xml = Contents\GameObject\Sun.xml
+		Contents\GameObject\Terrain.xml = Contents\GameObject\Terrain.xml
+		Contents\GameObject\Terrain_Study.xml = Contents\GameObject\Terrain_Study.xml
+		Contents\GameObject\UI.xml = Contents\GameObject\UI.xml
+		Contents\GameObject\Ui_Sample.xml = Contents\GameObject\Ui_Sample.xml
+		Contents\GameObject\Wall00.xml = Contents\GameObject\Wall00.xml
+		Contents\GameObject\water.xml = Contents\GameObject\water.xml
+		Contents\GameObject\XMLTest.xml = Contents\GameObject\XMLTest.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mesh", "Mesh", "{FAEE2CC2-F109-48EC-9EF9-FB41BAB78751}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Texture", "Texture", "{24D3644A-2017-4072-B147-CF6C1CB98037}"
+	ProjectSection(SolutionItems) = preProject
+		Contents\Texture\2000000.png = Contents\Texture\2000000.png
+		Contents\Texture\2000001.png = Contents\Texture\2000001.png
+		Contents\Texture\Bold.png = Contents\Texture\Bold.png
+		Contents\Texture\The Boss\Boss_normal.png = Contents\Texture\The Boss\Boss_normal.png
+		Contents\Texture\window.png = Contents\Texture\window.png
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ObjLoader", "ObjLoader\ObjLoader.vcxproj", "{80688FDB-A82F-499E-B5A6-6AD1DE5531E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61} = {C2138BC9-A195-455F-91A6-5FF469EB5E61}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TerrainEditor", "TerrainEditor\TerrainEditor.vcxproj", "{14E91A96-14F3-4FE3-81D8-EB73A9AE8247}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61} = {C2138BC9-A195-455F-91A6-5FF469EB5E61}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Debug|x64.ActiveCfg = Debug|x64
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Debug|x64.Build.0 = Debug|x64
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Debug|x86.ActiveCfg = Debug|Win32
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Debug|x86.Build.0 = Debug|Win32
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Release|x64.ActiveCfg = Release|x64
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Release|x64.Build.0 = Release|x64
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Release|x86.ActiveCfg = Release|Win32
+		{C2138BC9-A195-455F-91A6-5FF469EB5E61}.Release|x86.Build.0 = Release|Win32
+		{62755BC4-7433-469B-8413-314F6EC62971}.Debug|x64.ActiveCfg = Debug|x64
+		{62755BC4-7433-469B-8413-314F6EC62971}.Debug|x64.Build.0 = Debug|x64
+		{62755BC4-7433-469B-8413-314F6EC62971}.Debug|x86.ActiveCfg = Debug|Win32
+		{62755BC4-7433-469B-8413-314F6EC62971}.Debug|x86.Build.0 = Debug|Win32
+		{62755BC4-7433-469B-8413-314F6EC62971}.Release|x64.ActiveCfg = Release|x64
+		{62755BC4-7433-469B-8413-314F6EC62971}.Release|x64.Build.0 = Release|x64
+		{62755BC4-7433-469B-8413-314F6EC62971}.Release|x86.ActiveCfg = Release|Win32
+		{62755BC4-7433-469B-8413-314F6EC62971}.Release|x86.Build.0 = Release|Win32
+		{E4AABC26-46D5-436A-BE00-FF12933156D1}.Debug|x64.ActiveCfg = Debug|x64
+		{E4AABC26-46D5-436A-BE00-FF12933156D1}.Debug|x64.Build.0 = Debug|x64
+		{E4AABC26-46D5-436A-BE00-FF12933156D1}.Debug|x86.ActiveCfg = Debug|Win32
+		{E4AABC26-46D5-436A-BE00-FF12933156D1}.Debug|x86.Build.0 = Debug|Win32
+		{E4AABC26-46D5-436A-BE00-FF12933156D1}.Release|x64.ActiveCfg = Release|x64
+		{E4AABC26-46D5-436A-BE00-FF12933156D1}.Release|x64.Build.0 = Release|x64
+		{E4AABC26-46D5-436A-BE00-FF12933156D1}.Release|x86.ActiveCfg = Release|Win32
+		{E4AABC26-46D5-436A-BE00-FF12933156D1}.Release|x86.Build.0 = Release|Win32
+		{80688FDB-A82F-499E-B5A6-6AD1DE5531E4}.Debug|x64.ActiveCfg = Debug|x64
+		{80688FDB-A82F-499E-B5A6-6AD1DE5531E4}.Debug|x64.Build.0 = Debug|x64
+		{80688FDB-A82F-499E-B5A6-6AD1DE5531E4}.Debug|x86.ActiveCfg = Debug|Win32
+		{80688FDB-A82F-499E-B5A6-6AD1DE5531E4}.Debug|x86.Build.0 = Debug|Win32
+		{80688FDB-A82F-499E-B5A6-6AD1DE5531E4}.Release|x64.ActiveCfg = Release|x64
+		{80688FDB-A82F-499E-B5A6-6AD1DE5531E4}.Release|x64.Build.0 = Release|x64
+		{80688FDB-A82F-499E-B5A6-6AD1DE5531E4}.Release|x86.ActiveCfg = Release|Win32
+		{80688FDB-A82F-499E-B5A6-6AD1DE5531E4}.Release|x86.Build.0 = Release|Win32
+		{14E91A96-14F3-4FE3-81D8-EB73A9AE8247}.Debug|x64.ActiveCfg = Debug|x64
+		{14E91A96-14F3-4FE3-81D8-EB73A9AE8247}.Debug|x64.Build.0 = Debug|x64
+		{14E91A96-14F3-4FE3-81D8-EB73A9AE8247}.Debug|x86.ActiveCfg = Debug|Win32
+		{14E91A96-14F3-4FE3-81D8-EB73A9AE8247}.Debug|x86.Build.0 = Debug|Win32
+		{14E91A96-14F3-4FE3-81D8-EB73A9AE8247}.Release|x64.ActiveCfg = Release|x64
+		{14E91A96-14F3-4FE3-81D8-EB73A9AE8247}.Release|x64.Build.0 = Release|x64
+		{14E91A96-14F3-4FE3-81D8-EB73A9AE8247}.Release|x86.ActiveCfg = Release|Win32
+		{14E91A96-14F3-4FE3-81D8-EB73A9AE8247}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E65A645-0ED0-45FC-8214-114C1DE27774}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,51 @@
+<Root Name="DJ_Terrain" Visible="true" ObType="3">
+    <Mesh File="DJ_Terrain.mesh"/>
+    <Shader File="5.Cube.hlsl"/>
+    <Material File="DJ_Terrain.mtl"/>
+    <Transform>
+        <Position X="0" Y="0" Z="0"/>
+        <Scale X="5" Y="5" Z="5"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <terrain uvScale="20" triSize="131072" diFile="DJ_Terrain.di"/>
+    <Children Size="3"/>
+    <Child0 Name="COL1" Visible="true" ObType="0">
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="10.383432" Y="0" Z="7.4895859"/>
+            <Scale X="3" Y="3" Z="3"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="COL2" Visible="true" ObType="0">
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0.80152082" Y="0" Z="-12.496798"/>
+            <Scale X="5" Y="5" Z="5"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child1>
+    <Child2 Name="COL3" Visible="true" ObType="0">
+        <Collider ColliderType="1" Visible="false">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="-14.5694" Y="0" Z="5.5624003"/>
+            <Scale X="4" Y="4" Z="4"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child2>
+</Root>

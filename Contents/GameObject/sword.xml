@@ -1,0 +1,51 @@
+<Root Name="root2" Visible="true" ObType="1" BoneIndex="0">
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="14.999998" Y="13.500002" Z="-1.9999949"/>
+        <Scale X="4.5" Y="4.5" Z="4.5"/>
+        <Rotation X="0.087266468" Y="0.052359879" Z="-1.4137167"/>
+    </Transform>
+    <Children Size="1"/>
+    <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="2"/>
+        <Child0 Name="handle" Visible="true" ObType="0" BoneIndex="3">
+            <Mesh File="old_sword/handle.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="old_sword/m_handle.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="1"/>
+            <Child0 Name="m_handle_02MeshObject" Visible="true" ObType="0" BoneIndex="4">
+                <Mesh File="old_sword/m_handle_02MeshObject.mesh"/>
+                <Shader File="4.Cube.hlsl"/>
+                <Material File="old_sword/m_handle_02.mtl"/>
+                <Transform>
+                    <Position X="0" Y="0" Z="0"/>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="0" Y="0" Z="0"/>
+                </Transform>
+                <Children Size="0"/>
+            </Child0>
+        </Child0>
+        <Child1 Name="sword" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="old_sword/sword.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="old_sword/m_sword.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+    </Child0>
+</Root>

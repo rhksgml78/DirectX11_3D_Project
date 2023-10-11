@@ -1,0 +1,540 @@
+<Root Name="Laser1" Visible="true" ObType="1" BoneIndex="0">
+    <Skeleton File="LightSaber/LightSaber.skel" BoneIndexCount="48"/>
+    <Shader File="4.cube.hlsl"/>
+    <Transform>
+        <Position X="0" Y="5" Z="-123"/>
+        <Scale X="1" Y="1" Z="1"/>
+        <Rotation X="0" Y="0" Z="0"/>
+    </Transform>
+    <Children Size="2"/>
+    <Child0 Name="Laser1Box" Visible="false" ObType="0" BoneIndex="-1">
+        <Mesh File="0.Cube.mesh"/>
+        <Shader File="0.Cube.hlsl"/>
+        <Collider ColliderType="2" Visible="true">
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Collider>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="64" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="0"/>
+        </Transform>
+        <Children Size="0"/>
+    </Child0>
+    <Child1 Name="Offset" Visible="true" ObType="0" BoneIndex="1">
+        <Shader File="4.cube.hlsl"/>
+        <Transform>
+            <Position X="0" Y="0" Z="0"/>
+            <Scale X="1" Y="1" Z="1"/>
+            <Rotation X="0" Y="0" Z="-0"/>
+        </Transform>
+        <Children Size="45"/>
+        <Child0 Name="Cylinder.001_Cylinder.006" Visible="true" ObType="0" BoneIndex="45">
+            <Mesh File="LightSaber/Cylinder.001_Cylinder.006.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child0>
+        <Child1 Name="Cylinder.002_Cylinder.012" Visible="true" ObType="0" BoneIndex="46">
+            <Mesh File="LightSaber/Cylinder.002_Cylinder.012.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child1>
+        <Child2 Name="Cylinder_Cylinder.010" Visible="true" ObType="0" BoneIndex="43">
+            <Mesh File="LightSaber/Cylinder_Cylinder.010.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child2>
+        <Child3 Name="button_red.001_Cylinder.004" Visible="true" ObType="0" BoneIndex="5">
+            <Mesh File="LightSaber/button_red.001_Cylinder.004.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child3>
+        <Child4 Name="button_red.002_Cylinder.008" Visible="true" ObType="0" BoneIndex="24">
+            <Mesh File="LightSaber/button_red.002_Cylinder.008.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child4>
+        <Child5 Name="button_red.003_Cylinder.009" Visible="true" ObType="0" BoneIndex="23">
+            <Mesh File="LightSaber/button_red.003_Cylinder.009.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child5>
+        <Child6 Name="button_red_Cylinder.001" Visible="true" ObType="0" BoneIndex="3">
+            <Mesh File="LightSaber/button_red_Cylinder.001.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child6>
+        <Child7 Name="button_white.001_Cylinder.003" Visible="true" ObType="0" BoneIndex="6">
+            <Mesh File="LightSaber/button_white.001_Cylinder.003.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child7>
+        <Child8 Name="button_white.002_Cylinder.011" Visible="true" ObType="0" BoneIndex="44">
+            <Mesh File="LightSaber/button_white.002_Cylinder.011.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child8>
+        <Child9 Name="button_white.003_Cylinder.007" Visible="true" ObType="0" BoneIndex="25">
+            <Mesh File="LightSaber/button_white.003_Cylinder.007.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child9>
+        <Child10 Name="button_white_Cylinder.002" Visible="true" ObType="0" BoneIndex="4">
+            <Mesh File="LightSaber/button_white_Cylinder.002.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child10>
+        <Child11 Name="fin.001_Cube.002" Visible="true" ObType="0" BoneIndex="8">
+            <Mesh File="LightSaber/fin.001_Cube.002.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child11>
+        <Child12 Name="fin.002_Cube.003" Visible="true" ObType="0" BoneIndex="9">
+            <Mesh File="LightSaber/fin.002_Cube.003.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child12>
+        <Child13 Name="fin.003_Cube.004" Visible="true" ObType="0" BoneIndex="10">
+            <Mesh File="LightSaber/fin.003_Cube.004.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child13>
+        <Child14 Name="fin.004_Cube.005" Visible="true" ObType="0" BoneIndex="11">
+            <Mesh File="LightSaber/fin.004_Cube.005.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child14>
+        <Child15 Name="fin.005_Cube.006" Visible="true" ObType="0" BoneIndex="16">
+            <Mesh File="LightSaber/fin.005_Cube.006.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child15>
+        <Child16 Name="fin.006_Cube.007" Visible="true" ObType="0" BoneIndex="15">
+            <Mesh File="LightSaber/fin.006_Cube.007.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child16>
+        <Child17 Name="fin.007_Cube.008" Visible="true" ObType="0" BoneIndex="14">
+            <Mesh File="LightSaber/fin.007_Cube.008.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child17>
+        <Child18 Name="fin.008_Cube.009" Visible="true" ObType="0" BoneIndex="13">
+            <Mesh File="LightSaber/fin.008_Cube.009.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child18>
+        <Child19 Name="fin.009_Cube.010" Visible="true" ObType="0" BoneIndex="12">
+            <Mesh File="LightSaber/fin.009_Cube.010.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child19>
+        <Child20 Name="fin.010_Cube.011" Visible="true" ObType="0" BoneIndex="21">
+            <Mesh File="LightSaber/fin.010_Cube.011.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child20>
+        <Child21 Name="fin.011_Cube.012" Visible="true" ObType="0" BoneIndex="20">
+            <Mesh File="LightSaber/fin.011_Cube.012.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child21>
+        <Child22 Name="fin.012_Cube.013" Visible="true" ObType="0" BoneIndex="19">
+            <Mesh File="LightSaber/fin.012_Cube.013.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child22>
+        <Child23 Name="fin.013_Cube.014" Visible="true" ObType="0" BoneIndex="18">
+            <Mesh File="LightSaber/fin.013_Cube.014.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child23>
+        <Child24 Name="fin.014_Cube.015" Visible="true" ObType="0" BoneIndex="17">
+            <Mesh File="LightSaber/fin.014_Cube.015.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child24>
+        <Child25 Name="fin.015_Cube.016" Visible="true" ObType="0" BoneIndex="22">
+            <Mesh File="LightSaber/fin.015_Cube.016.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child25>
+        <Child26 Name="fin.016_Cube.018" Visible="true" ObType="0" BoneIndex="41">
+            <Mesh File="LightSaber/fin.016_Cube.018.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child26>
+        <Child27 Name="fin.017_Cube.019" Visible="true" ObType="0" BoneIndex="40">
+            <Mesh File="LightSaber/fin.017_Cube.019.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child27>
+        <Child28 Name="fin.018_Cube.020" Visible="true" ObType="0" BoneIndex="39">
+            <Mesh File="LightSaber/fin.018_Cube.020.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child28>
+        <Child29 Name="fin.019_Cube.021" Visible="true" ObType="0" BoneIndex="38">
+            <Mesh File="LightSaber/fin.019_Cube.021.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child29>
+        <Child30 Name="fin.020_Cube.022" Visible="true" ObType="0" BoneIndex="37">
+            <Mesh File="LightSaber/fin.020_Cube.022.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child30>
+        <Child31 Name="fin.021_Cube.023" Visible="true" ObType="0" BoneIndex="36">
+            <Mesh File="LightSaber/fin.021_Cube.023.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child31>
+        <Child32 Name="fin.022_Cube.024" Visible="true" ObType="0" BoneIndex="35">
+            <Mesh File="LightSaber/fin.022_Cube.024.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child32>
+        <Child33 Name="fin.023_Cube.025" Visible="true" ObType="0" BoneIndex="34">
+            <Mesh File="LightSaber/fin.023_Cube.025.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child33>
+        <Child34 Name="fin.024_Cube.026" Visible="true" ObType="0" BoneIndex="33">
+            <Mesh File="LightSaber/fin.024_Cube.026.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child34>
+        <Child35 Name="fin.025_Cube.027" Visible="true" ObType="0" BoneIndex="32">
+            <Mesh File="LightSaber/fin.025_Cube.027.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child35>
+        <Child36 Name="fin.026_Cube.028" Visible="true" ObType="0" BoneIndex="31">
+            <Mesh File="LightSaber/fin.026_Cube.028.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child36>
+        <Child37 Name="fin.027_Cube.029" Visible="true" ObType="0" BoneIndex="30">
+            <Mesh File="LightSaber/fin.027_Cube.029.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child37>
+        <Child38 Name="fin.028_Cube.030" Visible="true" ObType="0" BoneIndex="29">
+            <Mesh File="LightSaber/fin.028_Cube.030.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child38>
+        <Child39 Name="fin.029_Cube.031" Visible="true" ObType="0" BoneIndex="28">
+            <Mesh File="LightSaber/fin.029_Cube.031.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child39>
+        <Child40 Name="fin.030_Cube.032" Visible="true" ObType="0" BoneIndex="27">
+            <Mesh File="LightSaber/fin.030_Cube.032.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child40>
+        <Child41 Name="fin.031_Cube.033" Visible="true" ObType="0" BoneIndex="42">
+            <Mesh File="LightSaber/fin.031_Cube.033.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child41>
+        <Child42 Name="fin_Cube.001" Visible="true" ObType="0" BoneIndex="7">
+            <Mesh File="LightSaber/fin_Cube.001.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child42>
+        <Child43 Name="handle.001_Cylinder.005" Visible="true" ObType="0" BoneIndex="26">
+            <Mesh File="LightSaber/handle.001_Cylinder.005.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="0"/>
+        </Child43>
+        <Child44 Name="handle_Cylinder" Visible="true" ObType="0" BoneIndex="2">
+            <Mesh File="LightSaber/handle_Cylinder.mesh"/>
+            <Shader File="4.cube.hlsl"/>
+            <Material File="RedLaser.mtl"/>
+            <Transform>
+                <Position X="0" Y="0" Z="0"/>
+                <Scale X="1" Y="1" Z="1"/>
+                <Rotation X="0" Y="0" Z="-0"/>
+            </Transform>
+            <Children Size="1"/>
+            <Child0 Name="redMeshObject" Visible="true" ObType="0" BoneIndex="47">
+                <Mesh File="LightSaber/redMeshObject.mesh"/>
+                <Shader File="4.Cube.hlsl"/>
+                <Material File="RedLaser.mtl"/>
+                <Transform>
+                    <Position X="0" Y="0" Z="0"/>
+                    <Scale X="1" Y="1" Z="1"/>
+                    <Rotation X="0" Y="0" Z="0"/>
+                </Transform>
+                <Children Size="0"/>
+            </Child0>
+        </Child44>
+    </Child1>
+</Root>
