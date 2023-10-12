@@ -2,10 +2,28 @@
 
 StudyScene::StudyScene()
 {
-    
+}
+
+StudyScene::~StudyScene()
+{
+}
+
+void StudyScene::Init()
+{
+
     cam = Camera::Create();
     cam->LoadFile("Cam.xml");
     Camera::main = cam;
+
+    /*cube->SetTarget(Color(0, 0, 0, 1));
+
+    sky->Update();
+    map->Update();
+    cube->position = map->Find("None")->GetWorldPos();
+    LIGHT->Set();
+    sky->Render(RESOURCE->shaders.Load("0.SkyCubeMap.hlsl"));
+    map->Render(RESOURCE->shaders.Load("5.CubeMap.hlsl"));
+    D3D->Present();*/
 
     sky = Sky::Create();
     sky->texCube->LoadFile("sunsetcube1024.dds");
@@ -28,14 +46,14 @@ StudyScene::StudyScene()
     inven->LoadFile("Inven_Study.xml"); // 액터를 구성
     inven->LoadInven(); // 인벤을 구성
 
-    sphere = Actor::Create();
-    sphere->LoadFile("Sphere.xml");
+
 
     // 루트모션으로 만들기
     player->Find("mixamorig:Hips")->rootMotion = true;
 
     //인스턴싱 수업
 #pragma region instuncing
+
     //// 인스턴싱
     //for (int i = 0; i < SIZE; i++)
     //{
@@ -83,12 +101,17 @@ StudyScene::StudyScene()
 
     envi = new Environment(1024, 1024); // 환경이미지 크기늘리기
     envi2 = new Environment(1024, 1024); // 수면 굴절 효과를 위한 환경객체2
-    RESOURCE->shaders.Load("0.SkyCubeMap.hlsl")->LoadGeometry();
-    RESOURCE->shaders.Load("4.CubeMap.hlsl")->LoadGeometry();
-    RESOURCE->shaders.Load("5.CubeMap.hlsl")->LoadGeometry();
+    //23.10.12 수정
+    //RESOURCE->shaders.Load("0.SkyCubeMap.hlsl")->LoadGeometry();
+    //RESOURCE->shaders.Load("4.CubeMap.hlsl")->LoadGeometry();
+    //RESOURCE->shaders.Load("5.CubeMap.hlsl")->LoadGeometry();
+    //위 3개의 쉐이더사용 X 새로 추가한 4번 5번 워터맵 쉐이더 사용으로 변경
+    RESOURCE->shaders.Load("4.WaterMap.hlsl")->LoadGeometry();
+    RESOURCE->shaders.Load("5.WaterMap.hlsl")->LoadGeometry();
 
-    // 상수 버퍼 생성
+
     {
+        // 상수 버퍼 생성 23.10.11 추가
         D3D11_BUFFER_DESC desc = { 0 };
         desc.ByteWidth = sizeof(WaterBuffer);
         desc.Usage = D3D11_USAGE_DYNAMIC;
@@ -99,17 +122,31 @@ StudyScene::StudyScene()
         HRESULT hr = D3D->GetDevice()->CreateBuffer(&desc, NULL, &waterBuffer);
         assert(SUCCEEDED(hr));
     }
+    {
+        // 굴절효과(평면방정식)을 응용해야하는 버퍼 평면 버퍼! 23.10.12 추가
+        D3D11_BUFFER_DESC desc = { 0 };
+        desc.ByteWidth = sizeof(Vector4); // 사이즈가 단순히 Vector4형태이다.
+        desc.Usage = D3D11_USAGE_DYNAMIC;
+        desc.BindFlags = D3D11_BIND_CONSTANT_BUFFER;//상수버퍼
+        desc.CPUAccessFlags = D3D11_CPU_ACCESS_WRITE;
+        desc.MiscFlags = 0;
+        desc.StructureByteStride = 0;
+        HRESULT hr = D3D->GetDevice()->CreateBuffer(&desc, NULL, &planeBuffer);
+        assert(SUCCEEDED(hr));
+
+    }
 #pragma endregion
 
-#pragma region Water_Effect
-#pragma endregion
+#pragma region Sample
 
+#pragma endregion
 
 }
 
-StudyScene::~StudyScene()
+void StudyScene::Release()
 {
 #pragma region Water_Effect
+    SafeDelete(envi2);
     SafeDelete(envi);
     water->Release();
 #pragma endregion
@@ -127,38 +164,14 @@ StudyScene::~StudyScene()
     //}
     //actorInstance->Release();
 #pragma endregion
-    cam->Release();
     sky->Release();
     map->Release();
-}
-
-void StudyScene::Init()
-{
-
-
-    /*cube->SetTarget(Color(0, 0, 0, 1));
-
-    sky->Update();
-    map->Update();
-    cube->position = map->Find("None")->GetWorldPos();
-    LIGHT->Set();
-    sky->Render(RESOURCE->shaders.Load("0.SkyCubeMap.hlsl"));
-    map->Render(RESOURCE->shaders.Load("5.CubeMap.hlsl"));
-    D3D->Present();*/
-}
-
-void StudyScene::Release()
-{
-
 }
 
 
 void StudyScene::Update()
 {
-
-    //cube->RenderDetail();
-    shadow->RenderDetail();
-
+    // 카메라 설정
     Camera::main->width = App.GetWidth();
     Camera::main->height = App.GetHeight();
     Camera::main->viewport.width = App.GetWidth();
@@ -166,12 +179,14 @@ void StudyScene::Update()
 
     Camera::main->Update();
     Camera::ControlMainCam();
-
+   
+    // 조명 디테일 확인
     LIGHT->RenderDetail();
+    //cube->RenderDetail();
     ImGui::Text("FPS: %d", TIMER->GetFramePerSecond());
+    ImGui::SliderFloat(" App.deltaScale", &App.deltaScale, 0.0f, 10.0f);
 
     ImGui::Begin("Hierarchy");
-
 #pragma region instuncing
     //actorInstance->RenderHierarchy();
 #pragma endregion
@@ -182,17 +197,14 @@ void StudyScene::Update()
     sky->RenderHierarchy();
     map->RenderHierarchy();
     player->RenderHierarchy();
-    sphere->RenderHierarchy();
     inven->RenderHierarchy();
+    shadow->RenderDetail();
     ImGui::End();
 
-
-    cam->Update();
     sky->Update();
     map->Update();
     player->Update();
     inven->Update();
-    sphere->Update();
     //인스턴싱
 #pragma region instuncing
     //actorInstance->Update();
@@ -211,7 +223,6 @@ void StudyScene::PreRender()
 {
     Camera::main->Set();
     LIGHT->Set();
-
     //환경 맵핑 설정하기 !
     //cube->position = sphere->GetWorldPos();
     //cube->SetTarget(Color(0, 0, 0, 1));
@@ -220,30 +231,69 @@ void StudyScene::PreRender()
     //player->Render(RESOURCE->shaders.Load("4.CubeMap.hlsl"));
 
     // 그림자 매핑 설정하기!
+    shadow->SetRGBTexture(7);
     shadow->SetTarget(player->GetWorldPos());
-    sphere->Render(RESOURCE->shaders.Load("2.ShadowMap.hlsl"));
     player->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 
 #pragma region Water_Effect
     {
-        // 반사맵핑 텍스처
+        // 평면방정식에 사용할 평면 pl 23.10.12 추가
+        Plane pl(water->GetWorldPos(), water->GetUp()); // 윗방향
+        {
+            plane = pl;
+
+            //상수버퍼
+            D3D11_MAPPED_SUBRESOURCE mappedResource;
+            D3D->GetDC()->Map(planeBuffer, 0, D3D11_MAP_WRITE_DISCARD, 0, &mappedResource);
+            memcpy_s(mappedResource.pData, sizeof(Vector4), &plane, sizeof(Vector4));
+            D3D->GetDC()->Unmap(planeBuffer, 0);
+            D3D->GetDC()->VSSetConstantBuffers(6, 1, &planeBuffer);
+        }
+
+        // 반사맵핑 텍스처 23.10.11 추가
         Vector3 Dir = water->GetWorldPos() - Camera::main->GetWorldPos();
         float Distance = Dir.Length();
         Dir.Normalize();
         Vector3 reflect = Vector3::Reflect(Dir, water->GetUp());
         envi->position = (water->GetWorldPos() - reflect * Distance);
         envi->SetTarget(Color(0, 0, 0, 1));
-        sky->Render(RESOURCE->shaders.Load("0.SkyCubeMap.hlsl")); // 배경까지 반사시키려면 주석해제
-        player->Render(RESOURCE->shaders.Load("4.CubeMap.hlsl"));
-        map->Render(RESOURCE->shaders.Load("5.CubeMap.hlsl"));
+
+        // 수정전에는 배경, 플레이어, 맵까지 반사에 넣었는데 필요없어짐!
+        //sky->Render(RESOURCE->shaders.Load("0.SkyCubeMap.hlsl")); // 배경까지 반사시키려면 주석해제
+        //player->Render(RESOURCE->shaders.Load("4.CubeMap.hlsl"));
+        //map->Render(RESOURCE->shaders.Load("5.CubeMap.hlsl"));
+        
+        // 새로 추가한 쉐이더를 플레이어와 터레인에만들어준다!
+        player->Render(RESOURCE->shaders.Load("4.WaterMap.hlsl"));
+        map->Render(RESOURCE->shaders.Load("5.WaterMap.hlsl"));
     }
+
     {
-        // 굴절효과를 위해서 별도 렌더 구간 마련
+        // 평면방정식에 사용할 평면 pl 23.10.12 추가
+        //                              Y축 1더해준이유 > 표면틈새때문에
+        Plane pl(water->GetWorldPos() + Vector3(0, 1, 0), -water->GetUp()); // 아랫방향
+        {
+            //plane = Vector4(0, -1, 0, water->GetWorldPos().y);
+            plane = pl;
+            //상수버퍼
+            D3D11_MAPPED_SUBRESOURCE mappedResource;
+            D3D->GetDC()->Map(planeBuffer, 0, D3D11_MAP_WRITE_DISCARD, 0, &mappedResource);
+            memcpy_s(mappedResource.pData, sizeof(Vector4), &plane, sizeof(Vector4));
+            D3D->GetDC()->Unmap(planeBuffer, 0);
+            D3D->GetDC()->VSSetConstantBuffers(6, 1, &planeBuffer);
+        }
+        // 굴절효과를 위해서 별도 렌더 구간 마련  23.10.11 추가
         envi2->position = Camera::main->GetWorldPos(); // 현재시점위치
         envi2->SetTarget(Color(0, 0, 0, 1));
-        sky->Render(RESOURCE->shaders.Load("0.SkyCubeMap.hlsl"));
-        player->Render(RESOURCE->shaders.Load("4.CubeMap.hlsl"));
-        map->Render(RESOURCE->shaders.Load("5.CubeMap.hlsl"));
+
+        // 수정전에는 배경, 플레이어, 맵까지 반사에 넣었는데 필요없어짐!
+        //sky->Render(RESOURCE->shaders.Load("0.SkyCubeMap.hlsl"));
+        //player->Render(RESOURCE->shaders.Load("4.CubeMap.hlsl"));
+        //map->Render(RESOURCE->shaders.Load("5.CubeMap.hlsl"));
+
+        // 새로 추가한 쉐이더를 플레이어와 터레인에만들어준다!
+        player->Render(RESOURCE->shaders.Load("4.WaterMap.hlsl"));
+        map->Render(RESOURCE->shaders.Load("5.WaterMap.hlsl"));
     }
 #pragma endregion
 }
@@ -252,14 +302,11 @@ void StudyScene::Render()
 {
     Camera::main->Set();
     LIGHT->Set();
-    shadow->SetRGBTexture(7);
 
-    cam->Render();
     sky->Render();
     player->Render();
     map->Render();
     //cube->SetRGBTexture(4);
-    sphere->Render();
     //inven->Render();
     // 인스턴싱
 #pragma region instuncing
@@ -289,8 +336,8 @@ void StudyScene::Render()
 
 void StudyScene::ResizeScreen()
 {
-    cam->width = App.GetWidth();
-    cam->height = App.GetHeight();
-    cam->viewport.width = App.GetWidth();
-    cam->viewport.height = App.GetHeight();
+    Camera::main->width = App.GetWidth();
+    Camera::main->height = App.GetHeight();
+    Camera::main->viewport.width = App.GetWidth();
+    Camera::main->viewport.height = App.GetHeight();
 }

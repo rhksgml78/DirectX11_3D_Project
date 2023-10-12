@@ -117,15 +117,13 @@ float4 PS(PixelInput input) : SV_TARGET
 		
 		normal = normal * 2.0f - 1.0f; // 0.0 ~ 1.0 구간으로 제한
 		
-		reflection.xyz += MappingNormal * 0.01f; // 반사의 좌표를 미세하게 틀어주기
+        reflection.xyz += MappingNormal * 0.03f;
+        reflection = normalize(reflection);
 		
-		reflection = normalize(reflection);
+        float3 Refract = refract(normalize(ViewDir), Normal, 1) + MappingNormal * 0.03f;
 		
-        float3 Refract = refract(normalize(ViewDir), Normal, 1.01f) + MappingNormal*0.01f;
-		
-		// 두개의 임시변수는 0.5로줄어서 두개가 합쳐지면 1이되도록 한것!
-		Envi = TextureBG.Sample(SamplerBG, reflection.xyz) * environment * 0.5f;
-        Envi2 = TextureC.Sample(SamplerC, Refract) * environment * 0.5f;
+        Envi = TextureBG.Sample(SamplerBG, reflection.xyz);
+        Envi2 = TextureC.Sample(SamplerC, Refract);
     }
 	/*
 	refract() 함수를 사용한다! 매개변수3개들어감 float3형태로 i n n
@@ -133,8 +131,8 @@ float4 PS(PixelInput input) : SV_TARGET
 	쉐이더코드에서 굴절률을적용할떄에는 1.01정도가 적당한것같다. 
 	*/
 
-	Result.rgb += Envi + Envi2;
-	
+    Result.rgb = Result.rgb * (1.0f - environment)
+	+ (Envi + Envi2) * environment * 0.5f;
 	
 	BaseColor = Result;
 	

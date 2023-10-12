@@ -30,7 +30,10 @@ cbuffer VS_Shadow : register(b5)
 {
     matrix ShadowVP;
 }
-
+cbuffer VS_ClipPlane : register(b6)
+{
+    float4 ClipPlane;
+}
 
 
 cbuffer GS_VP : register(b0)
@@ -98,6 +101,9 @@ cbuffer PS_ShadowMap : register(b5)
     float2 ShadowSize;
 }
 
+
+
+
 Texture2D TextureN : register(t0);
 SamplerState SamplerN : register(s0);
 
@@ -115,6 +121,7 @@ SamplerState SamplerBG : register(s4);
 
 TextureCube TextureC : register(t5);
 SamplerState SamplerC : register(s5);
+
 
 
 

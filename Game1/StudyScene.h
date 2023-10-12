@@ -8,7 +8,6 @@ private:
 	Sky* sky;
 	Terrain* map;
 	Actor* player;
-	Actor* sphere;
 	class Inven* inven;
 
 	// 그림자
@@ -34,6 +33,9 @@ private:
 	Environment* envi;
 	Environment* envi2;
 	ID3D11Buffer* waterBuffer;
+	ID3D11Buffer* planeBuffer;	// 평면 방정식에 사용할 버퍼가 필요! 23.10.12 추가
+	Vector4 plane; // 평면 23.10.12 추가
+
 #pragma endregion
 
 public:
