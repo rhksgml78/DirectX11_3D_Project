@@ -11,8 +11,8 @@ void BossScene::Init() // 초기화
 	cam->LoadFile("PPTCAMPOS.xml");
 	Camera::main = cam;
 
-	sky = Sky::Create(); // 현재 default = yokohama.dds
-	sky->texCube->LoadFile("sunsetcube1024.dds");
+	sky = Sky::Create();
+	sky->texCube->LoadFile("sunsetcube1024.dds"); // 멀리 산능선이 보이는 해직녘풍경 큐브맵
 
 	map = Terrain::Create();
 	//map->LoadFile("Terrain.xml");
@@ -20,8 +20,7 @@ void BossScene::Init() // 초기화
 	map->showNode = true;
 	map->UpdateMeshUv();
 	map->CreateStructuredBuffer();
-	//그림자가 표현될 수치 적용시키기
-	map->material->shadow = 0.5f; // 변도없을예정인값
+	map->material->shadow = 0.5f; // 그림자가 표현될 수치 적용시키기 (변동없을예정)
 	map->showNode = false;
 
 	for (int i = 0; i < 3; i++) // 임시적으로 장애물 3개 배치할것입니다.
@@ -45,30 +44,31 @@ void BossScene::Init() // 초기화
 	boss->GetBoard()->SetTerrain(map); // 트리 동작용 세팅
 	player->SetTarget(boss->root);
 
-	// 테스트용 몬스터
+	// 테스트용 근접공격형 몬스터
 	monster = new MonsterType1();
 	monster->Init();
 	monster->SetPos(Vector3(50, 0, -100));
-	monster->GetBoard()->SetObj(player->root);
+	monster->GetBoard()->SetObj(player->root); // 트리 동작용 세팅
 	monster->GetBoard()->SetTerrain(map);
 
+	// 테스트용 원거리 공격형 몬스터
 	monster2 = new MonsterType2();
 	monster2->Init();
 	monster2->SetPos(Vector3(-50, 0, -100));
-	monster2->GetBoard()->SetObj(player->root);
+	monster2->GetBoard()->SetObj(player->root); // 트리 동작용 세팅
 	monster2->GetBoard()->SetTerrain(map);
 
 	// 그림자 2,4 그림자맵핑용 쉐이더파일 로드
 	shadow = new Shadow();
-	RESOURCE->shaders.Load("4.ShadowMap.hlsl");
-	RESOURCE->shaders.Load("2.ShadowMap.hlsl");
+	RESOURCE->shaders.Load("4.ShadowMap.hlsl"); // Actor 클래스에 적용가능
+	RESOURCE->shaders.Load("2.ShadowMap.hlsl"); // Terrain 클래스에 적용가능
 
 	// 출력 화면 크기 조절용
 	ResizeScreen();
 
 	// 컷씬 관련
 	isintro = false;
-	Camera::mainCamSpeed = 100.0f;
+	Camera::mainCamSpeed = 100.0f; // 자유시점 이동 속도 지정 ( 런타임중에는 Gui의 메뉴를 이용해주세요 )
 }
 
 void BossScene::Release()
@@ -140,10 +140,12 @@ void BossScene::Update()
 	// 피격에 따른 동작체크용 임시 명령
 	if (INPUT->KeyDown(VK_NUMPAD4))
 	{
-		boss->GetDameged(10);
+		//boss->GetDameged(10);
+		boss->root->anim->ChangeAnimation(AnimationState::ONCE_FIRST, 11);
+
 	}
 
-	Hi(); // 하이어라이키
+	Hi(); // 하이어라이키 - 코드를 줄이려고 함수로 뺐습니다 ( 추가되는 하이어라이키는 하단의 함수에서 추가해주세요! )
 
 	// 업데이트 일괄 실행
 	Camera::main->Update();
@@ -298,18 +300,26 @@ void BossScene::Render() // 2차 렌더 (PreRender이후 진행할 렌더)
 	//for (int i = 0; i < 3; i++)
 	//	map_stone[i]->Render();
 
-	// 보스 상태에 따로 필요한 UI 렌더 조건
-	if (boss->bState != MonsterBoss::Boss_State::INTRO)
-	{
-		gameui->Render();
-		//if(isintro == true && boss->GetHP() > 0)
-		if (boss->bState != MonsterBoss::Boss_State::DEATH) // 보스상태조건으로 변경했습니다.
-			gameui->GetBossBar()->Render();
-	}
+	//// 보스 상태에 따로 필요한 UI 렌더 조건
+	//if (boss->bState != MonsterBoss::Boss_State::INTRO)
+	//{
+	//	gameui->Render();
+	//	//if(isintro == true && boss->GetHP() > 0) // 조건식에 오류가 보입니다 변경하겠습니다.
+	//	if (boss->bState != MonsterBoss::Boss_State::DEATH) // 보스상태조건으로 변경했습니다.
+	//		gameui->GetBossBar()->Render();
+	//}
 
 	// 화면에서 프레임 확인하기용 (프레임 60이하로 떨어지지 않도록 조절해야합니다)
 	DWRITE->RenderText(L"FRAME : " + to_wstring(TIMER->GetFramePerSecond()), 
 		RECT{ 5,5,static_cast<LONG>(App.GetWidth()),static_cast<LONG>(App.GetHeight())});
+
+
+	//DWRITE->RenderText(L"Trail interval : " + to_wstring(boss->GetTrail()->interval),
+	//	RECT{ 200,125,static_cast<LONG>(App.GetWidth()),static_cast<LONG>(App.GetHeight()) },25.0f,
+	//	L"던파 연단된 칼날");
+	//DWRITE->RenderText(L"Trail Count : " + to_wstring(boss->GetTrail()->maxTrail),
+	//	RECT{ 200,155,static_cast<LONG>(App.GetWidth()),static_cast<LONG>(App.GetHeight()) }, 25.0f,
+	//	L"던파 연단된 칼날");
 }
 
 void BossScene::ResizeScreen() // 카메라 화면 크기 조절
@@ -403,6 +413,9 @@ void BossScene::camCheck()
 
 bool BossScene::PlayerAttaks()
 {
+	// 플레이어 다시 만드실생각 있으시면 애니메이션은 타입별로 배열처럼 쓸수있도록 부탁드립니다.
+	// 아래 보스,몬스터 조건처럼
+
 	if (player->root->anim->GetPlayNum() == 2 ||	// STRONG_ATTACK
 		player->root->anim->GetPlayNum() == 7 ||	// NORMAL_ATTACK
 		player->root->anim->GetPlayNum() == 20 ||	// BIG_SIDE_ATTACK
@@ -458,7 +471,12 @@ bool BossScene::Monster2Attacks()
 
 void BossScene::ShadowShaderSet()
 {
-	shadow->SetTarget(player->root->GetWorldPos()); // 그림자는 플레이어 기준으로
+	// 4.ShadowMap.hlsl = Actor 클래스에 적용
+	// 5.ShadowMap.hlsl = Terrain 클래스에 적용
+	// 현재 2개타입 클래스만 그림자적용합니다. 필요시 복사해서 코드를 수정해주세요! (주의. 타입별 넘버링 겹치지 않도록)
+
+	shadow->SetTarget(player->root->GetWorldPos()); // 그림자생성의 기준은 플레이어위치
+
 	player->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 	player->axe->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 	player->sword->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));

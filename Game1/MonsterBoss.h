@@ -137,6 +137,9 @@ public:
 	RocksEffect*	GetRocks2() { return rocks2; }
 	RocksEffectVt*	GetRocks3() { return rocks3; }
 
+	// 트레일정보
+	SlashTrail* GetTrail() { return trail; }
+
 	// Monster를 통해 상속된 가상함수 재정의
 	virtual void Init() override;
 	virtual void Release() override;

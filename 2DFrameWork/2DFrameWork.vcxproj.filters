@@ -116,7 +116,6 @@
     <ClInclude Include="Pop.h">
       <Filter>GameObject</Filter>
     </ClInclude>
-    <ClInclude Include="SlashTrail.h" />
     <ClInclude Include="PostEffect.h">
       <Filter>RenderTarget</Filter>
     </ClInclude>
@@ -158,6 +157,9 @@
     </ClInclude>
     <ClInclude Include="Deferred.h">
       <Filter>RenderTarget</Filter>
+    </ClInclude>
+    <ClInclude Include="SlashTrail.h">
+      <Filter>GameEffect</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -304,7 +306,6 @@
     <ClCompile Include="Pop.cpp">
       <Filter>GameObject</Filter>
     </ClCompile>
-    <ClCompile Include="SlashTrail.cpp" />
     <ClCompile Include="PostEffect.cpp">
       <Filter>RenderTarget</Filter>
     </ClCompile>
@@ -346,6 +347,9 @@
     </ClCompile>
     <ClCompile Include="Deferred.cpp">
       <Filter>RenderTarget</Filter>
+    </ClCompile>
+    <ClCompile Include="SlashTrail.cpp">
+      <Filter>GameEffect</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
