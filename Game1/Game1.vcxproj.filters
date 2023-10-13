@@ -138,6 +138,9 @@
     <ClInclude Include="GameUI.h">
       <Filter>Actors\OtherUi</Filter>
     </ClInclude>
+    <ClInclude Include="DeferredTestScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Scene2.cpp">
@@ -275,6 +278,9 @@
     </ClCompile>
     <ClCompile Include="Solar.cpp">
       <Filter>Actors\OtherUi</Filter>
+    </ClCompile>
+    <ClCompile Include="DeferredTestScene.cpp">
+      <Filter>Scenes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

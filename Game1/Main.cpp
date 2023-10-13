@@ -27,18 +27,22 @@ void Main::Init()
     //SCENE->AddScene("LOADING", new LoadingScene());
     //SCENE->ChangeScene("LOADING")->Init();
 
-    /*SCENE->AddScene("Scene2", new Scene2());
-    SCENE->ChangeScene("Scene2")->Init();*/
+    //SCENE->AddScene("Scene2", new Scene2());
+    //SCENE->ChangeScene("Scene2")->Init();
 
-    SCENE->AddScene("STUDY", new StudyScene());
-    SCENE->ChangeScene("STUDY")->Init();
+    //SCENE->AddScene("STUDY", new StudyScene());
+    //SCENE->ChangeScene("STUDY")->Init();
     
     //SCENE->AddScene("SKH_TEST", new SKH_TestScene());
     //SCENE->ChangeScene("SKH_TEST")->Init();
 
-    //// Å×½ºÆ®¾À
-    //SCENE->AddScene("BossScene", new BossScene());
-    //SCENE->ChangeScene("BossScene")->Init();
+    // PPTÁ¤¸®¿ë¾À
+    SCENE->AddScene("BossScene", new BossScene());
+    SCENE->ChangeScene("BossScene")->Init();
+
+    // µðÆÛµå·»´õ
+    //SCENE->AddScene("Defferd", new DeferredTestScene());
+    //SCENE->ChangeScene("Defferd")->Init();
 }
 
 void Main::Release()

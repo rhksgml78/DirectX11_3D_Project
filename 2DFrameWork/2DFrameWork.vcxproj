@@ -167,6 +167,7 @@
     <ClInclude Include="Collider.h" />
     <ClInclude Include="CubeRenderTarget.h" />
     <ClInclude Include="DeathEffect.h" />
+    <ClInclude Include="Deferred.h" />
     <ClInclude Include="DepthState.h" />
     <ClInclude Include="Dijkstra.h" />
     <ClInclude Include="Direct3D11.h" />
@@ -222,6 +223,7 @@
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="CubeRenderTarget.cpp" />
     <ClCompile Include="DeathEffect.cpp" />
+    <ClCompile Include="Deferred.cpp" />
     <ClCompile Include="DepthState.cpp" />
     <ClCompile Include="Dijkstra.cpp" />
     <ClCompile Include="Direct3D11.cpp" />

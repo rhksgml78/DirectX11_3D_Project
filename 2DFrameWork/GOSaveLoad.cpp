@@ -96,7 +96,6 @@ void GameObject::SaveObject(Xml::XMLElement* This, Xml::XMLDocument* doc)
 		This->LinkEndChild(Mesh);
 		Mesh->SetAttribute("File", mesh->file.c_str());
 
-		//09.22 추가
 		if (mesh->instanceBuffer)
 		{
 			Xml::XMLElement* Instance = doc->NewElement("Instance");
@@ -104,6 +103,7 @@ void GameObject::SaveObject(Xml::XMLElement* This, Xml::XMLDocument* doc)
 			mesh->SaveInstanceFile(mesh->instanceFile);
 			Instance->SetAttribute("File", mesh->instanceFile.c_str());
 		}
+
 	}
 	if (shader)
 	{
@@ -284,16 +284,19 @@ void GameObject::LoadObject(Xml::XMLElement* This)
 	if (component = This->FirstChildElement("Mesh"))
 	{
 		file = component->Attribute("File");
-		SafeReset(mesh);
-		mesh = RESOURCE->meshes.Load(file);
-
-		//09.22 추가
-		Xml::XMLElement* component2;
-		if (component2 = This->FirstChildElement("Instance"))
+		if (file.size() > 0)
 		{
-			mesh->instanceFile = component2->Attribute("File");
-			mesh->LoadInstanceFile(mesh->instanceFile);
+			SafeReset(mesh);
+			mesh = RESOURCE->meshes.Load(file);
+
+			Xml::XMLElement* component2;
+			if (component2 = This->FirstChildElement("Instance"))
+			{
+				mesh->instanceFile = component2->Attribute("File");
+				mesh->LoadInstanceFile(mesh->instanceFile);
+			}
 		}
+
 	}
 	if (component = This->FirstChildElement("Shader"))
 	{
@@ -497,7 +500,6 @@ void GameObject::LoadObject(Xml::XMLElement* This)
 		}
 	}
 }
-
 void GameObject::CopyChild(GameObject* src)
 {
 	//내가 이미 생성된후
@@ -557,7 +559,7 @@ void GameObject::CopyChild(GameObject* src)
 		Child->parent = this;
 		children[Child->name] = Child;
 		//테이블연결
-		root->AddChild(Child);
+		this->AddChild(Child);
 		//자식의 재귀호출
 		Child->CopyChild(srcChild);
 	}

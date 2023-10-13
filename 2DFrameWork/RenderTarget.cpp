@@ -1,6 +1,6 @@
 #include "framework.h"
 
-void RenderTarget::CreateBackBuffer(float width, float height)
+void RenderTarget::CreateBackBuffer(float width, float height, bool stencil)
 {
     //Create rgb
     HRESULT hr;
@@ -45,7 +45,7 @@ void RenderTarget::CreateBackBuffer(float width, float height)
         desc.Height = this->height;
         desc.MipLevels = 1;
         desc.ArraySize = 1;
-        desc.Format = DXGI_FORMAT_R32_TYPELESS;
+        desc.Format = stencil ? DXGI_FORMAT_R24G8_TYPELESS : DXGI_FORMAT_R32_TYPELESS;
         desc.SampleDesc.Count = 1;
         desc.BindFlags = D3D11_BIND_SHADER_RESOURCE | D3D11_BIND_DEPTH_STENCIL;
         hr = D3D->GetDevice()->CreateTexture2D(&desc, nullptr, &depth);
@@ -55,7 +55,7 @@ void RenderTarget::CreateBackBuffer(float width, float height)
     {//Create DSV
         D3D11_DEPTH_STENCIL_VIEW_DESC desc;
         ZeroMemory(&desc, sizeof(D3D11_DEPTH_STENCIL_VIEW_DESC));
-        desc.Format = DXGI_FORMAT_D32_FLOAT;
+        desc.Format = stencil ? DXGI_FORMAT_D24_UNORM_S8_UINT : DXGI_FORMAT_D32_FLOAT;
         desc.ViewDimension = D3D11_DSV_DIMENSION_TEXTURE2D;
         desc.Texture2D.MipSlice = 0;
 
@@ -66,7 +66,7 @@ void RenderTarget::CreateBackBuffer(float width, float height)
     {
         D3D11_SHADER_RESOURCE_VIEW_DESC desc;
         ZeroMemory(&desc, sizeof(D3D11_SHADER_RESOURCE_VIEW_DESC));
-        desc.Format = DXGI_FORMAT_R32_FLOAT;
+        desc.Format = stencil ? DXGI_FORMAT_R24_UNORM_X8_TYPELESS : DXGI_FORMAT_R32_FLOAT;
         desc.ViewDimension = D3D11_SRV_DIMENSION_TEXTURE2D;
         desc.Texture2D.MipLevels = 1;
         hr = D3D->GetDevice()->CreateShaderResourceView(depth, &desc, &depthResource);
@@ -98,10 +98,10 @@ void RenderTarget::DeleteBackBuffer()
     SafeRelease(depth);
 }
 
-RenderTarget::RenderTarget(UINT width, UINT height)
+RenderTarget::RenderTarget(UINT width, UINT height, bool stencil)
     : width(width), height(height)
 {
-    CreateBackBuffer(width, height);
+    CreateBackBuffer(width, height, stencil);
 }
 
 RenderTarget::~RenderTarget()
@@ -117,7 +117,7 @@ void RenderTarget::SetTarget(Color clear)
 
 void RenderTarget::SetRGBTexture(int slot)
 {
-    D3D->GetDC()->PSSetShaderResources(slot,1, &rgbResource);
+    D3D->GetDC()->PSSetShaderResources(slot, 1, &rgbResource);
     D3D->GetDC()->PSSetSamplers(slot, 1, &sampler);
 }
 

@@ -156,6 +156,9 @@
     <ClInclude Include="RoarEffect.h">
       <Filter>GameEffect</Filter>
     </ClInclude>
+    <ClInclude Include="Deferred.h">
+      <Filter>RenderTarget</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="System">
@@ -340,6 +343,9 @@
     </ClCompile>
     <ClCompile Include="RoarEffect.cpp">
       <Filter>GameEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="Deferred.cpp">
+      <Filter>RenderTarget</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

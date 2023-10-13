@@ -78,6 +78,8 @@ extern PostEffect* post;
 #include "BossScene.h"
 #include "SKH_TestScene.h"
 #include "StudyScene.h"
+#include "DeferredTestScene.h"
+
 
 
 

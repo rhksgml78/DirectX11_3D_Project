@@ -137,6 +137,8 @@ extern Application App;//Extern Global
 #include "Environment.h"
 #include "Shadow.h"
 #include "PostEffect.h"
+#include "Deferred.h"
+
 
 // 효과 이펙트
 #include "ExploedEffect.h"

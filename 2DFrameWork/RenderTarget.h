@@ -1,7 +1,9 @@
 #pragma once
 class RenderTarget
 {
+    friend class Deferred;
 protected:
+
     int width, height;
 
     ID3D11Texture2D* rgb;
@@ -16,14 +18,14 @@ protected:
     ID3D11ShaderResourceView* depthResource;
 
     ID3D11SamplerState* sampler;
-    
+
     //창사이즈 조절
-    void CreateBackBuffer(float width, float height);
+    void CreateBackBuffer(float width, float height, bool stencil = false);
     void DeleteBackBuffer();
 
 public:
     RenderTarget(UINT width = App.GetWidth(),
-        UINT height = App.GetHeight());
+        UINT height = App.GetHeight(), bool stencil = false);
     ~RenderTarget();
 
 

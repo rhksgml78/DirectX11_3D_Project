@@ -72,6 +72,8 @@ cbuffer PS_DirLight : register(b2)
     float4 DirLight;
     float4 DirColor;
 }
+
+
 #define MAX_LIGHT 16
 struct Light
 {
