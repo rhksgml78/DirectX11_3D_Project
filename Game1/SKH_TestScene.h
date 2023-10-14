@@ -2,32 +2,17 @@
 class SKH_TestScene : public Scene
 {
 private:
-	//Grid* grid;
+	Camera* cam;
+	Sky* sky;
+	Shadow* shadow;
 	Terrain* map;
 
-	Camera* cam;
-
+	// Actor (Player & Boss)
 	MonsterBoss* boss;
+	APlayer* player; // 플레이어 대체 액터
 
-	Actor* player;
-	//APlayer* player;
-	float temp = 0.0f;
-
-	MonsterType1* monster[MONSTERNUM];
-	MonsterType1* monsterClone;
-	MonsterType2* monster2[MONSTERNUM];
-
-	bool	isintro;
-	int		introcount = 0;
-	float	camtimer = 0;
-
-
-
-	GameUI* gameui;
-
-	// 그림자
-	Shadow* shadow;
-	//Shadow* shadow2;
+	MonsterType1* monster;
+	MonsterType2* monster2;
 
 public:
 	SKH_TestScene();
@@ -40,9 +25,7 @@ public:
 	virtual void PreRender() override;
 	virtual void ResizeScreen() override;
 
-	void move();
-	void camAction(); // CreateLookAt함수를 사용한 카메라시점변경및 움직임 구현
-	void camCheck();
-	void lookAtrotation(); // CreateLookAt함수를 사용한 플레이어의 3D 각도 변경 구현
+	void RenderTexture();
+
 };
 

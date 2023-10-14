@@ -5,6 +5,7 @@ class MonsterBoss : public Monster
 public:
 	enum class Boss_State
 	{
+		NONE,
 		INTRO,
 		NORMAL,
 		HIT,
@@ -188,6 +189,9 @@ public:
 
 	// 옵저버 관련
 	void SetObs(IObserver* obs) { atkSub->AddObserver(obs); }
+
+	// 스킬 타입 세팅
+	void SetSkills(int type) { skilltype = type; } // 0번 직선 공격, 1번 원형 공격
 
 };
 

@@ -33,12 +33,12 @@ void Main::Init()
     //SCENE->AddScene("STUDY", new StudyScene());
     //SCENE->ChangeScene("STUDY")->Init();
     
-    //SCENE->AddScene("SKH_TEST", new SKH_TestScene());
-    //SCENE->ChangeScene("SKH_TEST")->Init();
+    SCENE->AddScene("SKH_TEST", new SKH_TestScene());
+    SCENE->ChangeScene("SKH_TEST")->Init();
 
-    // PPTÁ¤¸®¿ë¾À
-    SCENE->AddScene("BossScene", new BossScene());
-    SCENE->ChangeScene("BossScene")->Init();
+    // º¸½º½ºÅ×ÀÌÁö¾À
+    //SCENE->AddScene("BossScene", new BossScene());
+    //SCENE->ChangeScene("BossScene")->Init();
 
     // µðÆÛµå·»´õ
     //SCENE->AddScene("Defferd", new DeferredTestScene());

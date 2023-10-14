@@ -3,9 +3,9 @@
     <Animations AnimSize="8" File0="monster_scream/monster_scream0.anim" File1="monster_idle/monster_idle0.anim" File2="monster_move/monster_move0.anim" File3="monster_hit/monster_hit0.anim" File4="monster_death/monster_death0.anim" File5="monster_attack_hand/monster_attack_hand0.anim" File6="monster_attack_hand2/monster_attack_hand20.anim" File7="monster_attack_kick/monster_attack_kick0.anim"/>
     <Shader File="4.cube.hlsl"/>
     <Transform>
-        <Position X="-100" Y="0" Z="-250"/>
+        <Position X="50" Y="0" Z="-100"/>
         <Scale X="0.1" Y="0.1" Z="0.1"/>
-        <Rotation X="0" Y="1.5707964" Z="0"/>
+        <Rotation X="0" Y="0" Z="0"/>
     </Transform>
     <Children Size="1"/>
     <Child0 Name="Offset" Visible="true" ObType="0" BoneIndex="1">

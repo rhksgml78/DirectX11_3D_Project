@@ -4,6 +4,7 @@ class MonsterType1 : public Monster
 public:
 	enum class Monster_State
 	{
+		NONE,
 		STANDBY,
 		NORMAL,
 		MOVE,

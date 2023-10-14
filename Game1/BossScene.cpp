@@ -77,8 +77,8 @@ void BossScene::Release()
 	SafeDelete(shadow);
 
 	// 테스트용 몬스터
-	SafeDelete(monster);
 	SafeDelete(monster2);
+	SafeDelete(monster);
 
 	SafeDelete(boss);
 	SafeDelete(player);
