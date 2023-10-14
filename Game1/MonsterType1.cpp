@@ -53,7 +53,7 @@ void MonsterType1::Init()
 	trail->interval = 0.002f;
 	trail->maxTrail = 50;
 	trail->material->diffuseMap = RESOURCE->textures.Load("../Texture/slashtrail.png");
-	trail->material->diffuse = Color(0.25, 0.25, 0.25, 1.0);
+	trail->material->diffuse = Color(0.5, 0.5, 0.5, 1.0);
 	trailEffect = true;
 	/*
 	트레일은 2곳에 있음
@@ -130,7 +130,7 @@ void MonsterType1::Update()
 		{
 			dusteffect->Play(); // 5번 anim 바닥 찍기 충격파
 			dusteffect->SetPos(root->GetWorldPos());
-			dusteffect->SetPosX(root->GetLocalPos().x + 10); // 충격파 위치 조절
+			dusteffect->SetPosZ(root->GetLocalPos().z + 10); // 충격파 위치 조절
 		}
 	}
 
@@ -271,8 +271,12 @@ void MonsterType1::death() // 외부에서 사망조건으로 진입시 실행
 			deatheffect->Play();
 		}
 	}
-	root->Find("PumpkinHulk")->material->ambient = Color(deathcolor, deathcolor, deathcolor, 1.0f);
-	root->Find("PumpkinHulk")->material->diffuse = Color(deathcolor, deathcolor, deathcolor, 1.0f);
+	if (deathcolor < 0.4f)
+	{
+		root->Find("PumpkinHulk")->material->ambient = Color(deathcolor, deathcolor, deathcolor, 1.0f);
+		root->Find("PumpkinHulk")->material->diffuse = Color(deathcolor, deathcolor, deathcolor, 1.0f);
+	}
+
 	if (deathcolor <= 0.0f)
 	{
 		root->visible = false;

@@ -76,6 +76,7 @@ public:
 	const Vector3	GetLastPos() { return lastPos; }
 	Actor*			GetObj() { return root; }
 	Ray				GetRay() { return rayToTarget; }
+	BloodEffect*	GetBloodEffect() { return bloodeffect; }
 
 	void			SetState() { this->mState = mState; }
 

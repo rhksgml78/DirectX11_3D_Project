@@ -119,6 +119,7 @@ public:
 	const Vector3	GetLastPos()	{ return lastPos; }
 	Actor*			GetObj()		{ return root; }
 	Ray				GetRay()		{ return rayToTarget; }
+	int				GetSkillType()	{ return skilltype;}
 
 	void			SetState() { this->bState = bState;}
 
@@ -191,7 +192,7 @@ public:
 	void SetObs(IObserver* obs) { atkSub->AddObserver(obs); }
 
 	// 스킬 타입 세팅
-	void SetSkills(int type) { skilltype = type; } // 0번 직선 공격, 1번 원형 공격
+	void SetSkills(int type) { skilltype = type; isskill = true; } // 0번 직선 공격, 1번 원형 공격
 
 };
 

@@ -9,7 +9,8 @@ private:
 
 	// Actor (Player & Boss)
 	MonsterBoss* boss;
-	APlayer* player; // 플레이어 대체 액터
+	//APlayer* player; // 플레이어 대체 액터
+	Actor* player2; // 플레이어 대체 액터
 
 	MonsterType1* monster;
 	MonsterType2* monster2;
