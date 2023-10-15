@@ -32,17 +32,18 @@ void Main::Init()
 
     //SCENE->AddScene("STUDY", new StudyScene());
     //SCENE->ChangeScene("STUDY")->Init();
-    
-    SCENE->AddScene("SKH_TEST", new SKH_TestScene());
-    SCENE->ChangeScene("SKH_TEST")->Init();
 
-    // 보스스테이지씬
+    // 보스스테이지 씬
     //SCENE->AddScene("BossScene", new BossScene());
     //SCENE->ChangeScene("BossScene")->Init();
 
-    // 디퍼드렌더
+    // 디퍼드렌더 테스트
     //SCENE->AddScene("Defferd", new DeferredTestScene());
     //SCENE->ChangeScene("Defferd")->Init();
+
+    // 개인 테스트 전용 씬
+    SCENE->AddScene("SKH_TEST", new SKH_TestScene());
+    SCENE->ChangeScene("SKH_TEST")->Init();
 }
 
 void Main::Release()

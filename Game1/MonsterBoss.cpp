@@ -303,9 +303,8 @@ void MonsterBoss::Render()
 void MonsterBoss::RenderHierarchy()
 {
 	root->RenderHierarchy();
-	roareffect->RenderHierarchy();
-	trail->RenderDetail();
-
+	//roareffect->RenderHierarchy();
+	//trail->RenderDetail();
 	//Skill_Circle_Col->RenderHierarchy();
 	//Skill_Line_Col->RenderHierarchy();
 	//effect->RenderHierarchy();

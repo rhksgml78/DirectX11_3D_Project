@@ -117,8 +117,7 @@ void Shadow::RenderDetail()
     }
     ImGui::SliderFloat("ShadowBias", &desc.ShadowBias, -0.1f, 0.1f);
     ImGui::SliderInt("Quality", &desc.ShadowQuality, 0, 1);
-
-    ImVec2 size(400, 400);
+    ImVec2 size(200, 200);
     ImGui::Image((void*)rgbResource, size);
     ImGui::End();
 }

@@ -27,16 +27,18 @@ void SKH_TestScene::Init()
 	map->showNode = false;
 
 	//임시 플레이어 - 현재 단순한 움직임만 가능하며 카메라모션은 모두 주석처리상태
-	//player = new APlayer();
-	//player->Init();
-	player2 = Actor::Create("Player_Sample");
-	player2->LoadFile("TestScenePlayer.xml");
+	player = new APlayer();
+	player->Init();
+	player->root->name = "Player";
+	//player2 = Actor::Create("Player_Sample");
+	//player2->LoadFile("TestScenePlayer.xml");
 
 	// 보스
 	boss = new MonsterBoss();
 	boss->Init();
+	boss->root->name = "BOSS";
 	boss->root->SetWorldPos(Vector3(0, 0, -250));
-	boss->GetBoard()->SetObj(player2->root); // 트리 동작용 세팅
+	boss->GetBoard()->SetObj(player->root); // 트리 동작용 세팅
 	boss->GetBoard()->SetTerrain(map); // 트리 동작용 세팅
 	boss->bState = MonsterBoss::Boss_State::NONE;
 	boss->root->anim->ChangeAnimation(AnimationState::LOOP, 1);
@@ -46,8 +48,9 @@ void SKH_TestScene::Init()
 	// 테스트용 근접공격형 몬스터
 	monster = new MonsterType1();
 	monster->Init();
+	monster->root->name = "MONSTER_TYPE1";
 	monster->SetPos(Vector3(50, 0, -100));
-	monster->GetBoard()->SetObj(player2->root); // 트리 동작용 세팅
+	monster->GetBoard()->SetObj(player->root); // 트리 동작용 세팅
 	monster->GetBoard()->SetTerrain(map);
 	monster->mState = MonsterType1::Monster_State::NONE;
 	monster->root->anim->ChangeAnimation(AnimationState::LOOP, 1);
@@ -55,8 +58,9 @@ void SKH_TestScene::Init()
 	// 테스트용 원거리 공격형 몬스터
 	monster2 = new MonsterType2();
 	monster2->Init();
+	monster2->root->name = "MONSTER_TYPE2";
 	monster2->SetPos(Vector3(-50, 0, -100));
-	monster2->GetBoard()->SetObj(player2->root); // 트리 동작용 세팅
+	monster2->GetBoard()->SetObj(player->root); // 트리 동작용 세팅
 	monster2->GetBoard()->SetTerrain(map);
 	monster2->mState = MonsterType2::Monster_State::NONE;
 	monster2->root->anim->ChangeAnimation(AnimationState::LOOP, 0);
@@ -73,7 +77,7 @@ void SKH_TestScene::Init()
 	// 출력 화면 크기 조절용
 	ResizeScreen();
 	
-	Camera::mainCamSpeed = 100.0f; // 자유시점 이동 속도 지정 ( 런타임중에는 Gui의 메뉴를 이용해주세요 )
+	Camera::mainCamSpeed = 30.0f; // 자유시점 이동 속도 지정 ( 런타임중에는 Gui의 메뉴를 이용해주세요 )
 }
 
 void SKH_TestScene::Release()
@@ -86,9 +90,9 @@ void SKH_TestScene::Release()
 	SafeDelete(monster);
 
 	SafeDelete(boss);
-	//SafeDelete(player);
+	SafeDelete(player);
 
-	player2->Release();
+	//player2->Release();
 	map->Release();
 	sky->Release();
 	cam->Release();
@@ -101,29 +105,27 @@ void SKH_TestScene::Update()
 	ImGui::SliderFloat("CAMSPEED", &Camera::mainCamSpeed, 0.0f, 100.0f);
 
 
-
-
 	// 하이어라이키
-	shadow->RenderDetail();
 	if (ImGui::Begin("Hierarchy"))
 	{
 		Camera::main->RenderHierarchy();
 		sky->RenderHierarchy();
-		map->RenderHierarchy();
 		boss->RenderHierarchy();
-		//player->RenderHierarchy();
-		player2->RenderHierarchy();
+		//player2->RenderHierarchy();
 		monster->RenderHierarchy();
 		monster2->RenderHierarchy();
 		ImGui::End();
 	}
+	shadow->RenderDetail();
+	player->RenderHierarchy();
+	map->RenderHierarchy();
 
 	// 객체들 업데이트
 	Camera::main->Update();
 	sky->Update();
 	map->Update();
-	//player->Update();
-	player2->Update();
+	player->Update();
+	//player2->Update();
 	boss->Update();
 	monster->Update();
 	monster2->Update();
@@ -138,24 +140,23 @@ void SKH_TestScene::LateUpdate()
 void SKH_TestScene::PreRender()
 {
 	// 프리렌더에서 그림자먼저 렌더링 한다음 렌더진행
-		// 4.ShadowMap.hlsl = Actor 클래스에 적용
+	// 4.ShadowMap.hlsl = Actor 클래스에 적용
 	// 5.ShadowMap.hlsl = Terrain 클래스에 적용
 	// 현재 2개타입 클래스만 그림자적용합니다. 필요시 복사해서 코드를 수정해주세요! (주의. 타입별 넘버링 겹치지 않도록)
 
-	shadow->SetTarget(player2->root->GetWorldPos()); // 그림자생성의 기준은 플레이어위치
 	// 플레이어쪽 그림자들
-	//shadow->SetTarget(player->root->GetWorldPos()); // 그림자생성의 기준은 플레이어위치
-	//player->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
-	//player->axe->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
-	//player->sword->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
-	//player->Lefthand->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
+	shadow->SetTarget(player->root->GetWorldPos()); // 그림자생성의 기준은 플레이어위치
+	player->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
+	player->axe->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
+	player->sword->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
+	player->Lefthand->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 	// 보스와 스킬이펙트 그림자들
-	//boss->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
+	boss->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 	//boss->GetRocks1()->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 	//boss->GetRocks2()->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 	//boss->GetRocks3()->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 	// 몬스터 그림자
-	//monster->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
+	monster->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 	monster2->root->Render(RESOURCE->shaders.Load("4.ShadowMap.hlsl"));
 	// 높낮이있을경우 맵에도 그림자 생성
 	map->Render(RESOURCE->shaders.Load("5.ShadowMap.hlsl"));
@@ -170,14 +171,22 @@ void SKH_TestScene::Render()
 	// 멤버들 렌더
 	sky->Render();
 	map->Render();
-	//boss->Render();
-	//player->Render();
+	boss->Render();
+	player->Render();
 	//player2->Render();
-	//monster->Render();
+	monster->Render();
 	monster2->Render();
 
 	// DWrite Rendering
-	RenderTexture();
+	
+	// 몬스터 이펙트 적용 출력 테스트
+	//RenderTexture();
+
+	// 큐브맵 변경 테스트
+	//ChangeCubemap();
+
+	// 그림자 관련 텍스트 출력
+	ShadowDwrite();
 }
 
 void SKH_TestScene::ResizeScreen()
@@ -403,4 +412,85 @@ void SKH_TestScene::RenderTexture()
 #pragma endregion
 
 	DWRITE->RenderText(temp,RECT{ 200,125,static_cast<LONG>(App.GetWidth()),static_cast<LONG>(App.GetHeight()) },25.0f);
+}
+
+void SKH_TestScene::ChangeCubemap()
+{
+	if (INPUT->KeyDown(VK_NUMPAD0))
+	{
+		mapchange = !mapchange;
+	}
+	if (mapchange)
+	{
+		cam->rotation.y += Camera::mainCamSpeed * TORADIAN * DELTA;
+
+		if (TIMER->GetTick(zerotimer, 2.5f))
+		{
+			count++;
+			if (count > 3)
+			{
+				count = 0;
+			}
+		}
+
+		switch (count)
+		{
+		case 0:
+		{
+			sky->texCube->LoadFile("sunsetcube1024.dds"); // 멀리 산능선이 보이는 해직녘풍경 큐브맵
+			backgroundname = L"Cube Map Style : SunSet";
+		}
+		break;
+		case 1:
+		{
+			sky->texCube->LoadFile("desertcube1024.dds"); // 멀리 산능선이 보이는 해직녘풍경 큐브맵
+			backgroundname = L"Cube Map Style : Desert";
+		}
+		break;
+		case 2:
+		{
+			sky->texCube->LoadFile("grasscube1024.dds"); // 멀리 산능선이 보이는 해직녘풍경 큐브맵
+			backgroundname = L"Cube Map Style : Grass";
+		}
+		break;
+		case 3:
+		{
+			sky->texCube->LoadFile("snowcube1024.dds"); // 멀리 산능선이 보이는 해직녘풍경 큐브맵
+			backgroundname = L"Cube Map Style : Snow";
+		}
+		break;
+		}
+	}
+	
+
+
+
+	DWRITE->RenderText(backgroundname, RECT{ 200,125,static_cast<LONG>(App.GetWidth()),static_cast<LONG>(App.GetHeight()) }, 25.0f
+	,L"던파 연단된 칼날");
+
+}
+
+void SKH_TestScene::ShadowDwrite() // 그림자정보 관련 출력 함수
+{
+
+	DWRITE->RenderText(L"그림자 출력 범위 : "+to_wstring((int)shadow->range), 
+		RECT{200,125,static_cast<LONG>(App.GetWidth()),static_cast<LONG>(App.GetHeight())}, 25.0f
+		, L"던파 연단된 칼날");
+
+	DWRITE->RenderText(L"그림자 Texture 크기" + to_wstring((int)shadow->GetTextureSize()), 
+		RECT{ 200,155,static_cast<LONG>(App.GetWidth()),static_cast<LONG>(App.GetHeight()) }, 25.0f
+		, L"던파 연단된 칼날");
+	switch (shadow->GetQuality())
+	{
+	case 0:
+		DWRITE->RenderText(L"Texture 필터 : MIN_MAG_MIP_POINT", 
+			RECT{ 200,185,static_cast<LONG>(App.GetWidth()),static_cast<LONG>(App.GetHeight()) }, 25.0f
+			, L"던파 연단된 칼날");
+		break;
+	case 1:
+		DWRITE->RenderText(L"Texture 필터 : MIN_MAG_MIP_LINEAR", 
+			RECT{ 200,185,static_cast<LONG>(App.GetWidth()),static_cast<LONG>(App.GetHeight()) }, 25.0f
+			, L"던파 연단된 칼날");
+		break;
+	}
 }

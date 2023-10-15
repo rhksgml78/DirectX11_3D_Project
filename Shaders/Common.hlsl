@@ -437,6 +437,9 @@ float4 AddShadow(float4 BaseColor, float4 vPosition)
         }
         factor = sum / 9.0f; // 멀티샘플링 (ex.안티앨리어싱, Blur에서 비슷하게사용했었다)
     }
+    //BaseColor.r = colorr;
+    //BaseColor.g = colorg;
+    //BaseColor.b = colorb;
     factor = max(0.5f, factor);
     BaseColor.rgb = saturate(BaseColor.rgb * factor);
     

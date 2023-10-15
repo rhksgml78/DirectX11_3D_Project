@@ -249,28 +249,28 @@ void Camera::ControlMainCam()
 {
     if (not main) return;
 
-	if (INPUT->KeyPress('W'))
+	if (INPUT->KeyPress('I'))
 	{
 		//                                  초당100움직임 xyz/s
 		main->MoveWorldPos(main->GetForward() * DELTA * mainCamSpeed);
 	}
-	if (INPUT->KeyPress('S'))
+	if (INPUT->KeyPress('K'))
 	{
 		main->MoveWorldPos(-main->GetForward() * DELTA * mainCamSpeed);
 	}
-	if (INPUT->KeyPress('A'))
+	if (INPUT->KeyPress('J'))
 	{
 		main->MoveWorldPos(-main->GetRight() * DELTA * mainCamSpeed);
 	}
-	if (INPUT->KeyPress('D'))
+	if (INPUT->KeyPress('L'))
 	{
 		main->MoveWorldPos(main->GetRight() * DELTA * mainCamSpeed);
 	}
-	if (INPUT->KeyPress('Q'))
+	if (INPUT->KeyPress('U'))
 	{
 		main->MoveWorldPos(-main->GetUp() * DELTA * mainCamSpeed);
 	}
-	if (INPUT->KeyPress('E'))
+	if (INPUT->KeyPress('O'))
 	{
 		main->MoveWorldPos(main->GetUp() * DELTA * mainCamSpeed);
 	}

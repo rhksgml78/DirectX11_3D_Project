@@ -19,6 +19,7 @@ protected:
 
     ID3D11SamplerState* sampler;
 
+protected:
     //창사이즈 조절
     void CreateBackBuffer(float width, float height, bool stencil = false);
     void DeleteBackBuffer();

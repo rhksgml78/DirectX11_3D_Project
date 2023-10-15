@@ -9,11 +9,16 @@ private:
 
 	// Actor (Player & Boss)
 	MonsterBoss* boss;
-	//APlayer* player; // 플레이어 대체 액터
-	Actor* player2; // 플레이어 대체 액터
+	APlayer* player; // 플레이어 대체 액터
+	//Actor* player2; // 플레이어 대체 액터
 
 	MonsterType1* monster;
 	MonsterType2* monster2;
+
+	wstring backgroundname = L"Cube Map Style : ";
+	float zerotimer = 0.0f;
+	int count = 0;
+	bool mapchange = false;
 
 public:
 	SKH_TestScene();
@@ -27,6 +32,8 @@ public:
 	virtual void ResizeScreen() override;
 
 	void RenderTexture();
+	void ChangeCubemap();
+	void ShadowDwrite();
 
 };
 

@@ -7,8 +7,8 @@ BossScene::~BossScene() { }
 void BossScene::Init() // 초기화
 {
 	cam = Camera::Create();
-	//cam->LoadFile("BossSceneCam.xml");
-	cam->LoadFile("PPTCAMPOS.xml");
+	cam->LoadFile("BossSceneCam.xml");
+	//cam->LoadFile("PPTCAMPOS.xml");
 	Camera::main = cam;
 
 	sky = Sky::Create();
@@ -47,14 +47,14 @@ void BossScene::Init() // 초기화
 	// 테스트용 근접공격형 몬스터
 	monster = new MonsterType1();
 	monster->Init();
-	monster->SetPos(Vector3(50, 0, -100));
+	monster->SetPos(Vector3(5000, 0, -100));
 	monster->GetBoard()->SetObj(player->root); // 트리 동작용 세팅
 	monster->GetBoard()->SetTerrain(map);
 
 	// 테스트용 원거리 공격형 몬스터
 	monster2 = new MonsterType2();
 	monster2->Init();
-	monster2->SetPos(Vector3(-50, 0, -100));
+	monster2->SetPos(Vector3(-5000, 0, -100));
 	monster2->GetBoard()->SetObj(player->root); // 트리 동작용 세팅
 	monster2->GetBoard()->SetTerrain(map);
 
@@ -127,10 +127,10 @@ void BossScene::Update()
 	}
 
 	// 씬의 주된 업데이트 내용들
-	Camera::ControlMainCam(); // 카메라만 따로 움직이고싶다면 주석해제
+	//Camera::ControlMainCam(); // 카메라만 따로 움직이고싶다면 주석해제
 	ImGui::SliderFloat("CAMSPEED",&Camera::mainCamSpeed, 0.0f, 100.0f);
-	//if (CamisPlayer) CamSetPlayer(); // 컷씬이아닐떄는 카메라 플레이어에 고정
-	//if (!iscutscene) CutScene(); // 컷씬이 한번도 실행안했다면 계속 실행
+	if (CamisPlayer) CamSetPlayer(); // 컷씬이아닐떄는 카메라 플레이어에 고정
+	if (!iscutscene) CutScene(); // 컷씬이 한번도 실행안했다면 계속 실행
 
 	// 플레이어 Y축 계속틀어짐. 임시용으로 변경 플레이어 담당측 문제 파악 필요
 	if (player->root->GetLocalPos().y != 0.0f)
@@ -200,78 +200,78 @@ void BossScene::LateUpdate()
 #pragma endregion
 
 #pragma region Boss Attacks
-	//if (BossAttacks()) // 보스의 모션이 공격관련 모션일때
-	//{ 
-	//	if (player->GetHitCol()->colOnOff && // 플레이어의 피격 콜라이더가 켜져있고
-	//		player->root->anim->GetPlayNum() != 27) // 구르기상태가 아닐때
-	//	{
-	//		if (boss->GetAktCol1()->Intersect(player->GetHitCol()))
-	//		{
-	//			//cout << "플레이어 에게 " << boss->GetPower() << " 의 데미지!" << endl;
-	//			player->GetDameged(boss->GetPower());
-	//		}
-	//		if (boss->GetAktCol2()->Intersect(player->GetHitCol()))
-	//		{
-	//			//cout << "플레이어 에게 " << boss->GetPower() << " 의 데미지!" << endl;
-	//			player->GetDameged(boss->GetPower());
-	//		}
-	//	}
-	//}
+	if (BossAttacks()) // 보스의 모션이 공격관련 모션일때
+	{ 
+		if (player->GetHitCol()->colOnOff && // 플레이어의 피격 콜라이더가 켜져있고
+			player->root->anim->GetPlayNum() != 27) // 구르기상태가 아닐때
+		{
+			if (boss->GetAktCol1()->Intersect(player->GetHitCol()))
+			{
+				//cout << "플레이어 에게 " << boss->GetPower() << " 의 데미지!" << endl;
+				player->GetDameged(boss->GetPower());
+			}
+			if (boss->GetAktCol2()->Intersect(player->GetHitCol()))
+			{
+				//cout << "플레이어 에게 " << boss->GetPower() << " 의 데미지!" << endl;
+				player->GetDameged(boss->GetPower());
+			}
+		}
+	}
 
-	//if (BossSkillAttacks()) // 보스가 스킬 시전중일때
-	//{
-	//	if (player->GetHitCol()->colOnOff && // 플레이어의 피격 콜라이더가 켜져있고
-	//		player->root->anim->GetPlayNum() != 27) // 구르기상태가 아닐때
-	//	{
-	//		if (boss->GetSkillCol1()->Intersect(player->GetHitCol()))
-	//		{
-	//			//cout<<"플레이어 에게 " << boss->GetPower() << " 의 데미지!" << endl;
-	//			player->GetDameged(boss->GetPower());
-	//		}
-	//		if (boss->GetSkillCol2()->Intersect(player->GetHitCol()))
-	//		{
-	//			//cout << "플레이어 에게 " << boss->GetPower() << " 의 데미지!" << endl;
-	//			player->GetDameged(boss->GetPower());
-	//		}
-	//	}
-	//}
+	if (BossSkillAttacks()) // 보스가 스킬 시전중일때
+	{
+		if (player->GetHitCol()->colOnOff && // 플레이어의 피격 콜라이더가 켜져있고
+			player->root->anim->GetPlayNum() != 27) // 구르기상태가 아닐때
+		{
+			if (boss->GetSkillCol1()->Intersect(player->GetHitCol()))
+			{
+				//cout<<"플레이어 에게 " << boss->GetPower() << " 의 데미지!" << endl;
+				player->GetDameged(boss->GetPower());
+			}
+			if (boss->GetSkillCol2()->Intersect(player->GetHitCol()))
+			{
+				//cout << "플레이어 에게 " << boss->GetPower() << " 의 데미지!" << endl;
+				player->GetDameged(boss->GetPower());
+			}
+		}
+	}
 #pragma endregion
 
 #pragma region Monster Attacks
-	//if (MonsterAttacks()) // 몬스터 1번타입이 공격상태일때
-	//{
-	//	if (player->GetHitCol()->colOnOff && // 플레이어의 피격 콜라이더가 켜져있고
-	//		player->root->anim->GetPlayNum() != 27) // 구르기상태가 아닐때
-	//	{
-	//		// 몬스터의 공격 콜라이더들이 플레이어의 히트콜라이더에 충돌했을때
-	//		// 몬스터1번 타입의 콜라이더는 왼손, 오른손, 발 3개이다!
-	//		if (monster->GetAktCol1()->Intersect(player->GetHitCol()) ||
-	//			monster->GetAktCol2()->Intersect(player->GetHitCol()) ||
-	//			monster->GetAktCol3()->Intersect(player->GetHitCol()))
-	//		{
-	//			cout << "플레이어 에게 [몬스터 1의]" << monster->GetPower() << " 의 데미지!" << endl;
-	//			player->GetDameged(monster->GetPower());
-	//		}
-	//	}
-	//}
+	if (MonsterAttacks()) // 몬스터 1번타입이 공격상태일때
+	{
+		if (player->GetHitCol()->colOnOff && // 플레이어의 피격 콜라이더가 켜져있고
+			player->root->anim->GetPlayNum() != 27) // 구르기상태가 아닐때
+		{
+			// 몬스터의 공격 콜라이더들이 플레이어의 히트콜라이더에 충돌했을때
+			// 몬스터1번 타입의 콜라이더는 왼손, 오른손, 발 3개이다!
+			if (monster->GetAktCol1()->Intersect(player->GetHitCol()) ||
+				monster->GetAktCol2()->Intersect(player->GetHitCol()) ||
+				monster->GetAktCol3()->Intersect(player->GetHitCol()))
+			{
+				cout << "플레이어 에게 [몬스터 1의]" << monster->GetPower() << " 의 데미지!" << endl;
+				player->GetDameged(monster->GetPower());
+			}
+		}
+	}
 #pragma endregion
 
 #pragma region Monster2 Attacks
-	//if (Monster2Attacks()) // 몬스터 2번타입이 공격상태일때
-	//{
-	//	if (player->GetHitCol()->colOnOff && // 플레이어의 피격 콜라이더가 켜져있고
-	//		player->root->anim->GetPlayNum() != 27) // 구르기상태가 아닐때
-	//	{
-	//		// 몬스터의 공격 콜라이더들이 플레이어의 히트콜라이더에 충돌했을때
-	//		// 몬스터2번 타입의 콜라이더는 스킬1, 스킬2 개이다!
-	//		if (monster2->GetAktCol1()->Intersect(player->GetHitCol()) ||
-	//			monster2->GetAktCol2()->Intersect(player->GetHitCol()))
-	//		{
-	//			cout << "플레이어 에게 [몬스터 2의] 스킬 " << monster2->GetPower() << " 의 데미지!" << endl;
-	//			player->GetDameged(monster2->GetPower());
-	//		}
-	//	}
-	//}
+	if (Monster2Attacks()) // 몬스터 2번타입이 공격상태일때
+	{
+		if (player->GetHitCol()->colOnOff && // 플레이어의 피격 콜라이더가 켜져있고
+			player->root->anim->GetPlayNum() != 27) // 구르기상태가 아닐때
+		{
+			// 몬스터의 공격 콜라이더들이 플레이어의 히트콜라이더에 충돌했을때
+			// 몬스터2번 타입의 콜라이더는 스킬1, 스킬2 개이다!
+			if (monster2->GetAktCol1()->Intersect(player->GetHitCol()) ||
+				monster2->GetAktCol2()->Intersect(player->GetHitCol()))
+			{
+				cout << "플레이어 에게 [몬스터 2의] 스킬 " << monster2->GetPower() << " 의 데미지!" << endl;
+				player->GetDameged(monster2->GetPower());
+			}
+		}
+	}
 #pragma endregion
 }
 

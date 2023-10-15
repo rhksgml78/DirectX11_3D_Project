@@ -54,6 +54,9 @@ float4 PS(PixelInput input) : SV_TARGET
 {
 	//        rgb값으로 리턴이 아닌 z값으로 리턴
 	float BaseColor = input.Position.z / input.Position.w;
-	
-	return float4(BaseColor, BaseColor, BaseColor, 1.0f);
+    return float4(BaseColor, BaseColor, BaseColor, 1.0f);
+    //float BaseColorR = (input.Position.z + colorr) / input.Position.w;
+	//float BaseColorG = (input.Position.z + colorg) / input.Position.w ;
+	//float BaseColorB = (input.Position.z + colorb) / input.Position.w ;
+    //return float4(BaseColorR, BaseColorG, BaseColorB, 1.0f);
 }

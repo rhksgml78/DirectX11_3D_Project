@@ -24,5 +24,9 @@ public:
 	void ResizeScreen(float width, float height);
 	void RenderDetail();
 
+	float GetTextureSize() { return textureSize; }
+	int GetQuality() { return desc.ShadowQuality; }
+
+
 };
 
