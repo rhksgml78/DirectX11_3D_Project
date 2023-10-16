@@ -30,9 +30,6 @@ void Main::Init()
     //SCENE->AddScene("Scene2", new Scene2());
     //SCENE->ChangeScene("Scene2")->Init();
 
-    //SCENE->AddScene("STUDY", new StudyScene());
-    //SCENE->ChangeScene("STUDY")->Init();
-
     // 보스스테이지 씬
     //SCENE->AddScene("BossScene", new BossScene());
     //SCENE->ChangeScene("BossScene")->Init();
@@ -41,9 +38,12 @@ void Main::Init()
     //SCENE->AddScene("Defferd", new DeferredTestScene());
     //SCENE->ChangeScene("Defferd")->Init();
 
+    SCENE->AddScene("STUDY", new StudyScene());
+    SCENE->ChangeScene("STUDY")->Init();
+
     // 개인 테스트 전용 씬
-    SCENE->AddScene("SKH_TEST", new SKH_TestScene());
-    SCENE->ChangeScene("SKH_TEST")->Init();
+    //SCENE->AddScene("SKH_TEST", new SKH_TestScene());
+    //SCENE->ChangeScene("SKH_TEST")->Init();
 }
 
 void Main::Release()

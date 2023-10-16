@@ -3,6 +3,7 @@ class SKH_TestScene : public Scene
 {
 private:
 	Camera* cam;
+	Camera* cam2;
 	Sky* sky;
 	Shadow* shadow;
 	Terrain* map;

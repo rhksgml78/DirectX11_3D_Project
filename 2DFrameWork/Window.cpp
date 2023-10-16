@@ -39,9 +39,14 @@ WPARAM Window::Run(Scene* main)
 			{
 
 				main->Render();
-				DEPTH->Set(false);
-				GameObject::RenderAxis();
-				DEPTH->Set(true);
+
+				if (isAxis) // 깊이값 끄고 그리는 축 필요없으면 Set함수로 끌수있도록 조절
+				{
+					DEPTH->Set(false);
+					GameObject::RenderAxis();
+					DEPTH->Set(true);
+				}
+
 				GUI->Render();
 			}
 			DWRITE->GetDC()->EndDraw();

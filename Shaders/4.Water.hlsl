@@ -4,7 +4,9 @@ cbuffer PS_Water : register(b10)
 {
 	float2 dir;
 	float time; //흐르는 시간 속도
-	float padding1;
+	float scale; // uv크기
+    float refractscalar; // 굴절률
+    float3 padding;
 }
 
 
@@ -56,7 +58,7 @@ PixelInput VS(VertexInput input)
 
 float4 PS(PixelInput input) : SV_TARGET
 {
-	float2 Uv = input.Uv + dir * time;
+    float2 Uv = (input.Uv + dir * time)*scale;
 	
 	
 	float4 BaseColor = DiffuseMapping(Uv);
@@ -120,7 +122,9 @@ float4 PS(PixelInput input) : SV_TARGET
         reflection.xyz += MappingNormal * 0.03f;
         reflection = normalize(reflection);
 		
-        float3 Refract = refract(normalize(ViewDir), Normal, 1) + MappingNormal * 0.03f;
+        //float3 Refract = refract(normalize(ViewDir), Normal, 1) + MappingNormal * 0.03f;
+		
+        float3 Refract = refract(normalize(ViewDir), Normal, 1) + MappingNormal * refractscalar;
 		
         Envi = TextureBG.Sample(SamplerBG, reflection.xyz);
         Envi2 = TextureC.Sample(SamplerC, Refract);
@@ -130,9 +134,21 @@ float4 PS(PixelInput input) : SV_TARGET
 	입사각 표면 굴절률 (물체에따른 굴절률은 인터넷자료참고. 물은1.333)
 	쉐이더코드에서 굴절률을적용할떄에는 1.01정도가 적당한것같다. 
 	*/
-
-    Result.rgb = Result.rgb * (1.0f - environment)
-	+ (Envi + Envi2) * environment * 0.5f;
+    if (padding.r == 1)
+    {
+        Result.rgb = Result.rgb * (1.0f - environment) + (Envi) * environment;
+    }
+    if (padding.g == 1)
+    {
+        Result.rgb = Result.rgb * (1.0f - environment) + (Envi2) * environment;
+    }
+    if (padding.b == 1)
+    {
+        Result.rgb = Result.rgb * (1.0f - environment) + (Envi + Envi2) * environment * 0.5f;
+    }
+	
+	// RTT1 + 2 = 완성본
+    //Result.rgb = Result.rgb * (1.0f - environment) + (Envi + Envi2) * environment * 0.5f;
 	
 	BaseColor = Result;
 	

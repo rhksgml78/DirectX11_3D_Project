@@ -1,4 +1,16 @@
 #include "stdafx.h"
+#include <DirectXMath.h>
+
+// 방향벡터 dir을 rotation 각도로 변경
+DirectX::XMVECTOR RotateVectorWithEulerAngles(const DirectX::XMVECTOR& dir, float pitch, float yaw, float roll) {
+	// Create a rotation matrix from Euler angles (pitch, yaw, roll)
+	DirectX::XMMATRIX rotationMatrix = DirectX::XMMatrixRotationRollPitchYaw(pitch, yaw, roll);
+
+	// Rotate the direction vector
+	DirectX::XMVECTOR rotatedDir = DirectX::XMVector3TransformCoord(dir, rotationMatrix);
+
+	return rotatedDir;
+}
 
 SKH_TestScene::SKH_TestScene()
 {
@@ -13,6 +25,8 @@ void SKH_TestScene::Init()
 	cam = Camera::Create();
 	cam->LoadFile("PPTCAMPOS.xml");
 	Camera::main = cam;
+
+	cam2 = Camera::Create();
 
 	sky = Sky::Create();
 	sky->texCube->LoadFile("sunsetcube1024.dds"); // 멀리 산능선이 보이는 해직녘풍경 큐브맵
@@ -103,7 +117,35 @@ void SKH_TestScene::Update()
 	// 카메라 움직임
 	Camera::ControlMainCam(); // 카메라만 따로 움직이고싶다면 주석해제
 	ImGui::SliderFloat("CAMSPEED", &Camera::mainCamSpeed, 0.0f, 100.0f);
+	LIGHT->RenderDetail();
 
+#pragma region Dir_TO_Rotation_Test
+	//// Your direction vector
+	////DirectX::XMVECTOR dir = DirectX::XMVectorSet(1.0f, 0.0f, 0.0f, 0.0f);
+	//DirectX::XMVECTOR dir = DirectX::XMVectorSet(LIGHT->dirLight.direction.x,
+	//											 LIGHT->dirLight.direction.y, 
+	//											 LIGHT->dirLight.direction.z, 
+	//											 LIGHT->dirLight.direction.w);
+
+	//// Rotation angles in radians
+	//float pitch = DirectX::XMConvertToRadians(180.0f); // X-axis rotation
+	//float yaw = DirectX::XMConvertToRadians(180.0f);   // Y-axis rotation
+	//float roll = DirectX::XMConvertToRadians(180.0f);  // Z-axis rotation
+
+	//// Rotate the direction vector
+	//DirectX::XMVECTOR rotatedDir = RotateVectorWithEulerAngles(dir, pitch, yaw, roll);
+	//cam2->rotation = rotatedDir;
+	//// The rotatedDir vector now contains the direction vector after rotation
+#pragma endregion
+
+	if (INPUT->KeyDown(VK_NUMPAD7))
+	{
+		Camera::main = cam;
+	}
+	if (INPUT->KeyDown(VK_NUMPAD8))
+	{
+		Camera::main = cam2;
+	}
 
 	// 하이어라이키
 	if (ImGui::Begin("Hierarchy"))

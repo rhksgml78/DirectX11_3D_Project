@@ -27,7 +27,9 @@ private:
 	{
 		Vector2 dir;
 		float time;
-		float padding;
+		float scale;
+		float refractscalar;
+		Vector3 padding;
 	}waterBufferDesc;
 
 	Environment* envi;
@@ -35,6 +37,12 @@ private:
 	ID3D11Buffer* waterBuffer;
 	ID3D11Buffer* planeBuffer;	// 평면 방정식에 사용할 버퍼가 필요! 23.10.12 추가
 	Vector4 plane; // 평면 23.10.12 추가
+	float waterspeed = 1.0f;
+	Vector2 waterdir{1,1};
+	float refractscalar = 0.003f;
+	float uvscale = 1.0f;
+	bool axistnf = true;
+	Vector3 rttpad = {0,0,1};
 
 #pragma endregion
 
