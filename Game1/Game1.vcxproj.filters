@@ -141,6 +141,9 @@
     <ClInclude Include="DeferredTestScene.h">
       <Filter>Scenes</Filter>
     </ClInclude>
+    <ClInclude Include="Tessellation_TestScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Scene2.cpp">
@@ -280,6 +283,9 @@
       <Filter>Actors\OtherUi</Filter>
     </ClCompile>
     <ClCompile Include="DeferredTestScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Tessellation_TestScene.cpp">
       <Filter>Scenes</Filter>
     </ClCompile>
   </ItemGroup>

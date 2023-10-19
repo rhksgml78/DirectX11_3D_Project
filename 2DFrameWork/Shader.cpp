@@ -13,6 +13,8 @@ Shader::~Shader()
     SafeRelease(vertexShader);
     SafeRelease(pixelShader);
     SafeRelease(geometryShader);
+    SafeRelease(hullShader);
+    SafeRelease(domainShader);
 }
 
 //바뀌기 전 Shader로드
@@ -329,10 +331,52 @@ void Shader::LoadGeometry()
     SafeRelease(GsBlob);
 }
 
+void Shader::LoadTessellation()
+{
+    {
+        SafeRelease(hullShader);
+
+        ID3D10Blob* HsBlob;
+
+        wstring path = L"../Shaders/" + Util::ToWString(file);
+
+        DWORD flags = D3DCOMPILE_ENABLE_STRICTNESS | D3DCOMPILE_DEBUG;
+
+
+        D3DCompileFromFile(path.c_str(), nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
+            "HS", "hs_5_0", flags, 0, &HsBlob, nullptr);
+
+        D3D->GetDevice()->CreateHullShader(HsBlob->GetBufferPointer(), HsBlob->GetBufferSize(),
+            nullptr, &hullShader);
+
+        SafeRelease(HsBlob);
+    }
+    {
+        SafeRelease(domainShader);
+
+        ID3D10Blob* DsBlob;
+
+        wstring path = L"../Shaders/" + Util::ToWString(file);
+
+        DWORD flags = D3DCOMPILE_ENABLE_STRICTNESS | D3DCOMPILE_DEBUG;
+
+
+        D3DCompileFromFile(path.c_str(), nullptr, D3D_COMPILE_STANDARD_FILE_INCLUDE,
+            "DS", "ds_5_0", flags, 0, &DsBlob, nullptr);
+
+        D3D->GetDevice()->CreateDomainShader(DsBlob->GetBufferPointer(), DsBlob->GetBufferSize(),
+            nullptr, &domainShader);
+
+        SafeRelease(DsBlob);
+    }
+}
+
 void Shader::Set()
 {
     D3D->GetDC()->VSSetShader(vertexShader, 0, 0);
     D3D->GetDC()->PSSetShader(pixelShader, 0, 0);
     D3D->GetDC()->GSSetShader(geometryShader, 0, 0);
+    D3D->GetDC()->HSSetShader(hullShader, 0, 0);
+    D3D->GetDC()->DSSetShader(domainShader, 0, 0);
     D3D->GetDC()->IASetInputLayout(vertexLayout);
 }

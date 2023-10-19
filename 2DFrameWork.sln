@@ -49,6 +49,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shaders", "Shaders", "{6498
 		Shaders\9.Cube.hlsl = Shaders\9.Cube.hlsl
 		Shaders\Common.hlsl = Shaders\Common.hlsl
 		Shaders\ComputeShader.hlsl = Shaders\ComputeShader.hlsl
+		Shaders\TessRect.hlsl = Shaders\TessRect.hlsl
+		Shaders\TessTri.hlsl = Shaders\TessTri.hlsl
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GameObject", "GameObject", "{02D83A04-620D-48C6-B4E7-41AB710F9687}"

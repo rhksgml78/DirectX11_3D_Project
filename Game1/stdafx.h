@@ -79,6 +79,7 @@ extern PostEffect* post;
 #include "SKH_TestScene.h"
 #include "StudyScene.h"
 #include "DeferredTestScene.h"
+#include "Tessellation_TestScene.h"
 
 
 

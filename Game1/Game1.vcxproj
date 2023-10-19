@@ -67,6 +67,7 @@
     <ClInclude Include="Solar.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StudyScene.h" />
+    <ClInclude Include="Tessellation_TestScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="APlayer.cpp" />
@@ -116,6 +117,7 @@
     <ClCompile Include="SKH_TestScene.cpp" />
     <ClCompile Include="Solar.cpp" />
     <ClCompile Include="StudyScene.cpp" />
+    <ClCompile Include="Tessellation_TestScene.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
